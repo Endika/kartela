@@ -2,9 +2,13 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
+import { version } from './package.json' with { type: 'json' }
 
 export default defineConfig({
   base: '/kartela/',
+  // Baked in at build time so the running page can say which build it is — the thing you
+  // actually need when a PWA might be serving a stale cache.
+  define: { __APP_VERSION__: JSON.stringify(version) },
   plugins: [
     tailwindcss(),
     VitePWA({

@@ -6,6 +6,8 @@ import { localeTranslations } from './adapters/locale-translations'
 import { storedOptions } from './adapters/local-storage-options'
 import { systemRandom } from './adapters/seeded-random'
 import type { Deps } from './ui/deps'
+import { el } from './ui/dom'
+import { renderFooter } from './ui/footer'
 import { renderStartScreen } from './ui/start-screen'
 import { renderMatchScreen } from './ui/match-screen'
 import { renderResultsScreen } from './ui/results-screen'
@@ -21,13 +23,17 @@ function composeDeps(): Deps {
   }
 }
 
-export function startApp(host: HTMLElement, deps: Deps): void {
+export function startApp(host: HTMLElement, deps: Deps, version: string): void {
   let options: Options = deps.options.load()
   let teardown: (() => void) | null = null
 
+  // Screens are swapped inside their own container so the footer survives every change.
+  const screen = el('div', { class: 'flex flex-1 flex-col' })
+  host.replaceChildren(screen, renderFooter(version))
+
   function swap(render: (root: HTMLElement) => (() => void) | void): void {
     teardown?.()
-    teardown = render(host) ?? null
+    teardown = render(screen) ?? null
   }
 
   function start(): void {
@@ -56,5 +62,5 @@ export function startApp(host: HTMLElement, deps: Deps): void {
 
 const host = document.querySelector<HTMLDivElement>('#app')
 if (host) {
-  startApp(host, composeDeps())
+  startApp(host, composeDeps(), __APP_VERSION__)
 }
