@@ -5,7 +5,15 @@ import { clear, el } from './dom'
 import type { Deps } from './deps'
 import { attachDrag, prefersReducedMotion } from './swipe'
 
-const EXIT_MS = 260
+const EXIT_MS = 280
+const ENTER_MS = 220
+const SNAP_MS = 180
+/** Overshoots a little on the way in, so a card lands like a card and not like a div. */
+const SPRING = 'cubic-bezier(0.2, 0.9, 0.25, 1.2)'
+
+/** How far a card slides with the finger, and how much it tilts doing it. */
+const FOLLOW_PX = 26
+const TILT_DEG = 5
 
 interface Card {
   root: HTMLElement
@@ -22,7 +30,11 @@ function createCard(side: Side): Card {
   // Posters come in slightly different shapes, so each one sits in a box of the same
   // aspect ratio — otherwise the two captions never line up.
   const frame = el('span', { class: 'flex aspect-2/3 w-full items-center justify-center' }, [image])
-  const caption = el('p', { class: 'text-center text-sm font-semibold text-white/90' })
+  // w-full keeps a long title wrapping inside the card instead of poking out of the
+  // viewport once the card slides and scales under the finger.
+  const caption = el('p', {
+    class: 'w-full text-center text-sm font-semibold text-balance text-white/90',
+  })
   const root = el(
     'button',
     {
@@ -40,8 +52,6 @@ function show(card: Card, film: Film, catalogue: FilmCatalogue, lang: Lang): voi
   card.image.src = catalogue.posterUrl(film)
   card.image.alt = titleOf(film, lang)
   card.caption.textContent = `${titleOf(film, lang)} · ${film.year}`
-  card.root.style.transform = ''
-  card.root.style.opacity = ''
 }
 
 export function renderMatchScreen(
@@ -54,6 +64,7 @@ export function renderMatchScreen(
   const translator: Translator = deps.translations.for(lang)
   const left = createCard('left')
   const right = createCard('right')
+  const cards = [left, right]
   const counter = el('p', { class: 'text-sm font-semibold text-gold', 'aria-live': 'polite' })
   const hint = el('p', { class: 'text-center text-sm text-white/70' })
   hint.textContent = translator.t('swipeHint')
@@ -79,23 +90,72 @@ export function renderMatchScreen(
     show(right, duel.right, deps.catalogue, lang)
   }
 
+  function settle(card: Card): void {
+    card.root.style.transition = ''
+    card.root.style.transform = ''
+    card.root.style.opacity = ''
+  }
+
+  /** Both cards lean the way the finger goes; the one being chosen lifts and grows. */
   function progress(ratio: number): void {
     if (busy) {
       return
     }
     const lean = Math.abs(ratio)
-    const target = ratio > 0 ? right : left
+    const slide = ratio * FOLLOW_PX
+    const tilt = ratio * TILT_DEG
+    const chosen = ratio > 0 ? right : left
     const other = ratio > 0 ? left : right
-    target.root.style.transform = `scale(${1 + lean * 0.06})`
-    target.root.style.opacity = '1'
-    other.root.style.transform = `scale(${1 - lean * 0.06})`
-    other.root.style.opacity = String(1 - lean * 0.45)
+    chosen.root.style.transition = ''
+    other.root.style.transition = ''
+    chosen.root.style.transform = `translate3d(${slide}px, ${-10 * lean}px, 0) rotate(${tilt}deg) scale(${1 + 0.08 * lean})`
+    chosen.root.style.opacity = '1'
+    other.root.style.transform = `translate3d(${slide * 0.45}px, ${5 * lean}px, 0) rotate(${tilt * 0.4}deg) scale(${1 - 0.07 * lean})`
+    other.root.style.opacity = String(1 - 0.45 * lean)
   }
 
-  function reset(): void {
-    for (const card of [left, right]) {
+  /** A drag that never reached the threshold springs the cards back into place. */
+  function snapBack(): void {
+    if (busy) {
+      return
+    }
+    for (const card of cards) {
+      card.root.style.transition = `transform ${SNAP_MS}ms ${SPRING}, opacity ${SNAP_MS}ms ease-out`
       card.root.style.transform = ''
       card.root.style.opacity = ''
+    }
+    window.setTimeout(() => {
+      for (const card of cards) {
+        card.root.style.transition = ''
+      }
+    }, SNAP_MS)
+  }
+
+  /** The new challenger flies in from the right, where challengers always come from. */
+  function enterChallenger(): void {
+    right.root.style.transition = ''
+    right.root.style.transform = 'translate3d(45%, 8%, 0) rotate(7deg) scale(0.86)'
+    right.root.style.opacity = '0'
+    requestAnimationFrame(() => {
+      right.root.style.transition = `transform ${ENTER_MS}ms ${SPRING}, opacity ${ENTER_MS}ms ease-out`
+      right.root.style.transform = ''
+      right.root.style.opacity = '1'
+      window.setTimeout(() => settle(right), ENTER_MS)
+    })
+  }
+
+  function advance(): void {
+    busy = false
+    for (const card of cards) {
+      settle(card)
+    }
+    if (match.isOver) {
+      onFinish()
+      return
+    }
+    paint()
+    if (!prefersReducedMotion()) {
+      enterChallenger()
     }
   }
 
@@ -106,42 +166,33 @@ export function renderMatchScreen(
     busy = true
     const winner = side === 'left' ? left : right
     const loser = side === 'left' ? right : left
-    const instant = prefersReducedMotion()
-
-    const advance = (): void => {
-      busy = false
-      reset()
-      if (match.isOver) {
-        onFinish()
-      } else {
-        paint()
-      }
-    }
+    // A winning challenger slides across into the champion's slot on the left.
+    const shift =
+      side === 'right'
+        ? left.root.getBoundingClientRect().left - right.root.getBoundingClientRect().left
+        : 0
 
     match.choose(side)
 
-    if (instant) {
+    if (prefersReducedMotion()) {
       advance()
       return
     }
-    for (const card of [winner, loser]) {
+
+    for (const card of cards) {
       card.root.style.transition = `transform ${EXIT_MS}ms ease-out, opacity ${EXIT_MS}ms ease-out`
     }
-    winner.root.style.transform = 'scale(1.12)'
-    loser.root.style.transform = `translateX(${side === 'left' ? '60%' : '-60%'}) scale(0.7)`
+    winner.root.style.transform = `translate3d(${shift}px, 0, 0) scale(1.06)`
+    winner.root.style.opacity = '1'
+    loser.root.style.transform = `translate3d(${side === 'left' ? '75%' : '-75%'}, 14%, 0) rotate(${side === 'left' ? 16 : -16}deg) scale(0.68)`
     loser.root.style.opacity = '0'
-    window.setTimeout(() => {
-      for (const card of [winner, loser]) {
-        card.root.style.transition = ''
-      }
-      advance()
-    }, EXIT_MS)
+    window.setTimeout(advance, EXIT_MS)
   }
 
   const detachDrag = attachDrag(arena, {
     onProgress: progress,
     onCommit: commit,
-    onCancel: reset,
+    onCancel: snapBack,
   })
 
   left.root.addEventListener('click', () => commit('left'))

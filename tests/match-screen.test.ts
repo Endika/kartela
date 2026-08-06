@@ -1,7 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { titleOf } from '../src/domain/film'
 import { createMatch } from '../src/domain/match'
-import { seededRandom } from '../src/adapters/seeded-random'
 import { renderMatchScreen } from '../src/ui/match-screen'
 import { FILMS, fakeDeps } from './support/fakes'
 
@@ -13,7 +12,7 @@ function mount(): HTMLDivElement {
   return root
 }
 
-const matchOf = (size: number) => createMatch(FILMS.slice(0, size), seededRandom(1))
+const matchOf = (size: number) => createMatch(FILMS.slice(0, size))
 
 describe('match screen', () => {
   beforeEach(() => {
