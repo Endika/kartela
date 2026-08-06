@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { attachDrag, type DragHandlers } from '../src/app/swipe'
-import type { Side } from '../src/core/match'
+import { attachDrag, type DragHandlers } from '../src/ui/swipe'
+import type { Side } from '../src/domain/match'
 
 const WIDTH = 400
 

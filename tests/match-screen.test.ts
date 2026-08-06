@@ -1,9 +1,11 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { CATALOG, title } from '../src/data/catalog'
-import { createMatch } from '../src/core/match'
-import { createRng } from '../src/core/rng'
-import { setLang } from '../src/i18n'
-import { renderMatchScreen } from '../src/app/match-screen'
+import { titleOf } from '../src/domain/film'
+import { createMatch } from '../src/domain/match'
+import { seededRandom } from '../src/adapters/seeded-random'
+import { renderMatchScreen } from '../src/ui/match-screen'
+import { FILMS, fakeDeps } from './support/fakes'
+
+const deps = fakeDeps()
 
 function mount(): HTMLDivElement {
   const root = document.createElement('div')
@@ -11,28 +13,37 @@ function mount(): HTMLDivElement {
   return root
 }
 
+const matchOf = (size: number) => createMatch(FILMS.slice(0, size), seededRandom(1))
+
 describe('match screen', () => {
   beforeEach(() => {
-    setLang('es')
     document.body.replaceChildren()
   })
 
   it('shows both posters of the duel with their titles', () => {
     const root = mount()
-    const match = createMatch(CATALOG.slice(0, 4), createRng(1))
-    renderMatchScreen(root, match, 'es', () => {})
+    const match = matchOf(4)
+    renderMatchScreen(root, deps, match, 'es', () => {})
     const images = [...root.querySelectorAll('img')]
     expect(images).toHaveLength(2)
     const duel = match.duel
-    expect(images[0]?.alt).toBe(title(duel!.left, 'es'))
-    expect(images[1]?.alt).toBe(title(duel!.right, 'es'))
+    expect(images[0]?.alt).toBe(titleOf(duel!.left, 'es'))
+    expect(images[1]?.alt).toBe(titleOf(duel!.right, 'es'))
     expect(root.textContent).toContain('Ronda 1 de 3')
+  })
+
+  it('builds poster URLs through the injected catalogue', () => {
+    const root = mount()
+    const match = matchOf(4)
+    renderMatchScreen(root, deps, match, 'es', () => {})
+    const src = root.querySelector('img')?.getAttribute('src') ?? ''
+    expect(src).toBe(deps.catalogue.posterUrl(match.duel!.left))
   })
 
   it('picks the film on the side that was tapped', () => {
     const root = mount()
-    const match = createMatch(CATALOG.slice(0, 4), createRng(1))
-    renderMatchScreen(root, match, 'es', () => {})
+    const match = matchOf(4)
+    renderMatchScreen(root, deps, match, 'es', () => {})
     const expected = match.duel?.right
     const cards = [...root.querySelectorAll('button[data-side]')] as HTMLButtonElement[]
     cards[1]?.click()
@@ -41,8 +52,8 @@ describe('match screen', () => {
 
   it('picks with the arrow keys too', () => {
     const root = mount()
-    const match = createMatch(CATALOG.slice(0, 4), createRng(1))
-    renderMatchScreen(root, match, 'es', () => {})
+    const match = matchOf(4)
+    renderMatchScreen(root, deps, match, 'es', () => {})
     const expected = match.duel?.left
     window.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowLeft' }))
     expect(match.champion).toBe(expected)
@@ -53,8 +64,8 @@ describe('match screen', () => {
     try {
       const root = mount()
       const onFinish = vi.fn()
-      const match = createMatch(CATALOG.slice(0, 2), createRng(1))
-      renderMatchScreen(root, match, 'es', onFinish)
+      const match = matchOf(2)
+      renderMatchScreen(root, deps, match, 'es', onFinish)
       window.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowLeft' }))
       expect(onFinish).not.toHaveBeenCalled()
       vi.advanceTimersByTime(300)
@@ -68,8 +79,8 @@ describe('match screen', () => {
     vi.useFakeTimers()
     try {
       const root = mount()
-      const match = createMatch(CATALOG.slice(0, 6), createRng(1))
-      renderMatchScreen(root, match, 'es', () => {})
+      const match = matchOf(6)
+      renderMatchScreen(root, deps, match, 'es', () => {})
       window.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowLeft' }))
       window.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowRight' }))
       expect(match.history).toHaveLength(1)
@@ -83,10 +94,16 @@ describe('match screen', () => {
 
   it('stops answering the keyboard after teardown', () => {
     const root = mount()
-    const match = createMatch(CATALOG.slice(0, 6), createRng(1))
-    const teardown = renderMatchScreen(root, match, 'es', () => {})
+    const match = matchOf(6)
+    const teardown = renderMatchScreen(root, deps, match, 'es', () => {})
     teardown()
     window.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowLeft' }))
     expect(match.history).toHaveLength(0)
+  })
+
+  it('speaks the language it is handed', () => {
+    const root = mount()
+    renderMatchScreen(root, deps, matchOf(4), 'eu', () => {})
+    expect(root.textContent).toContain('Gehien gustatzen zaizunerantz mugitu hatza')
   })
 })

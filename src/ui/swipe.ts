@@ -1,4 +1,4 @@
-import type { Side } from '../core/match'
+import type { Side } from '../domain/match'
 
 export interface DragHandlers {
   /** Called on every pointer move: ratio is -1 (fully left) … 1 (fully right). */

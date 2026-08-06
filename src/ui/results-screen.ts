@@ -1,16 +1,20 @@
-import { posterUrl, title, type Lang } from '../data/catalog'
-import { championRuns, type Match } from '../core/match'
-import { t } from '../i18n'
+import { titleOf, type Film, type Lang } from '../domain/film'
+import { championRuns, type Match } from '../domain/match'
 import { clear, el } from './dom'
+import type { Deps } from './deps'
 
 export function renderResultsScreen(
   root: HTMLElement,
+  deps: Deps,
   match: Match,
   lang: Lang,
   onAgain: () => void,
   onChange: () => void,
 ): void {
+  const { t } = deps.translations.for(lang)
+  const posterUrl = (film: Film): string => deps.catalogue.posterUrl(film)
   const champion = match.champion
+
   const header = el('section', { class: 'flex flex-col items-center gap-2' })
   if (champion) {
     const label = el('p', { class: 'text-sm font-semibold tracking-wide text-gold uppercase' })
@@ -18,10 +22,10 @@ export function renderResultsScreen(
     const poster = el('img', {
       class: 'w-40 rounded-2xl shadow-xl shadow-black/50',
       src: posterUrl(champion),
-      alt: title(champion, lang),
+      alt: titleOf(champion, lang),
     })
     const name = el('h2', { class: 'text-center text-xl font-bold' })
-    name.textContent = `${title(champion, lang)} · ${champion.year}`
+    name.textContent = `${titleOf(champion, lang)} · ${champion.year}`
     header.append(label, poster, name)
   }
 
@@ -40,9 +44,9 @@ export function renderResultsScreen(
         alt: '',
       })
       const name = el('p', { class: 'text-sm font-semibold' })
-      name.textContent = `${title(run.winner, lang)} · ${run.winner.year}`
+      name.textContent = `${titleOf(run.winner, lang)} · ${run.winner.year}`
       const over = el('p', { class: 'text-xs text-white/60' })
-      over.textContent = `${t('beats')} ${run.beaten.map((film) => title(film, lang)).join(' · ')}`
+      over.textContent = `${t('beats')} ${run.beaten.map((film) => titleOf(film, lang)).join(' · ')}`
       return el('li', { class: 'flex items-center gap-3 rounded-xl bg-night-soft/70 p-2' }, [
         thumb,
         el('div', { class: 'flex min-w-0 flex-col' }, [name, over]),

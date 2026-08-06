@@ -1,7 +1,8 @@
-import { posterUrl, title, type Film, type Lang } from '../data/catalog'
-import type { Match, Side } from '../core/match'
-import { t } from '../i18n'
+import { titleOf, type Film, type Lang } from '../domain/film'
+import type { Match, Side } from '../domain/match'
+import type { FilmCatalogue, Translator } from '../domain/ports'
 import { clear, el } from './dom'
+import type { Deps } from './deps'
 import { attachDrag, prefersReducedMotion } from './swipe'
 
 const EXIT_MS = 260
@@ -35,25 +36,27 @@ function createCard(side: Side): Card {
   return { root, image, caption }
 }
 
-function show(card: Card, film: Film, lang: Lang): void {
-  card.image.src = posterUrl(film)
-  card.image.alt = title(film, lang)
-  card.caption.textContent = `${title(film, lang)} · ${film.year}`
+function show(card: Card, film: Film, catalogue: FilmCatalogue, lang: Lang): void {
+  card.image.src = catalogue.posterUrl(film)
+  card.image.alt = titleOf(film, lang)
+  card.caption.textContent = `${titleOf(film, lang)} · ${film.year}`
   card.root.style.transform = ''
   card.root.style.opacity = ''
 }
 
 export function renderMatchScreen(
   root: HTMLElement,
+  deps: Deps,
   match: Match,
   lang: Lang,
   onFinish: () => void,
 ): () => void {
+  const translator: Translator = deps.translations.for(lang)
   const left = createCard('left')
   const right = createCard('right')
   const counter = el('p', { class: 'text-sm font-semibold text-gold', 'aria-live': 'polite' })
   const hint = el('p', { class: 'text-center text-sm text-white/70' })
-  hint.textContent = t('swipeHint')
+  hint.textContent = translator.t('swipeHint')
 
   const arena = el(
     'div',
@@ -68,9 +71,12 @@ export function renderMatchScreen(
     if (!duel) {
       return
     }
-    counter.textContent = t('round', { n: match.history.length + 1, total: match.total })
-    show(left, duel.left, lang)
-    show(right, duel.right, lang)
+    counter.textContent = translator.t('round', {
+      n: match.history.length + 1,
+      total: match.total,
+    })
+    show(left, duel.left, deps.catalogue, lang)
+    show(right, duel.right, deps.catalogue, lang)
   }
 
   function progress(ratio: number): void {

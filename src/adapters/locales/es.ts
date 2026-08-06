@@ -1,4 +1,4 @@
-import type { Dict } from './en'
+import type { Dict } from '../../domain/ports'
 
 export const es: Dict = {
   tagline: '¿Con cuál te quedas?',

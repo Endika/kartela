@@ -1,12 +1,14 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { CATALOG, title } from '../src/data/catalog'
-import { championRuns, createMatch, type Match } from '../src/core/match'
-import { createRng } from '../src/core/rng'
-import { setLang } from '../src/i18n'
-import { renderResultsScreen } from '../src/app/results-screen'
+import { titleOf } from '../src/domain/film'
+import { championRuns, createMatch, type Match } from '../src/domain/match'
+import { seededRandom } from '../src/adapters/seeded-random'
+import { renderResultsScreen } from '../src/ui/results-screen'
+import { FILMS, fakeDeps } from './support/fakes'
+
+const deps = fakeDeps()
 
 function playedMatch(size = 8): Match {
-  const match = createMatch(CATALOG.slice(0, size), createRng(4))
+  const match = createMatch(FILMS.slice(0, size), seededRandom(4))
   while (!match.isOver) {
     match.choose('left')
   }
@@ -19,61 +21,43 @@ function mount(): HTMLDivElement {
   return root
 }
 
+const render = (root: HTMLElement, match: Match, onAgain = vi.fn(), onChange = vi.fn()) =>
+  renderResultsScreen(root, deps, match, 'es', onAgain, onChange)
+
 describe('results screen', () => {
   beforeEach(() => {
-    setLang('es')
     document.body.replaceChildren()
   })
 
   it('lists every pick of the match, grouped by champion', () => {
     const root = mount()
     const match = playedMatch(8)
-    renderResultsScreen(
-      root,
-      match,
-      'es',
-      () => {},
-      () => {},
-    )
+    render(root, match)
     const runs = championRuns(match.history)
     expect(match.history).toHaveLength(7)
     expect(root.querySelectorAll('li')).toHaveLength(runs.length)
     // Nothing is lost by grouping: every beaten film is still named.
     const shown = root.textContent ?? ''
     for (const choice of match.history) {
-      expect(shown).toContain(title(choice.loser, 'es'))
+      expect(shown).toContain(titleOf(choice.loser, 'es'))
     }
   })
 
   it('puts the champion at the top', () => {
     const root = mount()
     const match = playedMatch(6)
-    renderResultsScreen(
-      root,
-      match,
-      'es',
-      () => {},
-      () => {},
-    )
-    const heading = root.querySelector('h2')
-    expect(heading?.textContent).toContain(title(match.champion!, 'es'))
-    const first = root.querySelector('li')
-    expect(first?.textContent).toContain(title(match.champion!, 'es'))
+    render(root, match)
+    expect(root.querySelector('h2')?.textContent).toContain(titleOf(match.champion!, 'es'))
+    expect(root.querySelector('li')?.textContent).toContain(titleOf(match.champion!, 'es'))
   })
 
   it('names what the newest champion beat, in the top entry', () => {
     const root = mount()
     const match = playedMatch(4)
-    renderResultsScreen(
-      root,
-      match,
-      'es',
-      () => {},
-      () => {},
-    )
+    render(root, match)
     const last = match.history[match.history.length - 1]
     const first = root.querySelector('li')
-    expect(first?.textContent).toContain(title(last!.loser, 'es'))
+    expect(first?.textContent).toContain(titleOf(last!.loser, 'es'))
     expect(first?.textContent).toContain('Gana a')
   })
 
@@ -81,28 +65,18 @@ describe('results screen', () => {
     const root = mount()
     const onAgain = vi.fn()
     const onChange = vi.fn()
-    renderResultsScreen(root, playedMatch(4), 'es', onAgain, onChange)
-    const play = [...root.querySelectorAll('button')].find((b) => b.textContent === 'Otra vez')
-    const change = [...root.querySelectorAll('button')].find(
-      (b) => b.textContent === 'Cambiar opciones',
-    )
-    play?.click()
-    change?.click()
+    render(root, playedMatch(4), onAgain, onChange)
+    const buttons = [...root.querySelectorAll('button')]
+    buttons.find((b) => b.textContent === 'Otra vez')?.click()
+    buttons.find((b) => b.textContent === 'Cambiar opciones')?.click()
     expect(onAgain).toHaveBeenCalledTimes(1)
     expect(onChange).toHaveBeenCalledTimes(1)
   })
 
   it('survives a match that never had a duel', () => {
     const root = mount()
-    const match = createMatch(CATALOG.slice(0, 1), createRng(1))
-    renderResultsScreen(
-      root,
-      match,
-      'es',
-      () => {},
-      () => {},
-    )
+    render(root, createMatch(FILMS.slice(0, 1), seededRandom(1)))
     expect(root.querySelectorAll('li')).toHaveLength(0)
-    expect(root.querySelector('h2')?.textContent).toContain(title(CATALOG[0]!, 'es'))
+    expect(root.querySelector('h2')?.textContent).toContain(titleOf(FILMS[0]!, 'es'))
   })
 })

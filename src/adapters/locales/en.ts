@@ -1,4 +1,6 @@
-export const en = {
+import type { Dict } from '../../domain/ports'
+
+export const en: Dict = {
   tagline: 'Which one do you keep?',
   studios: 'Studios',
   disney: 'Disney classics',
@@ -22,6 +24,4 @@ export const en = {
   yourPicks: 'Everything you picked',
   playAgain: 'Play again',
   change: 'Change options',
-} as const
-
-export type Dict = Record<keyof typeof en, string>
+}

@@ -1,4 +1,4 @@
-import type { Dict } from './en'
+import type { Dict } from '../../domain/ports'
 
 export const va: Dict = {
   tagline: 'Amb quina et quedes?',

@@ -1,11 +1,11 @@
-import { CATEGORIES, LANGS, type Category } from '../data/catalog'
-import { CATALOG } from '../data/catalog'
-import { DURATIONS, DURATION_SIZES, eligible, type Duration } from '../core/deck'
-import { LANG_NAMES, setLang, t, type Dict } from '../i18n'
+import { CATEGORIES, LANGS, isLang, type Category } from '../domain/film'
+import { deckSize } from '../domain/deck'
+import { DURATIONS, type Options } from '../domain/options'
+import type { TranslationKey, Translator } from '../domain/ports'
 import { clear, el } from './dom'
-import { saveOptions, type Options } from './options'
+import type { Deps } from './deps'
 
-const CATEGORY_LABELS: Record<Category, keyof Dict> = {
+const CATEGORY_LABELS: Record<Category, TranslationKey> = {
   disney: 'disney',
   pixar: 'pixar',
   dreamworks: 'dreamworks',
@@ -19,23 +19,20 @@ const CHIP = `rounded-2xl px-4 py-3 text-left text-sm font-semibold ring-2 trans
 const CHIP_ON = 'bg-gold/15 text-gold ring-gold'
 const CHIP_OFF = 'bg-night-soft text-white/65 ring-transparent'
 
-export function deckSize(options: Options): number {
-  const available = eligible(CATALOG, options).length
-  const limit = DURATION_SIZES[options.duration]
-  return limit === null ? available : Math.min(available, limit)
-}
-
 export function renderStartScreen(
   root: HTMLElement,
+  deps: Deps,
   options: Options,
   onPlay: (options: Options) => void,
 ): void {
+  const films = deps.catalogue.all()
   const draft: Options = { ...options, categories: [...options.categories] }
+  let translator: Translator = deps.translations.for(draft.lang)
 
   function update(change: Partial<Options>): void {
     Object.assign(draft, change)
-    saveOptions(draft)
-    setLang(draft.lang)
+    deps.options.save(draft)
+    translator = deps.translations.for(draft.lang)
     draw()
   }
 
@@ -47,7 +44,9 @@ export function renderStartScreen(
   }
 
   function draw(): void {
-    const size = deckSize(draft)
+    const t = (key: TranslationKey, params?: Record<string, string | number>): string =>
+      translator.t(key, params)
+    const size = deckSize(films, draft)
     const playable = size >= 2
 
     const studios = el(
@@ -84,8 +83,8 @@ export function renderStartScreen(
           class: `${CHIP} text-center ${on ? CHIP_ON : CHIP_OFF}`,
           'aria-pressed': String(on),
         })
-        button.textContent = t(duration as keyof Dict)
-        button.addEventListener('click', () => update({ duration: duration as Duration }))
+        button.textContent = t(duration)
+        button.addEventListener('click', () => update({ duration }))
         return button
       }),
     )
@@ -118,13 +117,13 @@ export function renderStartScreen(
       },
       LANGS.map((lang) => {
         const option = el('option', { value: lang, selected: lang === draft.lang })
-        option.textContent = LANG_NAMES[lang]
+        option.textContent = deps.translations.name(lang)
         return option
       }),
     )
     language.addEventListener('change', () => {
       const value = language.value
-      update({ lang: LANGS.find((lang) => lang === value) ?? draft.lang })
+      update({ lang: isLang(value) ? value : draft.lang })
     })
 
     const title = el('h1', { class: 'text-4xl font-black tracking-tight text-gold' })

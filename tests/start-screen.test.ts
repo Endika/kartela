@@ -1,17 +1,17 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { CATALOG } from '../src/data/catalog'
-import { eligible } from '../src/core/deck'
-import { setLang } from '../src/i18n'
-import { deckSize, renderStartScreen } from '../src/app/start-screen'
-import { defaultOptions, loadOptions, type Options } from '../src/app/options'
+import { eligible } from '../src/domain/deck'
+import { defaultOptions, type Options } from '../src/domain/options'
+import { renderStartScreen } from '../src/ui/start-screen'
+import { FILMS, fakeDeps } from './support/fakes'
 
-const spanish = (): Options => ({ ...defaultOptions(), lang: 'es' })
+const spanish = (): Options => defaultOptions('es')
 
 function mount(options: Options = spanish(), onPlay = vi.fn()) {
+  const deps = fakeDeps()
   const root = document.createElement('div')
   document.body.replaceChildren(root)
-  renderStartScreen(root, options, onPlay)
-  return { root, onPlay }
+  renderStartScreen(root, deps, options, onPlay)
+  return { root, onPlay, deps }
 }
 
 const buttons = (root: HTMLElement): HTMLButtonElement[] =>
@@ -33,8 +33,7 @@ const deckLabel = (root: HTMLElement): string => root.querySelector('#deck-size'
 
 describe('start screen', () => {
   beforeEach(() => {
-    localStorage.clear()
-    setLang('es')
+    document.body.replaceChildren()
   })
 
   it('offers the four studios, the sequels switch and the three lengths', () => {
@@ -70,9 +69,9 @@ describe('start screen', () => {
   it('counts only the eligible films when sequels are off', () => {
     const options: Options = { ...spanish(), duration: 'full', includeSequels: false }
     const { root } = mount(options)
-    const expected = eligible(CATALOG, options).length
+    const expected = eligible(FILMS, options).length
     expect(deckLabel(root)).toBe(`${expected} películas`)
-    expect(expected).toBeLessThan(CATALOG.length)
+    expect(expected).toBeLessThan(FILMS.length)
   })
 
   it('refuses to play with no studio selected and says why', () => {
@@ -80,16 +79,6 @@ describe('start screen', () => {
     byText(root, 'Pixar').click()
     expect(byText(root, 'Jugar').disabled).toBe(true)
     expect(deckLabel(root)).toBe('Elige al menos un estudio')
-  })
-
-  it('never asks for more films than the studios can give', () => {
-    const options: Options = {
-      ...spanish(),
-      categories: ['pixar'],
-      includeSequels: false,
-      duration: 'full',
-    }
-    expect(deckSize(options)).toBe(eligible(CATALOG, options).length)
   })
 
   it('hands the chosen options to the play callback', () => {
@@ -102,11 +91,11 @@ describe('start screen', () => {
     expect(onPlay.mock.calls[0]?.[0]).toMatchObject({ duration: 'full', includeSequels: false })
   })
 
-  it('remembers the options for the next visit', () => {
-    const { root } = mount()
+  it('saves the options through the injected store', () => {
+    const { root, deps } = mount()
     byText(root, 'Media').click()
     byText(root, 'DreamWorks').click()
-    const saved = loadOptions()
+    const saved = deps.options.load()
     expect(saved.duration).toBe('medium')
     expect(saved.categories).not.toContain('dreamworks')
   })
@@ -117,5 +106,14 @@ describe('start screen', () => {
     select.value = 'eu'
     select.dispatchEvent(new Event('change'))
     expect(byText(root, 'Jolastu')).toBeTruthy()
+  })
+
+  it('reads the films from the catalogue it was given, not a global one', () => {
+    const twoPixar = FILMS.filter((film) => film.category === 'pixar').slice(0, 2)
+    const deps = fakeDeps({ catalogue: { all: () => twoPixar, posterUrl: () => '' } })
+    const root = document.createElement('div')
+    document.body.replaceChildren(root)
+    renderStartScreen(root, deps, { ...spanish(), duration: 'full' }, vi.fn())
+    expect(deckLabel(root)).toBe('2 películas')
   })
 })

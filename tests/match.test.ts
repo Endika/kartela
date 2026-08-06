@@ -1,18 +1,20 @@
 import { describe, expect, it } from 'vitest'
-import { CATALOG, type Film } from '../src/data/catalog'
-import { buildDeck, DURATION_SIZES, eligible } from '../src/core/deck'
-import { championRuns, createMatch } from '../src/core/match'
-import { createRng } from '../src/core/rng'
+import type { Film } from '../src/domain/film'
+import { FILMS } from './support/fakes'
+import { buildDeck, deckSize, eligible } from '../src/domain/deck'
+import { DURATION_SIZES } from '../src/domain/options'
+import { championRuns, createMatch } from '../src/domain/match'
+import { seededRandom } from '../src/adapters/seeded-random'
 
 const ALL_CATEGORIES = ['disney', 'pixar', 'dreamworks', 'live-action'] as const
 
 function deckOf(size: number): Film[] {
-  return CATALOG.slice(0, size)
+  return FILMS.slice(0, size)
 }
 
 /** Plays a whole match by always keeping whatever sits on the given side. */
 function playAll(deck: readonly Film[], seed: number, side: 'left' | 'right' = 'left') {
-  const match = createMatch(deck, createRng(seed))
+  const match = createMatch(deck, seededRandom(seed))
   const seen: Film[] = []
   const duel = match.duel
   if (duel) {
@@ -31,46 +33,67 @@ function playAll(deck: readonly Film[], seed: number, side: 'left' | 'right' = '
 describe('deck', () => {
   it('keeps only the chosen categories', () => {
     const deck = buildDeck(
-      CATALOG,
-      { categories: ['pixar'], includeSequels: true, duration: 'full' },
-      createRng(1),
+      FILMS,
+      { categories: ['pixar'], includeSequels: true, duration: 'full', lang: 'es' },
+      seededRandom(1),
     )
     expect(deck.length).toBeGreaterThan(0)
     expect(deck.every((film) => film.category === 'pixar')).toBe(true)
   })
 
   it('drops sequels when asked to', () => {
-    const options = { categories: ALL_CATEGORIES, includeSequels: false, duration: 'full' } as const
-    const deck = buildDeck(CATALOG, options, createRng(1))
+    const options = {
+      categories: ALL_CATEGORIES,
+      includeSequels: false,
+      duration: 'full',
+      lang: 'es',
+    } as const
+    const deck = buildDeck(FILMS, options, seededRandom(1))
     expect(deck.some((film) => film.sequel)).toBe(false)
-    expect(deck.length).toBeLessThan(CATALOG.length)
+    expect(deck.length).toBeLessThan(FILMS.length)
   })
 
   it('cuts the deck to the chosen duration', () => {
-    const options = { categories: ALL_CATEGORIES, includeSequels: true, duration: 'short' } as const
-    expect(buildDeck(CATALOG, options, createRng(7))).toHaveLength(DURATION_SIZES.short as number)
+    const options = {
+      categories: ALL_CATEGORIES,
+      includeSequels: true,
+      duration: 'short',
+      lang: 'es',
+    } as const
+    expect(buildDeck(FILMS, options, seededRandom(7))).toHaveLength(DURATION_SIZES.short as number)
   })
 
   it('falls back to whatever is eligible when the duration asks for more', () => {
-    const options = { categories: ['pixar'], includeSequels: false, duration: 'medium' } as const
-    const available = eligible(CATALOG, options)
-    const deck = buildDeck(CATALOG, options, createRng(3))
+    const options = {
+      categories: ['pixar'],
+      includeSequels: false,
+      duration: 'medium',
+      lang: 'es',
+    } as const
+    const available = eligible(FILMS, options)
+    const deck = buildDeck(FILMS, options, seededRandom(3))
     expect(deck).toHaveLength(Math.min(available.length, DURATION_SIZES.medium as number))
+    expect(deckSize(FILMS, options)).toBe(deck.length)
   })
 
   it('never repeats a film inside a deck', () => {
     const deck = buildDeck(
-      CATALOG,
-      { categories: ALL_CATEGORIES, includeSequels: true, duration: 'full' },
-      createRng(11),
+      FILMS,
+      { categories: ALL_CATEGORIES, includeSequels: true, duration: 'full', lang: 'es' },
+      seededRandom(11),
     )
     expect(new Set(deck.map((film) => film.id)).size).toBe(deck.length)
   })
 
   it('shuffles differently for different seeds', () => {
-    const options = { categories: ALL_CATEGORIES, includeSequels: true, duration: 'short' } as const
-    const first = buildDeck(CATALOG, options, createRng(1)).map((film) => film.id)
-    const second = buildDeck(CATALOG, options, createRng(2)).map((film) => film.id)
+    const options = {
+      categories: ALL_CATEGORIES,
+      includeSequels: true,
+      duration: 'short',
+      lang: 'es',
+    } as const
+    const first = buildDeck(FILMS, options, seededRandom(1)).map((film) => film.id)
+    const second = buildDeck(FILMS, options, seededRandom(2)).map((film) => film.id)
     expect(first).not.toEqual(second)
   })
 })
@@ -93,7 +116,7 @@ describe('match', () => {
   })
 
   it('keeps the winner on screen for the next duel', () => {
-    const match = createMatch(deckOf(6), createRng(5))
+    const match = createMatch(deckOf(6), seededRandom(5))
     const choice = match.choose('left')
     expect(choice?.winner).toBe(match.champion)
     const next = match.duel
@@ -101,7 +124,7 @@ describe('match', () => {
   })
 
   it('never brings a beaten film back', () => {
-    const match = createMatch(deckOf(15), createRng(9))
+    const match = createMatch(deckOf(15), seededRandom(9))
     const beaten = new Set<string>()
     while (!match.isOver) {
       const duel = match.duel
@@ -113,7 +136,7 @@ describe('match', () => {
   })
 
   it('records the winner and loser of each duel', () => {
-    const match = createMatch(deckOf(4), createRng(2))
+    const match = createMatch(deckOf(4), seededRandom(2))
     while (!match.isOver) {
       const duel = match.duel
       const choice = match.choose('left')
@@ -126,7 +149,7 @@ describe('match', () => {
   it('swaps the champion between sides so the answer is never the same swipe', () => {
     const sides = new Set<string>()
     for (let seed = 0; seed < 20; seed++) {
-      const match = createMatch(deckOf(10), createRng(seed))
+      const match = createMatch(deckOf(10), seededRandom(seed))
       while (!match.isOver) {
         match.choose('left')
         const duel = match.duel
@@ -139,15 +162,15 @@ describe('match', () => {
   })
 
   it('ends immediately with a one-film deck', () => {
-    const match = createMatch(deckOf(1), createRng(1))
+    const match = createMatch(deckOf(1), seededRandom(1))
     expect(match.isOver).toBe(true)
     expect(match.duel).toBeNull()
-    expect(match.champion).toBe(CATALOG[0])
+    expect(match.champion).toBe(FILMS[0])
     expect(match.history).toEqual([])
   })
 
   it('survives an empty deck', () => {
-    const match = createMatch([], createRng(1))
+    const match = createMatch([], seededRandom(1))
     expect(match.isOver).toBe(true)
     expect(match.duel).toBeNull()
     expect(match.champion).toBeNull()
@@ -163,7 +186,7 @@ describe('match', () => {
 
 describe('championRuns', () => {
   it('groups the duels a single champion won in a row', () => {
-    const match = createMatch(deckOf(6), createRng(3))
+    const match = createMatch(deckOf(6), seededRandom(3))
     while (!match.isOver) {
       // Always keeping the champion means one run for the whole match.
       match.choose(match.duel?.left === match.champion ? 'left' : 'right')
@@ -175,7 +198,7 @@ describe('championRuns', () => {
   })
 
   it('opens a new run every time the challenger wins', () => {
-    const match = createMatch(deckOf(5), createRng(3))
+    const match = createMatch(deckOf(5), seededRandom(3))
     while (!match.isOver) {
       // Always keeping the challenger means a new run every duel.
       match.choose(match.duel?.left === match.champion ? 'right' : 'left')
