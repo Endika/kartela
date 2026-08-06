@@ -57,12 +57,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      # When GitHub's Pages queue is slow this step aborts at 10 minutes and that
+      # permanently poisons the commit SHA — the Pages deployment id IS the SHA, and a
+      # cancelled one can never be retried, so recovery means landing a new commit.
+      # Raising the `timeout` input does NOT help: the action caps it at MAX_TIMEOUT
+      # (600000 ms) with Math.min, so anything larger is silently ignored. Tried it.
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
-        with:
-          # GitHub's Pages queue is intermittently slow. The action's default 10-minute
-          # timeout aborts, and aborting permanently poisons this commit's SHA — the Pages
-          # deployment id IS the SHA, and a cancelled one can never be retried. So a slow
-          # queue costs a brand-new commit. Wait longer instead of poisoning the SHA.
-          timeout: 1200000
