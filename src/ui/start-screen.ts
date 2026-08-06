@@ -7,7 +7,8 @@ import { STUDIOS } from './studios'
 import type { Deps } from './deps'
 
 const FOCUS = 'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-crown'
-const CHIP = `rounded-2xl px-4 py-3 font-display text-left text-sm font-bold ring-2 transition-colors ${FOCUS}`
+const CHIP_BASE = `rounded-2xl py-3 font-display text-sm font-bold ring-2 transition-colors ${FOCUS}`
+const CHIP = `${CHIP_BASE} px-4 text-left`
 // A switched-on studio wears its own colour, the same one its cards use in a duel. Solid
 // coral is reserved for the one thing you actually press.
 const CHIP_OFF = 'bg-stage-soft text-white/65 ring-transparent'
@@ -45,13 +46,19 @@ export function renderStartScreen(
 
     const studios = el(
       'div',
-      { class: 'grid grid-cols-2 gap-2', role: 'group', 'aria-label': t('studios') },
+      {
+        // Intrinsic grid: three across when they fit, two when they do not. The min() floor
+        // is what stops a long name like DreamWorks widening the page below 320px.
+        class: 'grid grid-cols-[repeat(auto-fit,minmax(min(6rem,100%),1fr))] gap-2',
+        role: 'group',
+        'aria-label': t('studios'),
+      },
       CATEGORIES.map((category) => {
         const on = draft.categories.includes(category)
         const studio = STUDIOS[category]
         const chip = el('button', {
           type: 'button',
-          class: `${CHIP} ${on ? studio.chipOn : CHIP_OFF}`,
+          class: `${CHIP_BASE} min-w-0 px-2 text-center ${on ? studio.chipOn : CHIP_OFF}`,
           'aria-pressed': String(on),
         })
         chip.textContent = t(studio.label)
@@ -60,13 +67,24 @@ export function renderStartScreen(
       }),
     )
 
-    const sequels = el('button', {
-      type: 'button',
-      class: `${CHIP} w-full ${draft.includeSequels ? CHIP_ON_NEUTRAL : CHIP_OFF}`,
-      'aria-pressed': String(draft.includeSequels),
-    })
-    sequels.textContent = t('includeSequels')
-    sequels.addEventListener('click', () => update({ includeSequels: !draft.includeSequels }))
+    // Sequels and live-action cut across every studio, so they are switches rather than
+    // studios of their own.
+    const toggle = (
+      key: 'includeSequels' | 'includeLiveAction',
+      label: TranslationKey,
+    ): HTMLElement => {
+      const on = draft[key]
+      const button = el('button', {
+        type: 'button',
+        class: `${CHIP} w-full ${on ? CHIP_ON_NEUTRAL : CHIP_OFF}`,
+        'aria-pressed': String(on),
+      })
+      button.textContent = t(label)
+      button.addEventListener('click', () => update({ [key]: !on }))
+      return button
+    }
+    const sequels = toggle('includeSequels', 'includeSequels')
+    const liveAction = toggle('includeLiveAction', 'includeLiveAction')
 
     const lengths = el(
       'div',
@@ -132,7 +150,7 @@ export function renderStartScreen(
     root.append(
       el('main', { class: 'mx-auto flex w-full max-w-md flex-1 flex-col gap-6 px-5 py-8' }, [
         el('header', { class: 'flex flex-col items-center gap-1 text-center' }, [title, tagline]),
-        el('section', { class: 'flex flex-col gap-2' }, [studios, sequels]),
+        el('section', { class: 'flex flex-col gap-2' }, [studios, sequels, liveAction]),
         el('section', { class: 'flex flex-col gap-2' }, [lengths]),
         count,
         el('div', { class: 'flex flex-col items-center gap-6' }, [play, language]),

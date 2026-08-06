@@ -24,8 +24,10 @@ Swiping works with a finger, a mouse, or the ← / → keys, and a tap on a post
 
 ## Features
 
-- **189 films** — 64 Disney classics, 31 Pixar, 51 DreamWorks and 43 Disney live-action.
-- **Pick your studios** — each of the four is a toggle, and sequels have their own switch.
+- **189 films** — 107 Disney, 31 Pixar, 51 DreamWorks.
+- **Pick your studios** — one toggle each. Sequels (42 films) and live-action (43) cut
+  across all three, so they are switches of their own: a live-action remake is still a
+  Disney film, not a studio.
 - **Pick your length** — a short 12-poster run, a 24 one, or the whole catalogue.
 - **Fully offline & installable** — a PWA that keeps working with no connection after the
   first load, posters included.

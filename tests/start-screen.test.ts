@@ -36,14 +36,14 @@ describe('start screen', () => {
     document.body.replaceChildren()
   })
 
-  it('offers the four studios, the sequels switch and the three lengths', () => {
+  it('offers the three studios, both switches and the three lengths', () => {
     const { root } = mount()
     for (const label of [
-      'Clásicos Disney',
+      'Disney',
       'Pixar',
       'DreamWorks',
-      'Disney en imagen real',
       'Incluir secuelas',
+      'Incluir imagen real',
       'Corta',
       'Media',
       'Todo',
@@ -64,6 +64,18 @@ describe('start screen', () => {
     byText(root, 'Pixar').click()
     expect(deckLabel(root)).not.toBe(before)
     expect(byText(root, 'Pixar').getAttribute('aria-pressed')).toBe('false')
+  })
+
+  it('drops the live-action films without dropping Disney', () => {
+    const options: Options = { ...spanish(), duration: 'full' }
+    const { root } = mount(options)
+    const all = deckLabel(root)
+    byText(root, 'Incluir imagen real').click()
+    expect(deckLabel(root)).not.toBe(all)
+    expect(byText(root, 'Disney').getAttribute('aria-pressed')).toBe('true')
+    expect(deckLabel(root)).toBe(
+      `${eligible(FILMS, { ...options, includeLiveAction: false }).length} películas`,
+    )
   })
 
   it('counts only the eligible films when sequels are off', () => {

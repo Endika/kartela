@@ -6,7 +6,7 @@ import { DURATION_SIZES } from '../src/domain/options'
 import { championRuns, createMatch } from '../src/domain/match'
 import { seededRandom } from '../src/adapters/seeded-random'
 
-const ALL_CATEGORIES = ['disney', 'pixar', 'dreamworks', 'live-action'] as const
+const ALL_CATEGORIES = ['disney', 'pixar', 'dreamworks'] as const
 
 function deckOf(size: number): Film[] {
   return FILMS.slice(0, size)
@@ -34,7 +34,13 @@ describe('deck', () => {
   it('keeps only the chosen categories', () => {
     const deck = buildDeck(
       FILMS,
-      { categories: ['pixar'], includeSequels: true, duration: 'full', lang: 'es' },
+      {
+        categories: ['pixar'],
+        includeSequels: true,
+        includeLiveAction: true,
+        duration: 'full',
+        lang: 'es',
+      },
       seededRandom(1),
     )
     expect(deck.length).toBeGreaterThan(0)
@@ -45,6 +51,7 @@ describe('deck', () => {
     const options = {
       categories: ALL_CATEGORIES,
       includeSequels: false,
+      includeLiveAction: true,
       duration: 'full',
       lang: 'es',
     } as const
@@ -57,6 +64,7 @@ describe('deck', () => {
     const options = {
       categories: ALL_CATEGORIES,
       includeSequels: true,
+      includeLiveAction: true,
       duration: 'short',
       lang: 'es',
     } as const
@@ -67,6 +75,7 @@ describe('deck', () => {
     const options = {
       categories: ['pixar'],
       includeSequels: false,
+      includeLiveAction: true,
       duration: 'medium',
       lang: 'es',
     } as const
@@ -76,10 +85,38 @@ describe('deck', () => {
     expect(deckSize(FILMS, options)).toBe(deck.length)
   })
 
+  it('treats live-action as a filter, not a studio', () => {
+    const base = {
+      categories: ALL_CATEGORIES,
+      includeSequels: true,
+      includeLiveAction: true,
+      duration: 'full',
+      lang: 'es',
+    } as const
+    const withLive = eligible(FILMS, { ...base, includeLiveAction: true })
+    const withoutLive = eligible(FILMS, { ...base, includeLiveAction: false })
+    expect(withoutLive.length).toBeLessThan(withLive.length)
+    expect(withoutLive.some((film) => film.liveAction)).toBe(false)
+    // The live-action films are still Disney films, so switching them off keeps Disney.
+    expect(withoutLive.some((film) => film.category === 'disney')).toBe(true)
+  })
+
+  it('keeps a live-action Disney film under the Disney studio', () => {
+    const live = FILMS.filter((film) => film.liveAction)
+    expect(live.length).toBeGreaterThan(0)
+    expect(live.every((film) => film.category === 'disney')).toBe(true)
+  })
+
   it('never repeats a film inside a deck', () => {
     const deck = buildDeck(
       FILMS,
-      { categories: ALL_CATEGORIES, includeSequels: true, duration: 'full', lang: 'es' },
+      {
+        categories: ALL_CATEGORIES,
+        includeSequels: true,
+        includeLiveAction: true,
+        duration: 'full',
+        lang: 'es',
+      },
       seededRandom(11),
     )
     expect(new Set(deck.map((film) => film.id)).size).toBe(deck.length)
@@ -89,6 +126,7 @@ describe('deck', () => {
     const options = {
       categories: ALL_CATEGORIES,
       includeSequels: true,
+      includeLiveAction: true,
       duration: 'short',
       lang: 'es',
     } as const

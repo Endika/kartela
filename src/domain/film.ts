@@ -1,4 +1,5 @@
-export const CATEGORIES = ['disney', 'pixar', 'dreamworks', 'live-action'] as const
+export const CATEGORIES = ['disney', 'pixar', 'dreamworks'] as const
+/** The studio that released the film. */
 export type Category = (typeof CATEGORIES)[number]
 
 export const LANGS = ['en', 'es', 'eu', 'gl', 'ca', 'va'] as const
@@ -9,6 +10,8 @@ export interface Film {
   category: Category
   year: number
   sequel: boolean
+  /** Live-action is orthogonal to the studio: a live-action remake is still a Disney film. */
+  liveAction: boolean
   /** File name of the poster; turning it into a URL is the catalogue adapter's job. */
   poster: string
   titles: Record<Lang, string>

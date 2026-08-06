@@ -2,7 +2,6 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { titleOf } from '../src/domain/film'
 import { createMatch } from '../src/domain/match'
 import { renderMatchScreen } from '../src/ui/match-screen'
-import { STUDIOS } from '../src/ui/studios'
 import { FILMS, fakeDeps } from './support/fakes'
 
 const deps = fakeDeps()
@@ -107,20 +106,31 @@ describe('match screen', () => {
     expect(root.textContent).toContain('Gehien gustatzen zaizunerantz mugitu hatza')
   })
 
+  const tabsOf = (root: HTMLElement): (string | null)[] =>
+    [...root.querySelectorAll('button[data-side] span:first-child')].map((n) => n.textContent)
+
+  const STUDIO_NAMES: Record<string, string> = {
+    disney: 'Disney',
+    pixar: 'Pixar',
+    dreamworks: 'DreamWorks',
+  }
+
   it('labels each card with the studio the film belongs to', () => {
     const root = mount()
     const match = matchOf(4)
     renderMatchScreen(root, deps, match, 'es', () => {})
-    const tabs = [...root.querySelectorAll('button[data-side] span:first-child')].map(
-      (n) => n.textContent,
-    )
-    const expected = [match.duel!.left, match.duel!.right].map((film) =>
-      film.category === 'live-action' ? 'Imagen real' : STUDIOS[film.category].tab,
-    )
-    // Pixar and DreamWorks read the same in every language, Disney classics shorten to Disney.
-    expect(tabs).toHaveLength(2)
-    expect(tabs[0]?.length).toBeGreaterThan(0)
-    expect(expected).toHaveLength(2)
+    expect(tabsOf(root)).toEqual([
+      STUDIO_NAMES[match.duel!.left.category],
+      STUDIO_NAMES[match.duel!.right.category],
+    ])
+  })
+
+  it('calls a live-action remake by its studio, not by being live-action', () => {
+    const live = FILMS.filter((film) => film.liveAction).slice(0, 2)
+    expect(live).toHaveLength(2)
+    const root = mount()
+    renderMatchScreen(root, deps, createMatch(live), 'es', () => {})
+    expect(tabsOf(root)).toEqual(['Disney', 'Disney'])
   })
 
   it('crowns nobody in the first duel and the winner from then on', () => {

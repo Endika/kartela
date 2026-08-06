@@ -14,8 +14,9 @@ const store = (initial?: string) =>
 describe('stored options', () => {
   it('starts with every studio, sequels on and a short match', () => {
     const options = store().load()
-    expect(options.categories).toEqual(['disney', 'pixar', 'dreamworks', 'live-action'])
+    expect(options.categories).toEqual(['disney', 'pixar', 'dreamworks'])
     expect(options.includeSequels).toBe(true)
+    expect(options.includeLiveAction).toBe(true)
     expect(options.duration).toBe('short')
   })
 
@@ -29,10 +30,17 @@ describe('stored options', () => {
   it('round-trips through storage', () => {
     const storage = memoryStorage()
     const target = storedOptions(translations, storage)
-    target.save({ categories: ['pixar'], includeSequels: false, duration: 'full', lang: 'eu' })
+    target.save({
+      categories: ['pixar'],
+      includeSequels: false,
+      includeLiveAction: false,
+      duration: 'full',
+      lang: 'eu',
+    })
     expect(target.load()).toEqual({
       categories: ['pixar'],
       includeSequels: false,
+      includeLiveAction: false,
       duration: 'full',
       lang: 'eu',
     })
@@ -57,6 +65,7 @@ describe('stored options', () => {
     expect(options.duration).toBe('short')
     expect(options.lang).toBe('es')
     expect(options.includeSequels).toBe(true)
+    expect(options.includeLiveAction).toBe(true)
   })
 
   it('refuses to load an empty studio list', () => {

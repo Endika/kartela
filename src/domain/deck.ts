@@ -6,7 +6,9 @@ import { shuffle } from './shuffle'
 export function eligible(catalogue: readonly Film[], options: Options): Film[] {
   return catalogue.filter(
     (film) =>
-      options.categories.includes(film.category) && (options.includeSequels || !film.sequel),
+      options.categories.includes(film.category) &&
+      (options.includeSequels || !film.sequel) &&
+      (options.includeLiveAction || !film.liveAction),
   )
 }
 

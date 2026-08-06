@@ -34,6 +34,12 @@ describe('catalog', () => {
     expect(FILMS.some((film) => !film.sequel)).toBe(true)
   })
 
+  it('marks live-action films without inventing a studio for them', () => {
+    const live = FILMS.filter((film) => film.liveAction)
+    expect(live.length).toBeGreaterThan(0)
+    expect(live.every((film) => CATEGORIES.includes(film.category))).toBe(true)
+  })
+
   it('gives every film a title in all six languages', () => {
     const missing = FILMS.flatMap((film) =>
       LANGS.filter((lang) => !film.titles[lang]?.trim()).map((lang) => `${film.id}:${lang}`),

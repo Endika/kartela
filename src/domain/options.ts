@@ -13,6 +13,7 @@ export const DURATION_SIZES: Record<Duration, number | null> = {
 export interface Options {
   readonly categories: readonly Category[]
   includeSequels: boolean
+  includeLiveAction: boolean
   duration: Duration
   lang: Lang
 }
@@ -21,6 +22,7 @@ export function defaultOptions(lang: Lang): Options {
   return {
     categories: [...CATEGORIES],
     includeSequels: true,
+    includeLiveAction: true,
     duration: 'short',
     lang,
   }

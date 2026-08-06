@@ -34,6 +34,10 @@ export function storedOptions(
           typeof saved.includeSequels === 'boolean'
             ? saved.includeSequels
             : fallback.includeSequels,
+        includeLiveAction:
+          typeof saved.includeLiveAction === 'boolean'
+            ? saved.includeLiveAction
+            : fallback.includeLiveAction,
         duration: isDuration(saved.duration) ? saved.duration : fallback.duration,
         lang: isLang(saved.lang) ? saved.lang : fallback.lang,
       }

@@ -5,6 +5,9 @@ import type { TranslationKey } from '../domain/ports'
  * One hue per studio. The colour lives in a thin frame and a small tab — never behind the
  * poster — because 189 posters already bring their own palettes and would fight it.
  *
+ * A live-action remake wears its studio's colour like any other film: it is a Disney film
+ * that happens not to be animated, not a studio of its own.
+ *
  * Class names are spelled out rather than built from the hue so Tailwind can find them.
  */
 export interface StudioLook {
@@ -38,12 +41,5 @@ export const STUDIOS: Record<Category, StudioLook> = {
     frame: 'ring-dreamworks',
     chipOn: 'bg-dreamworks/15 text-dreamworks ring-dreamworks',
     tabFill: 'bg-dreamworks text-stage',
-  },
-  'live-action': {
-    label: 'liveAction',
-    tab: 'tabLive',
-    frame: 'ring-live',
-    chipOn: 'bg-live/15 text-live ring-live',
-    tabFill: 'bg-live text-stage',
   },
 }
