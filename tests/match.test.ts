@@ -101,10 +101,12 @@ describe('deck', () => {
     expect(withoutLive.some((film) => film.category === 'disney')).toBe(true)
   })
 
-  it('keeps a live-action Disney film under the Disney studio', () => {
+  it('files a live-action film under the studio that made it', () => {
     const live = FILMS.filter((film) => film.liveAction)
     expect(live.length).toBeGreaterThan(0)
-    expect(live.every((film) => film.category === 'disney')).toBe(true)
+    expect(live.every((film) => ALL_CATEGORIES.includes(film.category))).toBe(true)
+    // Live-action is not a Disney-only trait: the Dragon remake is DreamWorks.
+    expect(new Set(live.map((film) => film.category)).size).toBeGreaterThan(1)
   })
 
   it('never repeats a film inside a deck', () => {

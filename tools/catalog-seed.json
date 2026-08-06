@@ -517,6 +517,490 @@
     }
   },
   {
+    "page": "20,000 Leagues Under the Sea (1954 film)",
+    "category": "disney",
+    "year": 1954,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Swiss Family Robinson (1960 film)",
+    "category": "disney",
+    "year": 1960,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Los Robinsones de los mares del Sur"
+    }
+  },
+  {
+    "page": "The Parent Trap (1961 film)",
+    "category": "disney",
+    "year": 1961,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Tú a Boston y yo a California"
+    }
+  },
+  {
+    "page": "Mary Poppins (film)",
+    "category": "disney",
+    "year": 1964,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "The Love Bug",
+    "category": "disney",
+    "year": 1968,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Ahí va ese bólido"
+    }
+  },
+  {
+    "page": "Bedknobs and Broomsticks",
+    "category": "disney",
+    "year": 1971,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "La bruja novata"
+    }
+  },
+  {
+    "page": "Who Framed Roger Rabbit",
+    "category": "disney",
+    "year": 1988,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Honey, I Shrunk the Kids",
+    "category": "disney",
+    "year": 1989,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Cariño, he encogido a los niños"
+    }
+  },
+  {
+    "page": "The Mighty Ducks (film)",
+    "category": "disney",
+    "year": 1992,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Cool Runnings",
+    "category": "disney",
+    "year": 1993,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Elegidos para el triunfo"
+    }
+  },
+  {
+    "page": "Homeward Bound: The Incredible Journey",
+    "category": "disney",
+    "year": 1993,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "101 Dalmatians (1996 film)",
+    "category": "disney",
+    "year": 1996,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "101 dálmatas"
+    }
+  },
+  {
+    "page": "Flubber (film)",
+    "category": "disney",
+    "year": 1997,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "George of the Jungle (film)",
+    "category": "disney",
+    "year": 1997,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "The Parent Trap (1998 film)",
+    "category": "disney",
+    "year": 1998,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Tú a Londres y yo a California"
+    }
+  },
+  {
+    "page": "102 Dalmatians",
+    "category": "disney",
+    "year": 2000,
+    "sequel": true,
+    "liveAction": true,
+    "titles": {
+      "es": "102 dálmatas"
+    }
+  },
+  {
+    "page": "The Princess Diaries (film)",
+    "category": "disney",
+    "year": 2001,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Princesa por sorpresa"
+    }
+  },
+  {
+    "page": "Freaky Friday (2003 film)",
+    "category": "disney",
+    "year": 2003,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Holes (film)",
+    "category": "disney",
+    "year": 2003,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "category": "disney",
+    "year": 2003,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Piratas del Caribe: La maldición de la Perla Negra"
+    }
+  },
+  {
+    "page": "National Treasure (film)",
+    "category": "disney",
+    "year": 2004,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "The Princess Diaries 2: Royal Engagement",
+    "category": "disney",
+    "year": 2004,
+    "sequel": true,
+    "liveAction": true,
+    "titles": {
+      "es": "Princesa por sorpresa 2"
+    }
+  },
+  {
+    "page": "Herbie: Fully Loaded",
+    "category": "disney",
+    "year": 2005,
+    "sequel": true,
+    "liveAction": true,
+    "titles": {
+      "es": "Herbie a tope"
+    }
+  },
+  {
+    "page": "Sky High (2005 film)",
+    "category": "disney",
+    "year": 2005,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Sky High: Una escuela de altos vuelos"
+    }
+  },
+  {
+    "page": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+    "category": "disney",
+    "year": 2005,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Las crónicas de Narnia: el león, la bruja y el armario"
+    }
+  },
+  {
+    "page": "Pirates of the Caribbean: Dead Man's Chest",
+    "category": "disney",
+    "year": 2006,
+    "sequel": true,
+    "liveAction": true,
+    "titles": {
+      "es": "Piratas del Caribe: El cofre del hombre muerto"
+    }
+  },
+  {
+    "page": "Bridge to Terabithia (2007 film)",
+    "category": "disney",
+    "year": 2007,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Un puente hacia Terabithia"
+    }
+  },
+  {
+    "page": "Enchanted (film)",
+    "category": "disney",
+    "year": 2007,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Encantada: La historia de Giselle"
+    }
+  },
+  {
+    "page": "Pirates of the Caribbean: At World's End",
+    "category": "disney",
+    "year": 2007,
+    "sequel": true,
+    "liveAction": true,
+    "titles": {
+      "es": "Piratas del Caribe: En el fin del mundo"
+    }
+  },
+  {
+    "page": "The Chronicles of Narnia: Prince Caspian",
+    "category": "disney",
+    "year": 2008,
+    "sequel": true,
+    "liveAction": true,
+    "titles": {
+      "es": "Las crónicas de Narnia: el príncipe Caspian"
+    }
+  },
+  {
+    "page": "Alice in Wonderland (2010 film)",
+    "category": "disney",
+    "year": 2010,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Pirates of the Caribbean: On Stranger Tides",
+    "category": "disney",
+    "year": 2011,
+    "sequel": true,
+    "liveAction": true,
+    "titles": {
+      "es": "Piratas del Caribe: En mareas misteriosas"
+    }
+  },
+  {
+    "page": "The Muppets (2011 film)",
+    "category": "disney",
+    "year": 2011,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Los Muppets"
+    }
+  },
+  {
+    "page": "Oz the Great and Powerful",
+    "category": "disney",
+    "year": 2013,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Oz, un mundo de fantasía"
+    }
+  },
+  {
+    "page": "Maleficent (film)",
+    "category": "disney",
+    "year": 2014,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Cinderella (2015 American film)",
+    "category": "disney",
+    "year": 2015,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "La Cenicienta"
+    }
+  },
+  {
+    "page": "Alice Through the Looking Glass (2016 film)",
+    "category": "disney",
+    "year": 2016,
+    "sequel": true,
+    "liveAction": true,
+    "titles": {
+      "es": "Alicia a través del espejo"
+    }
+  },
+  {
+    "page": "Pete's Dragon (2016 film)",
+    "category": "disney",
+    "year": 2016,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Peter y el dragón"
+    }
+  },
+  {
+    "page": "The BFG (2016 film)",
+    "category": "disney",
+    "year": 2016,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Mi amigo el gigante"
+    }
+  },
+  {
+    "page": "The Jungle Book (2016 film)",
+    "category": "disney",
+    "year": 2016,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Beauty and the Beast (2017 film)",
+    "category": "disney",
+    "year": 2017,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "category": "disney",
+    "year": 2017,
+    "sequel": true,
+    "liveAction": true,
+    "titles": {
+      "es": "Piratas del Caribe: La venganza de Salazar"
+    }
+  },
+  {
+    "page": "Christopher Robin (film)",
+    "category": "disney",
+    "year": 2018,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Mary Poppins Returns",
+    "category": "disney",
+    "year": 2018,
+    "sequel": true,
+    "liveAction": true,
+    "titles": {
+      "es": "El regreso de Mary Poppins"
+    }
+  },
+  {
+    "page": "Aladdin (2019 film)",
+    "category": "disney",
+    "year": 2019,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Dumbo (2019 film)",
+    "category": "disney",
+    "year": 2019,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Maleficent: Mistress of Evil",
+    "category": "disney",
+    "year": 2019,
+    "sequel": true,
+    "liveAction": true,
+    "titles": {
+      "es": "Maléfica: Maestra del mal"
+    }
+  },
+  {
+    "page": "The Lion King (2019 film)",
+    "category": "disney",
+    "year": 2019,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Mulan (2020 film)",
+    "category": "disney",
+    "year": 2020,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Mulán"
+    }
+  },
+  {
+    "page": "Cruella (film)",
+    "category": "disney",
+    "year": 2021,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Jungle Cruise (film)",
+    "category": "disney",
+    "year": 2021,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "The Little Mermaid (2023 film)",
+    "category": "disney",
+    "year": 2023,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Mufasa: The Lion King",
+    "category": "disney",
+    "year": 2024,
+    "sequel": true,
+    "liveAction": true,
+    "titles": {
+      "es": "Mufasa: El rey león"
+    }
+  },
+  {
+    "page": "Lilo & Stitch (2025 film)",
+    "category": "disney",
+    "year": 2025,
+    "sequel": false,
+    "liveAction": true
+  },
+  {
+    "page": "Snow White (2025 film)",
+    "category": "disney",
+    "year": 2025,
+    "sequel": false,
+    "liveAction": true,
+    "titles": {
+      "es": "Blancanieves"
+    }
+  },
+  {
     "page": "Antz",
     "category": "dreamworks",
     "year": 1998,
@@ -922,367 +1406,13 @@
     "liveAction": false
   },
   {
-    "page": "20,000 Leagues Under the Sea (1954 film)",
-    "category": "disney",
-    "year": 1954,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Swiss Family Robinson (1960 film)",
-    "category": "disney",
-    "year": 1960,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "Los Robinsones de los mares del Sur"
-    }
-  },
-  {
-    "page": "The Parent Trap (1961 film)",
-    "category": "disney",
-    "year": 1961,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "Tú a Boston y yo a California"
-    }
-  },
-  {
-    "page": "Mary Poppins (film)",
-    "category": "disney",
-    "year": 1964,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "The Love Bug",
-    "category": "disney",
-    "year": 1968,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "Ahí va ese bólido"
-    }
-  },
-  {
-    "page": "Bedknobs and Broomsticks",
-    "category": "disney",
-    "year": 1971,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "La bruja novata"
-    }
-  },
-  {
-    "page": "Who Framed Roger Rabbit",
-    "category": "disney",
-    "year": 1988,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Honey, I Shrunk the Kids",
-    "category": "disney",
-    "year": 1989,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "Cariño, he encogido a los niños"
-    }
-  },
-  {
-    "page": "The Mighty Ducks (film)",
-    "category": "disney",
-    "year": 1992,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Cool Runnings",
-    "category": "disney",
-    "year": 1993,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "Elegidos para el triunfo"
-    }
-  },
-  {
-    "page": "Homeward Bound: The Incredible Journey",
-    "category": "disney",
-    "year": 1993,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "101 Dalmatians (1996 film)",
-    "category": "disney",
-    "year": 1996,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "101 dálmatas"
-    }
-  },
-  {
-    "page": "Flubber (film)",
-    "category": "disney",
-    "year": 1997,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "George of the Jungle (film)",
-    "category": "disney",
-    "year": 1997,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "The Parent Trap (1998 film)",
-    "category": "disney",
-    "year": 1998,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "Tú a Londres y yo a California"
-    }
-  },
-  {
-    "page": "The Princess Diaries (film)",
-    "category": "disney",
-    "year": 2001,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "Princesa por sorpresa"
-    }
-  },
-  {
-    "page": "Freaky Friday (2003 film)",
-    "category": "disney",
-    "year": 2003,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Holes (film)",
-    "category": "disney",
-    "year": 2003,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Pirates of the Caribbean: The Curse of the Black Pearl",
-    "category": "disney",
-    "year": 2003,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "Piratas del Caribe: La maldición de la Perla Negra"
-    }
-  },
-  {
-    "page": "National Treasure (film)",
-    "category": "disney",
-    "year": 2004,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
-    "category": "disney",
-    "year": 2005,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "Las crónicas de Narnia: el león, la bruja y el armario"
-    }
-  },
-  {
-    "page": "Pirates of the Caribbean: Dead Man's Chest",
-    "category": "disney",
-    "year": 2006,
-    "sequel": true,
-    "liveAction": true,
-    "titles": {
-      "es": "Piratas del Caribe: El cofre del hombre muerto"
-    }
-  },
-  {
-    "page": "Bridge to Terabithia (2007 film)",
-    "category": "disney",
-    "year": 2007,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "Un puente hacia Terabithia"
-    }
-  },
-  {
-    "page": "Enchanted (film)",
-    "category": "disney",
-    "year": 2007,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "Encantada: La historia de Giselle"
-    }
-  },
-  {
-    "page": "Pirates of the Caribbean: At World's End",
-    "category": "disney",
-    "year": 2007,
-    "sequel": true,
-    "liveAction": true,
-    "titles": {
-      "es": "Piratas del Caribe: En el fin del mundo"
-    }
-  },
-  {
-    "page": "The Chronicles of Narnia: Prince Caspian",
-    "category": "disney",
-    "year": 2008,
-    "sequel": true,
-    "liveAction": true,
-    "titles": {
-      "es": "Las crónicas de Narnia: el príncipe Caspian"
-    }
-  },
-  {
-    "page": "Alice in Wonderland (2010 film)",
-    "category": "disney",
-    "year": 2010,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Pirates of the Caribbean: On Stranger Tides",
-    "category": "disney",
-    "year": 2011,
-    "sequel": true,
-    "liveAction": true,
-    "titles": {
-      "es": "Piratas del Caribe: En mareas misteriosas"
-    }
-  },
-  {
-    "page": "Maleficent (film)",
-    "category": "disney",
-    "year": 2014,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Cinderella (2015 American film)",
-    "category": "disney",
-    "year": 2015,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "La Cenicienta"
-    }
-  },
-  {
-    "page": "Pete's Dragon (2016 film)",
-    "category": "disney",
-    "year": 2016,
-    "sequel": false,
-    "liveAction": true,
-    "titles": {
-      "es": "Peter y el dragón"
-    }
-  },
-  {
-    "page": "The Jungle Book (2016 film)",
-    "category": "disney",
-    "year": 2016,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Beauty and the Beast (2017 film)",
-    "category": "disney",
-    "year": 2017,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Christopher Robin (film)",
-    "category": "disney",
-    "year": 2018,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Mary Poppins Returns",
-    "category": "disney",
-    "year": 2018,
-    "sequel": true,
-    "liveAction": true,
-    "titles": {
-      "es": "El regreso de Mary Poppins"
-    }
-  },
-  {
-    "page": "Aladdin (2019 film)",
-    "category": "disney",
-    "year": 2019,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Dumbo (2019 film)",
-    "category": "disney",
-    "year": 2019,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "The Lion King (2019 film)",
-    "category": "disney",
-    "year": 2019,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Cruella (film)",
-    "category": "disney",
-    "year": 2021,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Jungle Cruise (film)",
-    "category": "disney",
-    "year": 2021,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "The Little Mermaid (2023 film)",
-    "category": "disney",
-    "year": 2023,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Lilo & Stitch (2025 film)",
-    "category": "disney",
-    "year": 2025,
-    "sequel": false,
-    "liveAction": true
-  },
-  {
-    "page": "Snow White (2025 film)",
-    "category": "disney",
+    "page": "How to Train Your Dragon (2025 film)",
+    "category": "dreamworks",
     "year": 2025,
     "sequel": false,
     "liveAction": true,
     "titles": {
-      "es": "Blancanieves"
+      "es": "Cómo entrenar a tu dragón"
     }
   },
   {
