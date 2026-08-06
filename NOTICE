@@ -1,0 +1,23 @@
+Kartela
+Copyright (c) Endika Iglesias
+Released under the MIT licence — see LICENSE.
+
+The MIT licence covers the source code of this project only. It does not cover the movie
+poster images bundled under public/posters/, nor the film titles and metadata in
+src/data/catalog.json.
+
+Movie posters
+-------------
+The poster images are the property of their respective copyright holders — The Walt Disney
+Company, Pixar Animation Studios, DreamWorks Animation and their distributors. They are
+included here as low-resolution thumbnails (260 px wide) for the sole purpose of letting a
+player recognise a film inside a non-commercial game. No claim of ownership is made, and
+they are not redistributed at full resolution.
+
+Posters and film metadata were retrieved from Wikipedia (https://www.wikipedia.org), whose
+text is available under the Creative Commons Attribution-ShareAlike License. The poster
+images themselves are hosted on Wikipedia under a non-free fair-use rationale that applies
+to Wikipedia's own use of them, not to third parties.
+
+If you hold rights to any image here and want it removed, open an issue at
+https://github.com/Endika/kartela/issues and it will be taken down.

@@ -1,0 +1,58 @@
+/// <reference types="vitest/config" />
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+import { VitePWA } from 'vite-plugin-pwa'
+
+export default defineConfig({
+  base: '/kartela/',
+  plugins: [
+    tailwindcss(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      devOptions: { enabled: false },
+      includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
+      manifest: {
+        name: 'Kartela',
+        short_name: 'Kartela',
+        description: 'Pick your favourite movie poster, one duel at a time',
+        theme_color: '#171327',
+        background_color: '#171327',
+        display: 'standalone',
+        orientation: 'portrait',
+        start_url: '/kartela/',
+        scope: '/kartela/',
+        icons: [
+          {
+            src: 'pwa-192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any',
+          },
+          {
+            src: 'pwa-maskable-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable',
+          },
+        ],
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,svg,png,json}'],
+      },
+    }),
+  ],
+  build: { sourcemap: true, target: 'es2022' },
+  test: {
+    environment: 'jsdom',
+  },
+})

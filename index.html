@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="theme-color" content="#171327" />
+    <title>Kartela</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <style>
+      /* Prevent accidental zoom on mobile: block double-tap zoom, keep scroll/tap. */
+      html {
+        touch-action: manipulation;
+      }
+    </style>
+    <script>
+      // iOS Safari ignores user-scalable=no, so block pinch-zoom explicitly.
+      document.addEventListener('gesturestart', function (e) {
+        e.preventDefault()
+      })
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
