@@ -17,14 +17,16 @@ export function renderResultsScreen(
 
   const header = el('section', { class: 'flex flex-col items-center gap-2' })
   if (champion) {
-    const label = el('p', { class: 'text-sm font-semibold tracking-wide text-gold uppercase' })
+    const label = el('p', {
+      class: 'font-display text-sm font-extrabold tracking-wide text-crown uppercase',
+    })
     label.textContent = t('favourite')
     const poster = el('img', {
-      class: 'w-40 rounded-2xl shadow-xl shadow-black/50',
+      class: 'w-40 rounded-2xl ring-4 ring-crown shadow-xl shadow-black/50',
       src: posterUrl(champion),
       alt: titleOf(champion, lang),
     })
-    const name = el('h2', { class: 'text-center text-xl font-bold' })
+    const name = el('h2', { class: 'font-display text-center text-2xl font-extrabold' })
     name.textContent = `${titleOf(champion, lang)} · ${champion.year}`
     header.append(label, poster, name)
   }
@@ -43,11 +45,11 @@ export function renderResultsScreen(
         src: posterUrl(run.winner),
         alt: '',
       })
-      const name = el('p', { class: 'text-sm font-semibold' })
+      const name = el('p', { class: 'font-display text-sm font-bold' })
       name.textContent = `${titleOf(run.winner, lang)} · ${run.winner.year}`
       const over = el('p', { class: 'text-xs text-white/60' })
       over.textContent = `${t('beats')} ${run.beaten.map((film) => titleOf(film, lang)).join(' · ')}`
-      return el('li', { class: 'flex items-center gap-3 rounded-xl bg-night-soft/70 p-2' }, [
+      return el('li', { class: 'flex items-center gap-3 rounded-xl bg-stage-soft/70 p-2' }, [
         thumb,
         el('div', { class: 'flex min-w-0 flex-col' }, [name, over]),
       ])
@@ -74,10 +76,10 @@ export function renderResultsScreen(
 
   const summary = el('summary', {
     class:
-      'cursor-pointer text-sm font-semibold text-white/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold',
+      'cursor-pointer text-sm font-semibold text-white/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-crown',
   })
   summary.textContent = `${t('fullHistory')} (${match.history.length})`
-  const history = el('details', { class: 'rounded-xl bg-night-soft/40 px-3 py-2' }, [
+  const history = el('details', { class: 'rounded-xl bg-stage-soft/40 px-3 py-2' }, [
     summary,
     duels,
   ])
@@ -85,7 +87,7 @@ export function renderResultsScreen(
   const again = el('button', {
     type: 'button',
     class:
-      'rounded-full bg-gold px-8 py-4 text-lg font-bold text-night focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold',
+      'rounded-full bg-brand px-10 py-4 font-display text-xl font-extrabold text-stage shadow-lg shadow-brand/25 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-crown',
   })
   again.textContent = t('playAgain')
   again.addEventListener('click', onAgain)
@@ -93,7 +95,7 @@ export function renderResultsScreen(
   const change = el('button', {
     type: 'button',
     class:
-      'rounded-full bg-night-soft px-6 py-3 text-sm font-semibold text-white/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold',
+      'rounded-full bg-stage-soft px-6 py-3 font-display text-sm font-bold text-white/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-crown',
   })
   change.textContent = t('change')
   change.addEventListener('click', onChange)

@@ -3,6 +3,7 @@ import type { Match, Side } from '../domain/match'
 import type { FilmCatalogue, Translator } from '../domain/ports'
 import { clear, el } from './dom'
 import type { Deps } from './deps'
+import { STUDIOS } from './studios'
 import { attachDrag, prefersReducedMotion } from './swipe'
 
 const EXIT_MS = 280
@@ -15,10 +16,23 @@ const SPRING = 'cubic-bezier(0.2, 0.9, 0.25, 1.2)'
 const FOLLOW_PX = 26
 const TILT_DEG = 5
 
+const CARD =
+  'relative flex min-w-0 flex-1 flex-col items-center gap-2 rounded-3xl bg-stage-soft p-2 ring-4 will-change-transform focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-crown'
+const TAB =
+  'absolute -top-3 left-1/2 -translate-x-1/2 rounded-full px-2 py-0.5 font-display text-[10px] font-extrabold tracking-wide whitespace-nowrap'
+
+const CROWN_SVG = `<svg viewBox="0 0 24 19" width="100%" aria-hidden="true">
+  <path d="M2.6 16.2 1 4.8l6.4 4.1L12 1.6l4.6 7.3L23 4.8l-1.6 11.4z"
+    fill="var(--color-crown)" stroke="var(--color-stage)" stroke-width="1.6"
+    stroke-linejoin="round" />
+  <circle cx="12" cy="1.6" r="1.7" fill="var(--color-crown)" stroke="var(--color-stage)" stroke-width="1.2" />
+</svg>`
+
 interface Card {
   root: HTMLElement
   image: HTMLImageElement
   caption: HTMLElement
+  tab: HTMLElement
 }
 
 function createCard(side: Side): Card {
@@ -33,22 +47,22 @@ function createCard(side: Side): Card {
   // w-full keeps a long title wrapping inside the card instead of poking out of the
   // viewport once the card slides and scales under the finger.
   const caption = el('p', {
-    class: 'w-full text-center text-sm font-semibold text-balance text-white/90',
+    class: 'w-full font-display text-center text-sm font-bold text-balance text-white/90',
   })
-  const root = el(
-    'button',
-    {
-      type: 'button',
-      class:
-        'flex min-w-0 flex-1 flex-col items-center gap-2 rounded-xl will-change-transform focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold',
-      'data-side': side,
-    },
-    [frame, caption],
-  )
-  return { root, image, caption }
+  const tab = el('span', { class: TAB })
+  const root = el('button', { type: 'button', class: CARD, 'data-side': side }, [
+    tab,
+    frame,
+    caption,
+  ])
+  return { root, image, caption, tab }
 }
 
-function show(card: Card, film: Film, catalogue: FilmCatalogue, lang: Lang): void {
+function show(card: Card, film: Film, catalogue: FilmCatalogue, lang: Lang, t: Translator): void {
+  const studio = STUDIOS[film.category]
+  card.root.className = `${CARD} ${studio.frame}`
+  card.tab.className = `${TAB} ${studio.tabFill}`
+  card.tab.textContent = t.t(studio.tab)
   card.image.src = catalogue.posterUrl(film)
   card.image.alt = titleOf(film, lang)
   card.caption.textContent = `${titleOf(film, lang)} · ${film.year}`
@@ -65,13 +79,31 @@ export function renderMatchScreen(
   const left = createCard('left')
   const right = createCard('right')
   const cards = [left, right]
-  const counter = el('p', { class: 'text-sm font-semibold text-gold', 'aria-live': 'polite' })
+
+  // The champion always holds the left card, so the crown lives there and only shows up
+  // once somebody has actually won a duel.
+  const crown = el('span', {
+    class: 'crown absolute -top-4 left-0 w-9',
+    role: 'img',
+    'aria-label': translator.t('leading'),
+    hidden: true,
+  })
+  // A static, authored SVG rather than 👑: an emoji font is not guaranteed on every device,
+  // and a missing glyph renders as a tofu box.
+  crown.innerHTML = CROWN_SVG
+  left.root.append(crown)
+
+  const counter = el('p', {
+    class: 'font-display text-base font-extrabold text-crown',
+    id: 'round',
+    'aria-live': 'polite',
+  })
   const hint = el('p', { class: 'text-center text-sm text-white/70' })
   hint.textContent = translator.t('swipeHint')
 
   const arena = el(
     'div',
-    { class: 'flex w-full max-w-md touch-none items-center justify-center gap-3 select-none' },
+    { class: 'flex w-full max-w-md touch-none items-start justify-center gap-3 pt-5 select-none' },
     [left.root, right.root],
   )
 
@@ -86,8 +118,16 @@ export function renderMatchScreen(
       n: match.history.length + 1,
       total: match.total,
     })
-    show(left, duel.left, deps.catalogue, lang)
-    show(right, duel.right, deps.catalogue, lang)
+    show(left, duel.left, deps.catalogue, lang, translator)
+    show(right, duel.right, deps.catalogue, lang, translator)
+    const crowned = match.history.length > 0
+    crown.hidden = !crowned
+    if (crowned && !prefersReducedMotion()) {
+      crown.classList.remove('crown-hop')
+      // Reading offsetWidth restarts the animation for the new champion.
+      void crown.offsetWidth
+      crown.classList.add('crown-hop')
+    }
   }
 
   function settle(card: Card): void {
@@ -212,10 +252,13 @@ export function renderMatchScreen(
     el(
       'main',
       {
-        class:
-          'mx-auto flex w-full max-w-md flex-1 flex-col items-center justify-center gap-5 px-3 py-6',
+        class: 'mx-auto flex w-full max-w-md flex-1 flex-col items-center gap-4 px-3 pt-4 pb-6',
       },
-      [counter, arena, hint],
+      [
+        counter,
+        el('div', { class: 'flex w-full flex-1 items-center justify-center' }, [arena]),
+        hint,
+      ],
     ),
   )
   paint()

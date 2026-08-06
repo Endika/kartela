@@ -3,21 +3,15 @@ import { deckSize } from '../domain/deck'
 import { DURATIONS, type Options } from '../domain/options'
 import type { TranslationKey, Translator } from '../domain/ports'
 import { clear, el } from './dom'
+import { STUDIOS } from './studios'
 import type { Deps } from './deps'
 
-const CATEGORY_LABELS: Record<Category, TranslationKey> = {
-  disney: 'disney',
-  pixar: 'pixar',
-  dreamworks: 'dreamworks',
-  'live-action': 'liveAction',
-}
-
-const FOCUS = 'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold'
-const CHIP = `rounded-2xl px-4 py-3 text-left text-sm font-semibold ring-2 transition-colors ${FOCUS}`
-// Only the play button is solid gold: chips that are on get a gold outline instead, so six
-// switched-on studios do not compete with the one thing you actually press.
-const CHIP_ON = 'bg-gold/15 text-gold ring-gold'
-const CHIP_OFF = 'bg-night-soft text-white/65 ring-transparent'
+const FOCUS = 'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-crown'
+const CHIP = `rounded-2xl px-4 py-3 font-display text-left text-sm font-bold ring-2 transition-colors ${FOCUS}`
+// A switched-on studio wears its own colour, the same one its cards use in a duel. Solid
+// coral is reserved for the one thing you actually press.
+const CHIP_OFF = 'bg-stage-soft text-white/65 ring-transparent'
+const CHIP_ON_NEUTRAL = 'bg-crown/15 text-crown ring-crown'
 
 export function renderStartScreen(
   root: HTMLElement,
@@ -54,12 +48,13 @@ export function renderStartScreen(
       { class: 'grid grid-cols-2 gap-2', role: 'group', 'aria-label': t('studios') },
       CATEGORIES.map((category) => {
         const on = draft.categories.includes(category)
+        const studio = STUDIOS[category]
         const chip = el('button', {
           type: 'button',
-          class: `${CHIP} ${on ? CHIP_ON : CHIP_OFF}`,
+          class: `${CHIP} ${on ? studio.chipOn : CHIP_OFF}`,
           'aria-pressed': String(on),
         })
-        chip.textContent = t(CATEGORY_LABELS[category])
+        chip.textContent = t(studio.label)
         chip.addEventListener('click', () => toggleCategory(category))
         return chip
       }),
@@ -67,7 +62,7 @@ export function renderStartScreen(
 
     const sequels = el('button', {
       type: 'button',
-      class: `${CHIP} w-full ${draft.includeSequels ? CHIP_ON : CHIP_OFF}`,
+      class: `${CHIP} w-full ${draft.includeSequels ? CHIP_ON_NEUTRAL : CHIP_OFF}`,
       'aria-pressed': String(draft.includeSequels),
     })
     sequels.textContent = t('includeSequels')
@@ -80,7 +75,7 @@ export function renderStartScreen(
         const on = draft.duration === duration
         const button = el('button', {
           type: 'button',
-          class: `${CHIP} text-center ${on ? CHIP_ON : CHIP_OFF}`,
+          class: `${CHIP} text-center ${on ? CHIP_ON_NEUTRAL : CHIP_OFF}`,
           'aria-pressed': String(on),
         })
         button.textContent = t(duration)
@@ -102,7 +97,7 @@ export function renderStartScreen(
 
     const play = el('button', {
       type: 'button',
-      class: `rounded-full bg-gold px-8 py-4 text-lg font-bold text-night disabled:bg-night-soft disabled:text-white/50 ${FOCUS}`,
+      class: `rounded-full bg-brand px-10 py-4 font-display text-xl font-extrabold text-stage shadow-lg shadow-brand/25 disabled:bg-stage-soft disabled:text-white/50 disabled:shadow-none ${FOCUS}`,
       disabled: !playable,
       'aria-describedby': 'deck-size',
     })
@@ -112,7 +107,7 @@ export function renderStartScreen(
     const language = el(
       'select',
       {
-        class: `min-w-0 rounded-full bg-night-soft px-4 py-2 text-sm text-white/80 ${FOCUS}`,
+        class: `min-w-0 rounded-full bg-stage-soft px-4 py-2 text-sm text-white/80 ${FOCUS}`,
         'aria-label': t('language'),
       },
       LANGS.map((lang) => {
@@ -126,9 +121,11 @@ export function renderStartScreen(
       update({ lang: isLang(value) ? value : draft.lang })
     })
 
-    const title = el('h1', { class: 'text-4xl font-black tracking-tight text-gold' })
+    const title = el('h1', {
+      class: 'font-display text-5xl font-extrabold tracking-tight text-crown',
+    })
     title.textContent = 'Kartela'
-    const tagline = el('p', { class: 'text-lg text-white/80' })
+    const tagline = el('p', { class: 'font-display text-lg font-bold text-white/80' })
     tagline.textContent = t('tagline')
 
     clear(root)

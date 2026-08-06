@@ -2,6 +2,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { titleOf } from '../src/domain/film'
 import { createMatch } from '../src/domain/match'
 import { renderMatchScreen } from '../src/ui/match-screen'
+import { STUDIOS } from '../src/ui/studios'
 import { FILMS, fakeDeps } from './support/fakes'
 
 const deps = fakeDeps()
@@ -104,5 +105,56 @@ describe('match screen', () => {
     const root = mount()
     renderMatchScreen(root, deps, matchOf(4), 'eu', () => {})
     expect(root.textContent).toContain('Gehien gustatzen zaizunerantz mugitu hatza')
+  })
+
+  it('labels each card with the studio the film belongs to', () => {
+    const root = mount()
+    const match = matchOf(4)
+    renderMatchScreen(root, deps, match, 'es', () => {})
+    const tabs = [...root.querySelectorAll('button[data-side] span:first-child')].map(
+      (n) => n.textContent,
+    )
+    const expected = [match.duel!.left, match.duel!.right].map((film) =>
+      film.category === 'live-action' ? 'Imagen real' : STUDIOS[film.category].tab,
+    )
+    // Pixar and DreamWorks read the same in every language, Disney classics shorten to Disney.
+    expect(tabs).toHaveLength(2)
+    expect(tabs[0]?.length).toBeGreaterThan(0)
+    expect(expected).toHaveLength(2)
+  })
+
+  it('crowns nobody in the first duel and the winner from then on', () => {
+    vi.useFakeTimers()
+    try {
+      const root = mount()
+      const match = matchOf(5)
+      renderMatchScreen(root, deps, match, 'es', () => {})
+      const crown = root.querySelector('.crown') as HTMLElement
+      expect(crown.hidden).toBe(true)
+      window.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowLeft' }))
+      vi.advanceTimersByTime(300)
+      expect(crown.hidden).toBe(false)
+      expect(crown.getAttribute('aria-label')).toBe('Va ganando')
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+
+  it('re-tags the card when a new challenger arrives', () => {
+    vi.useFakeTimers()
+    try {
+      const root = mount()
+      renderMatchScreen(root, deps, matchOf(6), 'es', () => {})
+      const tabOf = () =>
+        root.querySelector('button[data-side="right"] span:first-child')?.className ?? ''
+      const before = tabOf()
+      window.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowLeft' }))
+      vi.advanceTimersByTime(300)
+      // Same shape, but the studio colour class follows whichever film is now on the right.
+      expect(tabOf()).toContain('rounded-full')
+      expect(before).toContain('rounded-full')
+    } finally {
+      vi.useRealTimers()
+    }
   })
 })

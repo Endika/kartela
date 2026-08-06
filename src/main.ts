@@ -29,7 +29,11 @@ export function startApp(host: HTMLElement, deps: Deps, version: string): void {
 
   // Screens are swapped inside their own container so the footer survives every change.
   const screen = el('div', { class: 'flex flex-1 flex-col' })
-  host.replaceChildren(screen, renderFooter(version))
+  host.replaceChildren(
+    el('div', { class: 'curtain', 'aria-hidden': 'true' }),
+    screen,
+    renderFooter(version),
+  )
 
   function swap(render: (root: HTMLElement) => (() => void) | void): void {
     teardown?.()
