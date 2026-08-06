@@ -14,19 +14,23 @@ interface Card {
 
 function createCard(side: Side): Card {
   const image = el('img', {
-    class: 'w-full rounded-xl bg-night-soft object-contain shadow-lg shadow-black/40',
+    class: 'max-h-full max-w-full rounded-xl object-contain shadow-lg shadow-black/50',
     alt: '',
     draggable: 'false',
   })
-  const caption = el('p', { class: 'text-center text-sm font-semibold text-white/85' })
+  // Posters come in slightly different shapes, so each one sits in a box of the same
+  // aspect ratio — otherwise the two captions never line up.
+  const frame = el('span', { class: 'flex aspect-2/3 w-full items-center justify-center' }, [image])
+  const caption = el('p', { class: 'text-center text-sm font-semibold text-white/90' })
   const root = el(
     'button',
     {
       type: 'button',
-      class: 'flex w-1/2 flex-col items-center gap-2 will-change-transform',
+      class:
+        'flex min-w-0 flex-1 flex-col items-center gap-2 rounded-xl will-change-transform focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold',
       'data-side': side,
     },
-    [image, caption],
+    [frame, caption],
   )
   return { root, image, caption }
 }
@@ -47,8 +51,8 @@ export function renderMatchScreen(
 ): () => void {
   const left = createCard('left')
   const right = createCard('right')
-  const counter = el('p', { class: 'text-sm font-semibold text-gold' })
-  const hint = el('p', { class: 'text-center text-xs text-white/50' })
+  const counter = el('p', { class: 'text-sm font-semibold text-gold', 'aria-live': 'polite' })
+  const hint = el('p', { class: 'text-center text-sm text-white/70' })
   hint.textContent = t('swipeHint')
 
   const arena = el(
@@ -150,7 +154,10 @@ export function renderMatchScreen(
   root.append(
     el(
       'main',
-      { class: 'mx-auto flex w-full max-w-md flex-1 flex-col items-center gap-4 px-4 py-6' },
+      {
+        class:
+          'mx-auto flex w-full max-w-md flex-1 flex-col items-center justify-center gap-5 px-3 py-6',
+      },
       [counter, arena, hint],
     ),
   )
