@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.6.0](https://github.com/Endika/kartela/compare/v0.5.0...v0.6.0) (2026-08-06)
+
+
+### Features
+
+* name a live-action remake by its studio and switch it like sequels ([959b45c](https://github.com/Endika/kartela/commit/959b45cc6c2ac464122e4d8c44fbfc0281dbc0ad))
+
+
+### Refactor
+
+* model live-action as a flag on the film, not a studio ([5dcd566](https://github.com/Endika/kartela/commit/5dcd566ed3d882f9ebe0aceb5ff94885d52f41c6))
+
 ## [0.5.0](https://github.com/Endika/kartela/compare/v0.4.0...v0.5.0) (2026-08-06)
 
 
