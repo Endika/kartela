@@ -22,6 +22,7 @@ export const es: Dict = {
   favourite: 'Tu favorita',
   beats: 'Gana a',
   yourPicks: 'Todo lo que has elegido',
+  fullHistory: 'Todos los duelos',
   playAgain: 'Otra vez',
   change: 'Cambiar opciones',
 }

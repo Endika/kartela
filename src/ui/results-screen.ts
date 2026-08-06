@@ -54,6 +54,34 @@ export function renderResultsScreen(
     }),
   )
 
+  // Every duel, oldest first, so you can look a film up and see what knocked it out.
+  const duels = el(
+    'ol',
+    { class: 'flex flex-col gap-1 pt-2' },
+    match.history.map((choice, index) => {
+      const rank = el('span', { class: 'w-6 shrink-0 text-right text-white/35' })
+      rank.textContent = String(index + 1)
+      const won = el('span', { class: 'font-semibold text-white/85' })
+      won.textContent = titleOf(choice.winner, lang)
+      const lost = el('span', { class: 'text-white/45 line-through' })
+      lost.textContent = titleOf(choice.loser, lang)
+      return el('li', { class: 'flex items-baseline gap-2 text-xs' }, [
+        rank,
+        el('span', { class: 'min-w-0' }, [won, document.createTextNode(' · '), lost]),
+      ])
+    }),
+  )
+
+  const summary = el('summary', {
+    class:
+      'cursor-pointer text-sm font-semibold text-white/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold',
+  })
+  summary.textContent = `${t('fullHistory')} (${match.history.length})`
+  const history = el('details', { class: 'rounded-xl bg-night-soft/40 px-3 py-2' }, [
+    summary,
+    duels,
+  ])
+
   const again = el('button', {
     type: 'button',
     class:
@@ -74,7 +102,7 @@ export function renderResultsScreen(
   root.append(
     el('main', { class: 'mx-auto flex w-full max-w-md flex-1 flex-col gap-6 px-5 py-8' }, [
       header,
-      el('section', { class: 'flex flex-col gap-2' }, [listTitle, list]),
+      el('section', { class: 'flex flex-col gap-2' }, [listTitle, list, history]),
       el('div', { class: 'flex flex-col items-center gap-3' }, [again, change]),
     ]),
   )

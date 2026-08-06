@@ -22,6 +22,7 @@ export const gl: Dict = {
   favourite: 'A túa favorita',
   beats: 'Gaña a',
   yourPicks: 'Todo o que escolliches',
+  fullHistory: 'Todos os duelos',
   playAgain: 'Outra vez',
   change: 'Cambiar opcións',
 }

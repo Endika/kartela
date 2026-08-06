@@ -42,6 +42,7 @@ export const TRANSLATION_KEYS = [
   'favourite',
   'beats',
   'yourPicks',
+  'fullHistory',
   'playAgain',
   'change',
 ] as const

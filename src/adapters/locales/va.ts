@@ -22,6 +22,7 @@ export const va: Dict = {
   favourite: 'La teua preferida',
   beats: 'Guanya a',
   yourPicks: 'Tot el que has triat',
+  fullHistory: 'Tots els duels',
   playAgain: 'Una altra vegada',
   change: 'Canviar opcions',
 }

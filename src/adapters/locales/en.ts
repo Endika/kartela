@@ -22,6 +22,7 @@ export const en: Dict = {
   favourite: 'Your favourite',
   beats: 'Beats',
   yourPicks: 'Everything you picked',
+  fullHistory: 'Every duel',
   playAgain: 'Play again',
   change: 'Change options',
 }

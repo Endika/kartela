@@ -22,6 +22,7 @@ export const eu: Dict = {
   favourite: 'Zure gogokoena',
   beats: 'Irabazten dio:',
   yourPicks: 'Aukeratu duzun guztia',
+  fullHistory: 'Duelo guztiak',
   playAgain: 'Berriro',
   change: 'Aukerak aldatu',
 }
