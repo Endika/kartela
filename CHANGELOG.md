@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.5.0](https://github.com/Endika/kartela/compare/v0.4.0...v0.5.0) (2026-08-06)
+
+
+### Features
+
+* dress the game as a toy cinema with rounded self-hosted type ([586be6d](https://github.com/Endika/kartela/commit/586be6d3971bffb5cab91b2117f34339624518cb))
+* give each studio a colour and crown whoever is winning ([c407508](https://github.com/Endika/kartela/commit/c407508cbe2c2c6e139483e1d9b9d85adfb4964d))
+* redraw the icon as two cards under a crown ([7337390](https://github.com/Endika/kartela/commit/733739054023ef539507987aea44cdc92731482b))
+
 ## [0.4.0](https://github.com/Endika/kartela/compare/v0.3.0...v0.4.0) (2026-08-06)
 
 
