@@ -31,6 +31,7 @@ interface SeedEntry {
   category: string
   year: number
   sequel: boolean
+  liveAction: boolean
   titles?: Record<string, string>
 }
 
@@ -39,6 +40,7 @@ interface Film {
   category: string
   year: number
   sequel: boolean
+  liveAction: boolean
   poster: string
   titles: Record<string, string>
 }
@@ -239,6 +241,7 @@ async function build(entry: SeedEntry): Promise<Film> {
     category: entry.category,
     year: entry.year,
     sequel: entry.sequel,
+    liveAction: entry.liveAction,
     poster: `${id}.webp`,
     titles,
   }

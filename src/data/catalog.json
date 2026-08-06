@@ -1,9 +1,10 @@
 [
   {
     "id": "101-dalmatians-1996",
-    "category": "live-action",
+    "category": "disney",
     "year": 1996,
     "sequel": false,
+    "liveAction": true,
     "poster": "101-dalmatians-1996.webp",
     "titles": {
       "en": "101 Dalmatians",
@@ -16,9 +17,10 @@
   },
   {
     "id": "20-000-leagues-under-the-sea-1954",
-    "category": "live-action",
+    "category": "disney",
     "year": 1954,
     "sequel": false,
+    "liveAction": true,
     "poster": "20-000-leagues-under-the-sea-1954.webp",
     "titles": {
       "en": "20,000 Leagues Under the Sea",
@@ -34,6 +36,7 @@
     "category": "pixar",
     "year": 1998,
     "sequel": false,
+    "liveAction": false,
     "poster": "a-bugs-life-1998.webp",
     "titles": {
       "en": "A Bug's Life",
@@ -49,6 +52,7 @@
     "category": "dreamworks",
     "year": 2019,
     "sequel": false,
+    "liveAction": false,
     "poster": "abominable-2019.webp",
     "titles": {
       "en": "Abominable",
@@ -64,6 +68,7 @@
     "category": "disney",
     "year": 1992,
     "sequel": false,
+    "liveAction": false,
     "poster": "aladdin-1992.webp",
     "titles": {
       "en": "Aladdin",
@@ -76,9 +81,10 @@
   },
   {
     "id": "aladdin-2019",
-    "category": "live-action",
+    "category": "disney",
     "year": 2019,
     "sequel": false,
+    "liveAction": true,
     "poster": "aladdin-2019.webp",
     "titles": {
       "en": "Aladdin",
@@ -94,6 +100,7 @@
     "category": "disney",
     "year": 1951,
     "sequel": false,
+    "liveAction": false,
     "poster": "alice-in-wonderland-1951.webp",
     "titles": {
       "en": "Alice in Wonderland",
@@ -106,9 +113,10 @@
   },
   {
     "id": "alice-in-wonderland-2010",
-    "category": "live-action",
+    "category": "disney",
     "year": 2010,
     "sequel": false,
+    "liveAction": true,
     "poster": "alice-in-wonderland-2010.webp",
     "titles": {
       "en": "Alice in Wonderland",
@@ -124,6 +132,7 @@
     "category": "dreamworks",
     "year": 1998,
     "sequel": false,
+    "liveAction": false,
     "poster": "antz-1998.webp",
     "titles": {
       "en": "Antz",
@@ -139,6 +148,7 @@
     "category": "disney",
     "year": 2001,
     "sequel": false,
+    "liveAction": false,
     "poster": "atlantis-the-lost-empire-2001.webp",
     "titles": {
       "en": "Atlantis: The Lost Empire",
@@ -154,6 +164,7 @@
     "category": "disney",
     "year": 1942,
     "sequel": false,
+    "liveAction": false,
     "poster": "bambi-1942.webp",
     "titles": {
       "en": "Bambi",
@@ -169,6 +180,7 @@
     "category": "disney",
     "year": 1991,
     "sequel": false,
+    "liveAction": false,
     "poster": "beauty-and-the-beast-1991.webp",
     "titles": {
       "en": "Beauty and the Beast",
@@ -181,9 +193,10 @@
   },
   {
     "id": "beauty-and-the-beast-2017",
-    "category": "live-action",
+    "category": "disney",
     "year": 2017,
     "sequel": false,
+    "liveAction": true,
     "poster": "beauty-and-the-beast-2017.webp",
     "titles": {
       "en": "Beauty and the Beast",
@@ -196,9 +209,10 @@
   },
   {
     "id": "bedknobs-and-broomsticks-1971",
-    "category": "live-action",
+    "category": "disney",
     "year": 1971,
     "sequel": false,
+    "liveAction": true,
     "poster": "bedknobs-and-broomsticks-1971.webp",
     "titles": {
       "en": "Bedknobs and Broomsticks",
@@ -214,6 +228,7 @@
     "category": "dreamworks",
     "year": 2007,
     "sequel": false,
+    "liveAction": false,
     "poster": "bee-movie-2007.webp",
     "titles": {
       "en": "Bee Movie",
@@ -229,6 +244,7 @@
     "category": "disney",
     "year": 2014,
     "sequel": false,
+    "liveAction": false,
     "poster": "big-hero-6-2014.webp",
     "titles": {
       "en": "Big Hero 6",
@@ -244,6 +260,7 @@
     "category": "disney",
     "year": 2008,
     "sequel": false,
+    "liveAction": false,
     "poster": "bolt-2008.webp",
     "titles": {
       "en": "Bolt",
@@ -259,6 +276,7 @@
     "category": "pixar",
     "year": 2012,
     "sequel": false,
+    "liveAction": false,
     "poster": "brave-2012.webp",
     "titles": {
       "en": "Brave",
@@ -271,9 +289,10 @@
   },
   {
     "id": "bridge-to-terabithia-2007",
-    "category": "live-action",
+    "category": "disney",
     "year": 2007,
     "sequel": false,
+    "liveAction": true,
     "poster": "bridge-to-terabithia-2007.webp",
     "titles": {
       "en": "Bridge to Terabithia",
@@ -289,6 +308,7 @@
     "category": "disney",
     "year": 2003,
     "sequel": false,
+    "liveAction": false,
     "poster": "brother-bear-2003.webp",
     "titles": {
       "en": "Brother Bear",
@@ -304,6 +324,7 @@
     "category": "dreamworks",
     "year": 2017,
     "sequel": false,
+    "liveAction": false,
     "poster": "captain-underpants-the-first-epic-movie-2017.webp",
     "titles": {
       "en": "Captain Underpants: The First Epic Movie",
@@ -319,6 +340,7 @@
     "category": "pixar",
     "year": 2011,
     "sequel": true,
+    "liveAction": false,
     "poster": "cars-2-2011.webp",
     "titles": {
       "en": "Cars 2",
@@ -334,6 +356,7 @@
     "category": "pixar",
     "year": 2006,
     "sequel": false,
+    "liveAction": false,
     "poster": "cars-2006.webp",
     "titles": {
       "en": "Cars",
@@ -349,6 +372,7 @@
     "category": "pixar",
     "year": 2017,
     "sequel": true,
+    "liveAction": false,
     "poster": "cars-3-2017.webp",
     "titles": {
       "en": "Cars 3",
@@ -364,6 +388,7 @@
     "category": "disney",
     "year": 2005,
     "sequel": false,
+    "liveAction": false,
     "poster": "chicken-little-2005.webp",
     "titles": {
       "en": "Chicken Little",
@@ -379,6 +404,7 @@
     "category": "dreamworks",
     "year": 2000,
     "sequel": false,
+    "liveAction": false,
     "poster": "chicken-run-2000.webp",
     "titles": {
       "en": "Chicken Run",
@@ -391,9 +417,10 @@
   },
   {
     "id": "christopher-robin-2018",
-    "category": "live-action",
+    "category": "disney",
     "year": 2018,
     "sequel": false,
+    "liveAction": true,
     "poster": "christopher-robin-2018.webp",
     "titles": {
       "en": "Christopher Robin",
@@ -409,6 +436,7 @@
     "category": "disney",
     "year": 1950,
     "sequel": false,
+    "liveAction": false,
     "poster": "cinderella-1950.webp",
     "titles": {
       "en": "Cinderella",
@@ -421,9 +449,10 @@
   },
   {
     "id": "cinderella-2015",
-    "category": "live-action",
+    "category": "disney",
     "year": 2015,
     "sequel": false,
+    "liveAction": true,
     "poster": "cinderella-2015.webp",
     "titles": {
       "en": "Cinderella",
@@ -439,6 +468,7 @@
     "category": "pixar",
     "year": 2017,
     "sequel": false,
+    "liveAction": false,
     "poster": "coco-2017.webp",
     "titles": {
       "en": "Coco",
@@ -451,9 +481,10 @@
   },
   {
     "id": "cool-runnings-1993",
-    "category": "live-action",
+    "category": "disney",
     "year": 1993,
     "sequel": false,
+    "liveAction": true,
     "poster": "cool-runnings-1993.webp",
     "titles": {
       "en": "Cool Runnings",
@@ -466,9 +497,10 @@
   },
   {
     "id": "cruella-2021",
-    "category": "live-action",
+    "category": "disney",
     "year": 2021,
     "sequel": false,
+    "liveAction": true,
     "poster": "cruella-2021.webp",
     "titles": {
       "en": "Cruella",
@@ -484,6 +516,7 @@
     "category": "disney",
     "year": 2000,
     "sequel": false,
+    "liveAction": false,
     "poster": "dinosaur-2000.webp",
     "titles": {
       "en": "Dinosaur",
@@ -499,6 +532,7 @@
     "category": "dreamworks",
     "year": 2025,
     "sequel": false,
+    "liveAction": false,
     "poster": "dog-man-2025.webp",
     "titles": {
       "en": "Dog Man",
@@ -514,6 +548,7 @@
     "category": "disney",
     "year": 1941,
     "sequel": false,
+    "liveAction": false,
     "poster": "dumbo-1941.webp",
     "titles": {
       "en": "Dumbo",
@@ -526,9 +561,10 @@
   },
   {
     "id": "dumbo-2019",
-    "category": "live-action",
+    "category": "disney",
     "year": 2019,
     "sequel": false,
+    "liveAction": true,
     "poster": "dumbo-2019.webp",
     "titles": {
       "en": "Dumbo",
@@ -544,6 +580,7 @@
     "category": "pixar",
     "year": 2023,
     "sequel": false,
+    "liveAction": false,
     "poster": "elemental-2023.webp",
     "titles": {
       "en": "Elemental",
@@ -559,6 +596,7 @@
     "category": "pixar",
     "year": 2025,
     "sequel": false,
+    "liveAction": false,
     "poster": "elio-2025.webp",
     "titles": {
       "en": "Elio",
@@ -574,6 +612,7 @@
     "category": "disney",
     "year": 2021,
     "sequel": false,
+    "liveAction": false,
     "poster": "encanto-2021.webp",
     "titles": {
       "en": "Encanto",
@@ -586,9 +625,10 @@
   },
   {
     "id": "enchanted-2007",
-    "category": "live-action",
+    "category": "disney",
     "year": 2007,
     "sequel": false,
+    "liveAction": true,
     "poster": "enchanted-2007.webp",
     "titles": {
       "en": "Enchanted",
@@ -604,6 +644,7 @@
     "category": "disney",
     "year": 1940,
     "sequel": false,
+    "liveAction": false,
     "poster": "fantasia-1940.webp",
     "titles": {
       "en": "Fantasia",
@@ -619,6 +660,7 @@
     "category": "disney",
     "year": 1999,
     "sequel": true,
+    "liveAction": false,
     "poster": "fantasia-2000-1999.webp",
     "titles": {
       "en": "Fantasia 2000",
@@ -634,6 +676,7 @@
     "category": "pixar",
     "year": 2016,
     "sequel": true,
+    "liveAction": false,
     "poster": "finding-dory-2016.webp",
     "titles": {
       "en": "Finding Dory",
@@ -649,6 +692,7 @@
     "category": "pixar",
     "year": 2003,
     "sequel": false,
+    "liveAction": false,
     "poster": "finding-nemo-2003.webp",
     "titles": {
       "en": "Finding Nemo",
@@ -661,9 +705,10 @@
   },
   {
     "id": "flubber-1997",
-    "category": "live-action",
+    "category": "disney",
     "year": 1997,
     "sequel": false,
+    "liveAction": true,
     "poster": "flubber-1997.webp",
     "titles": {
       "en": "Flubber",
@@ -679,6 +724,7 @@
     "category": "dreamworks",
     "year": 2006,
     "sequel": false,
+    "liveAction": false,
     "poster": "flushed-away-2006.webp",
     "titles": {
       "en": "Flushed Away",
@@ -691,9 +737,10 @@
   },
   {
     "id": "freaky-friday-2003",
-    "category": "live-action",
+    "category": "disney",
     "year": 2003,
     "sequel": false,
+    "liveAction": true,
     "poster": "freaky-friday-2003.webp",
     "titles": {
       "en": "Freaky Friday",
@@ -709,6 +756,7 @@
     "category": "disney",
     "year": 2019,
     "sequel": true,
+    "liveAction": false,
     "poster": "frozen-2-2019.webp",
     "titles": {
       "en": "Frozen 2",
@@ -724,6 +772,7 @@
     "category": "disney",
     "year": 2013,
     "sequel": false,
+    "liveAction": false,
     "poster": "frozen-2013.webp",
     "titles": {
       "en": "Frozen",
@@ -739,6 +788,7 @@
     "category": "disney",
     "year": 1947,
     "sequel": false,
+    "liveAction": false,
     "poster": "fun-and-fancy-free-1947.webp",
     "titles": {
       "en": "Fun and Fancy Free",
@@ -754,6 +804,7 @@
     "category": "dreamworks",
     "year": 2025,
     "sequel": false,
+    "liveAction": false,
     "poster": "gabbys-dollhouse-the-movie-2025.webp",
     "titles": {
       "en": "Gabby's Dollhouse: The Movie",
@@ -766,9 +817,10 @@
   },
   {
     "id": "george-of-the-jungle-1997",
-    "category": "live-action",
+    "category": "disney",
     "year": 1997,
     "sequel": false,
+    "liveAction": true,
     "poster": "george-of-the-jungle-1997.webp",
     "titles": {
       "en": "George of the Jungle",
@@ -784,6 +836,7 @@
     "category": "disney",
     "year": 1997,
     "sequel": false,
+    "liveAction": false,
     "poster": "hercules-1997.webp",
     "titles": {
       "en": "Hercules",
@@ -796,9 +849,10 @@
   },
   {
     "id": "holes-2003",
-    "category": "live-action",
+    "category": "disney",
     "year": 2003,
     "sequel": false,
+    "liveAction": true,
     "poster": "holes-2003.webp",
     "titles": {
       "en": "Holes",
@@ -814,6 +868,7 @@
     "category": "dreamworks",
     "year": 2015,
     "sequel": false,
+    "liveAction": false,
     "poster": "home-2015.webp",
     "titles": {
       "en": "Home",
@@ -829,6 +884,7 @@
     "category": "disney",
     "year": 2004,
     "sequel": false,
+    "liveAction": false,
     "poster": "home-on-the-range-2004.webp",
     "titles": {
       "en": "Home on the Range",
@@ -841,9 +897,10 @@
   },
   {
     "id": "homeward-bound-the-incredible-journey-1993",
-    "category": "live-action",
+    "category": "disney",
     "year": 1993,
     "sequel": false,
+    "liveAction": true,
     "poster": "homeward-bound-the-incredible-journey-1993.webp",
     "titles": {
       "en": "Homeward Bound: The Incredible Journey",
@@ -856,9 +913,10 @@
   },
   {
     "id": "honey-i-shrunk-the-kids-1989",
-    "category": "live-action",
+    "category": "disney",
     "year": 1989,
     "sequel": false,
+    "liveAction": true,
     "poster": "honey-i-shrunk-the-kids-1989.webp",
     "titles": {
       "en": "Honey, I Shrunk the Kids",
@@ -874,6 +932,7 @@
     "category": "pixar",
     "year": 2026,
     "sequel": false,
+    "liveAction": false,
     "poster": "hoppers-2026.webp",
     "titles": {
       "en": "Hoppers",
@@ -889,6 +948,7 @@
     "category": "dreamworks",
     "year": 2014,
     "sequel": true,
+    "liveAction": false,
     "poster": "how-to-train-your-dragon-2-2014.webp",
     "titles": {
       "en": "How to Train Your Dragon 2",
@@ -904,6 +964,7 @@
     "category": "dreamworks",
     "year": 2010,
     "sequel": false,
+    "liveAction": false,
     "poster": "how-to-train-your-dragon-2010.webp",
     "titles": {
       "en": "How to Train Your Dragon",
@@ -919,6 +980,7 @@
     "category": "dreamworks",
     "year": 2019,
     "sequel": true,
+    "liveAction": false,
     "poster": "how-to-train-your-dragon-the-hidden-world-2019.webp",
     "titles": {
       "en": "How to Train Your Dragon: The Hidden World",
@@ -934,6 +996,7 @@
     "category": "pixar",
     "year": 2018,
     "sequel": true,
+    "liveAction": false,
     "poster": "incredibles-2-2018.webp",
     "titles": {
       "en": "Incredibles 2",
@@ -949,6 +1012,7 @@
     "category": "pixar",
     "year": 2024,
     "sequel": true,
+    "liveAction": false,
     "poster": "inside-out-2-2024.webp",
     "titles": {
       "en": "Inside Out 2",
@@ -964,6 +1028,7 @@
     "category": "pixar",
     "year": 2015,
     "sequel": false,
+    "liveAction": false,
     "poster": "inside-out-2015.webp",
     "titles": {
       "en": "Inside Out",
@@ -976,9 +1041,10 @@
   },
   {
     "id": "jungle-cruise-2021",
-    "category": "live-action",
+    "category": "disney",
     "year": 2021,
     "sequel": false,
+    "liveAction": true,
     "poster": "jungle-cruise-2021.webp",
     "titles": {
       "en": "Jungle Cruise",
@@ -994,6 +1060,7 @@
     "category": "dreamworks",
     "year": 2011,
     "sequel": true,
+    "liveAction": false,
     "poster": "kung-fu-panda-2-2011.webp",
     "titles": {
       "en": "Kung Fu Panda 2",
@@ -1009,6 +1076,7 @@
     "category": "dreamworks",
     "year": 2008,
     "sequel": false,
+    "liveAction": false,
     "poster": "kung-fu-panda-2008.webp",
     "titles": {
       "en": "Kung Fu Panda",
@@ -1024,6 +1092,7 @@
     "category": "dreamworks",
     "year": 2016,
     "sequel": true,
+    "liveAction": false,
     "poster": "kung-fu-panda-3-2016.webp",
     "titles": {
       "en": "Kung Fu Panda 3",
@@ -1039,6 +1108,7 @@
     "category": "dreamworks",
     "year": 2024,
     "sequel": true,
+    "liveAction": false,
     "poster": "kung-fu-panda-4-2024.webp",
     "titles": {
       "en": "Kung Fu Panda 4",
@@ -1054,6 +1124,7 @@
     "category": "disney",
     "year": 1955,
     "sequel": false,
+    "liveAction": false,
     "poster": "lady-and-the-tramp-1955.webp",
     "titles": {
       "en": "Lady and the Tramp",
@@ -1069,6 +1140,7 @@
     "category": "pixar",
     "year": 2022,
     "sequel": true,
+    "liveAction": false,
     "poster": "lightyear-2022.webp",
     "titles": {
       "en": "Lightyear",
@@ -1084,6 +1156,7 @@
     "category": "disney",
     "year": 2002,
     "sequel": false,
+    "liveAction": false,
     "poster": "lilo-and-stitch-2002.webp",
     "titles": {
       "en": "Lilo & Stitch",
@@ -1096,9 +1169,10 @@
   },
   {
     "id": "lilo-and-stitch-2025",
-    "category": "live-action",
+    "category": "disney",
     "year": 2025,
     "sequel": false,
+    "liveAction": true,
     "poster": "lilo-and-stitch-2025.webp",
     "titles": {
       "en": "Lilo & Stitch",
@@ -1114,6 +1188,7 @@
     "category": "pixar",
     "year": 2021,
     "sequel": false,
+    "liveAction": false,
     "poster": "luca-2021.webp",
     "titles": {
       "en": "Luca",
@@ -1129,6 +1204,7 @@
     "category": "dreamworks",
     "year": 2005,
     "sequel": false,
+    "liveAction": false,
     "poster": "madagascar-2005.webp",
     "titles": {
       "en": "Madagascar",
@@ -1144,6 +1220,7 @@
     "category": "dreamworks",
     "year": 2012,
     "sequel": true,
+    "liveAction": false,
     "poster": "madagascar-3-europes-most-wanted-2012.webp",
     "titles": {
       "en": "Madagascar 3: Europe's Most Wanted",
@@ -1159,6 +1236,7 @@
     "category": "dreamworks",
     "year": 2008,
     "sequel": true,
+    "liveAction": false,
     "poster": "madagascar-escape-2-africa-2008.webp",
     "titles": {
       "en": "Madagascar: Escape 2 Africa",
@@ -1174,6 +1252,7 @@
     "category": "disney",
     "year": 1946,
     "sequel": false,
+    "liveAction": false,
     "poster": "make-mine-music-1946.webp",
     "titles": {
       "en": "Make Mine Music",
@@ -1186,9 +1265,10 @@
   },
   {
     "id": "maleficent-2014",
-    "category": "live-action",
+    "category": "disney",
     "year": 2014,
     "sequel": false,
+    "liveAction": true,
     "poster": "maleficent-2014.webp",
     "titles": {
       "en": "Maleficent",
@@ -1201,9 +1281,10 @@
   },
   {
     "id": "mary-poppins-1964",
-    "category": "live-action",
+    "category": "disney",
     "year": 1964,
     "sequel": false,
+    "liveAction": true,
     "poster": "mary-poppins-1964.webp",
     "titles": {
       "en": "Mary Poppins",
@@ -1216,9 +1297,10 @@
   },
   {
     "id": "mary-poppins-returns-2018",
-    "category": "live-action",
+    "category": "disney",
     "year": 2018,
     "sequel": true,
+    "liveAction": true,
     "poster": "mary-poppins-returns-2018.webp",
     "titles": {
       "en": "Mary Poppins Returns",
@@ -1234,6 +1316,7 @@
     "category": "disney",
     "year": 2007,
     "sequel": false,
+    "liveAction": false,
     "poster": "meet-the-robinsons-2007.webp",
     "titles": {
       "en": "Meet the Robinsons",
@@ -1249,6 +1332,7 @@
     "category": "dreamworks",
     "year": 2010,
     "sequel": false,
+    "liveAction": false,
     "poster": "megamind-2010.webp",
     "titles": {
       "en": "Megamind",
@@ -1264,6 +1348,7 @@
     "category": "disney",
     "year": 1948,
     "sequel": false,
+    "liveAction": false,
     "poster": "melody-time-1948.webp",
     "titles": {
       "en": "Melody Time",
@@ -1279,6 +1364,7 @@
     "category": "disney",
     "year": 2024,
     "sequel": true,
+    "liveAction": false,
     "poster": "moana-2-2024.webp",
     "titles": {
       "en": "Moana 2",
@@ -1294,6 +1380,7 @@
     "category": "disney",
     "year": 2016,
     "sequel": false,
+    "liveAction": false,
     "poster": "moana-2016.webp",
     "titles": {
       "en": "Moana",
@@ -1309,6 +1396,7 @@
     "category": "pixar",
     "year": 2001,
     "sequel": false,
+    "liveAction": false,
     "poster": "monsters-inc-2001.webp",
     "titles": {
       "en": "Monsters, Inc.",
@@ -1324,6 +1412,7 @@
     "category": "pixar",
     "year": 2013,
     "sequel": true,
+    "liveAction": false,
     "poster": "monsters-university-2013.webp",
     "titles": {
       "en": "Monsters University",
@@ -1339,6 +1428,7 @@
     "category": "dreamworks",
     "year": 2009,
     "sequel": false,
+    "liveAction": false,
     "poster": "monsters-vs-aliens-2009.webp",
     "titles": {
       "en": "Monsters vs. Aliens",
@@ -1354,6 +1444,7 @@
     "category": "dreamworks",
     "year": 2014,
     "sequel": false,
+    "liveAction": false,
     "poster": "mr-peabody-and-sherman-2014.webp",
     "titles": {
       "en": "Mr. Peabody & Sherman",
@@ -1369,6 +1460,7 @@
     "category": "disney",
     "year": 1998,
     "sequel": false,
+    "liveAction": false,
     "poster": "mulan-1998.webp",
     "titles": {
       "en": "Mulan",
@@ -1381,9 +1473,10 @@
   },
   {
     "id": "national-treasure-2004",
-    "category": "live-action",
+    "category": "disney",
     "year": 2004,
     "sequel": false,
+    "liveAction": true,
     "poster": "national-treasure-2004.webp",
     "titles": {
       "en": "National Treasure",
@@ -1399,6 +1492,7 @@
     "category": "disney",
     "year": 1988,
     "sequel": false,
+    "liveAction": false,
     "poster": "oliver-and-company-1988.webp",
     "titles": {
       "en": "Oliver & Company",
@@ -1414,6 +1508,7 @@
     "category": "disney",
     "year": 1961,
     "sequel": false,
+    "liveAction": false,
     "poster": "one-hundred-and-one-dalmatians-1961.webp",
     "titles": {
       "en": "One Hundred and One Dalmatians",
@@ -1429,6 +1524,7 @@
     "category": "pixar",
     "year": 2020,
     "sequel": false,
+    "liveAction": false,
     "poster": "onward-2020.webp",
     "titles": {
       "en": "Onward",
@@ -1444,6 +1540,7 @@
     "category": "dreamworks",
     "year": 2024,
     "sequel": false,
+    "liveAction": false,
     "poster": "orion-and-the-dark-2024.webp",
     "titles": {
       "en": "Orion and the Dark",
@@ -1459,6 +1556,7 @@
     "category": "dreamworks",
     "year": 2006,
     "sequel": false,
+    "liveAction": false,
     "poster": "over-the-hedge-2006.webp",
     "titles": {
       "en": "Over the Hedge",
@@ -1474,6 +1572,7 @@
     "category": "dreamworks",
     "year": 2014,
     "sequel": true,
+    "liveAction": false,
     "poster": "penguins-of-madagascar-2014.webp",
     "titles": {
       "en": "Penguins of Madagascar",
@@ -1489,6 +1588,7 @@
     "category": "disney",
     "year": 1953,
     "sequel": false,
+    "liveAction": false,
     "poster": "peter-pan-1953.webp",
     "titles": {
       "en": "Peter Pan",
@@ -1501,9 +1601,10 @@
   },
   {
     "id": "petes-dragon-2016",
-    "category": "live-action",
+    "category": "disney",
     "year": 2016,
     "sequel": false,
+    "liveAction": true,
     "poster": "petes-dragon-2016.webp",
     "titles": {
       "en": "Pete's Dragon",
@@ -1519,6 +1620,7 @@
     "category": "disney",
     "year": 1940,
     "sequel": false,
+    "liveAction": false,
     "poster": "pinocchio-1940.webp",
     "titles": {
       "en": "Pinocchio",
@@ -1531,9 +1633,10 @@
   },
   {
     "id": "pirates-of-the-caribbean-at-worlds-end-2007",
-    "category": "live-action",
+    "category": "disney",
     "year": 2007,
     "sequel": true,
+    "liveAction": true,
     "poster": "pirates-of-the-caribbean-at-worlds-end-2007.webp",
     "titles": {
       "en": "Pirates of the Caribbean: At World's End",
@@ -1546,9 +1649,10 @@
   },
   {
     "id": "pirates-of-the-caribbean-dead-mans-chest-2006",
-    "category": "live-action",
+    "category": "disney",
     "year": 2006,
     "sequel": true,
+    "liveAction": true,
     "poster": "pirates-of-the-caribbean-dead-mans-chest-2006.webp",
     "titles": {
       "en": "Pirates of the Caribbean: Dead Man's Chest",
@@ -1561,9 +1665,10 @@
   },
   {
     "id": "pirates-of-the-caribbean-on-stranger-tides-2011",
-    "category": "live-action",
+    "category": "disney",
     "year": 2011,
     "sequel": true,
+    "liveAction": true,
     "poster": "pirates-of-the-caribbean-on-stranger-tides-2011.webp",
     "titles": {
       "en": "Pirates of the Caribbean: On Stranger Tides",
@@ -1576,9 +1681,10 @@
   },
   {
     "id": "pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003",
-    "category": "live-action",
+    "category": "disney",
     "year": 2003,
     "sequel": false,
+    "liveAction": true,
     "poster": "pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003.webp",
     "titles": {
       "en": "Pirates of the Caribbean: The Curse of the Black Pearl",
@@ -1594,6 +1700,7 @@
     "category": "disney",
     "year": 1995,
     "sequel": false,
+    "liveAction": false,
     "poster": "pocahontas-1995.webp",
     "titles": {
       "en": "Pocahontas",
@@ -1609,6 +1716,7 @@
     "category": "dreamworks",
     "year": 2011,
     "sequel": true,
+    "liveAction": false,
     "poster": "puss-in-boots-2011.webp",
     "titles": {
       "en": "Puss in Boots",
@@ -1624,6 +1732,7 @@
     "category": "dreamworks",
     "year": 2022,
     "sequel": true,
+    "liveAction": false,
     "poster": "puss-in-boots-the-last-wish-2022.webp",
     "titles": {
       "en": "Puss in Boots: The Last Wish",
@@ -1639,6 +1748,7 @@
     "category": "disney",
     "year": 2018,
     "sequel": true,
+    "liveAction": false,
     "poster": "ralph-breaks-the-internet-2018.webp",
     "titles": {
       "en": "Ralph Breaks the Internet",
@@ -1654,6 +1764,7 @@
     "category": "pixar",
     "year": 2007,
     "sequel": false,
+    "liveAction": false,
     "poster": "ratatouille-2007.webp",
     "titles": {
       "en": "Ratatouille",
@@ -1669,6 +1780,7 @@
     "category": "disney",
     "year": 2021,
     "sequel": false,
+    "liveAction": false,
     "poster": "raya-and-the-last-dragon-2021.webp",
     "titles": {
       "en": "Raya and the Last Dragon",
@@ -1684,6 +1796,7 @@
     "category": "dreamworks",
     "year": 2012,
     "sequel": false,
+    "liveAction": false,
     "poster": "rise-of-the-guardians-2012.webp",
     "titles": {
       "en": "Rise of the Guardians",
@@ -1699,6 +1812,7 @@
     "category": "disney",
     "year": 1973,
     "sequel": false,
+    "liveAction": false,
     "poster": "robin-hood-1973.webp",
     "titles": {
       "en": "Robin Hood",
@@ -1714,6 +1828,7 @@
     "category": "dreamworks",
     "year": 2023,
     "sequel": false,
+    "liveAction": false,
     "poster": "ruby-gillman-teenage-kraken-2023.webp",
     "titles": {
       "en": "Ruby Gillman, Teenage Kraken",
@@ -1729,6 +1844,7 @@
     "category": "disney",
     "year": 1943,
     "sequel": false,
+    "liveAction": false,
     "poster": "saludos-amigos-1943.webp",
     "titles": {
       "en": "Saludos Amigos",
@@ -1744,6 +1860,7 @@
     "category": "dreamworks",
     "year": 2004,
     "sequel": false,
+    "liveAction": false,
     "poster": "shark-tale-2004.webp",
     "titles": {
       "en": "Shark Tale",
@@ -1759,6 +1876,7 @@
     "category": "dreamworks",
     "year": 2004,
     "sequel": true,
+    "liveAction": false,
     "poster": "shrek-2-2004.webp",
     "titles": {
       "en": "Shrek 2",
@@ -1774,6 +1892,7 @@
     "category": "dreamworks",
     "year": 2001,
     "sequel": false,
+    "liveAction": false,
     "poster": "shrek-2001.webp",
     "titles": {
       "en": "Shrek",
@@ -1789,6 +1908,7 @@
     "category": "dreamworks",
     "year": 2010,
     "sequel": true,
+    "liveAction": false,
     "poster": "shrek-forever-after-2010.webp",
     "titles": {
       "en": "Shrek Forever After",
@@ -1804,6 +1924,7 @@
     "category": "dreamworks",
     "year": 2007,
     "sequel": true,
+    "liveAction": false,
     "poster": "shrek-the-third-2007.webp",
     "titles": {
       "en": "Shrek the Third",
@@ -1819,6 +1940,7 @@
     "category": "dreamworks",
     "year": 2003,
     "sequel": false,
+    "liveAction": false,
     "poster": "sinbad-legend-of-the-seven-seas-2003.webp",
     "titles": {
       "en": "Sinbad: Legend of the Seven Seas",
@@ -1834,6 +1956,7 @@
     "category": "disney",
     "year": 1959,
     "sequel": false,
+    "liveAction": false,
     "poster": "sleeping-beauty-1959.webp",
     "titles": {
       "en": "Sleeping Beauty",
@@ -1846,9 +1969,10 @@
   },
   {
     "id": "snow-white-2025",
-    "category": "live-action",
+    "category": "disney",
     "year": 2025,
     "sequel": false,
+    "liveAction": true,
     "poster": "snow-white-2025.webp",
     "titles": {
       "en": "Snow White",
@@ -1864,6 +1988,7 @@
     "category": "disney",
     "year": 1937,
     "sequel": false,
+    "liveAction": false,
     "poster": "snow-white-and-the-seven-dwarfs-1937.webp",
     "titles": {
       "en": "Snow White and the Seven Dwarfs",
@@ -1879,6 +2004,7 @@
     "category": "pixar",
     "year": 2020,
     "sequel": false,
+    "liveAction": false,
     "poster": "soul-2020.webp",
     "titles": {
       "en": "Soul",
@@ -1894,6 +2020,7 @@
     "category": "dreamworks",
     "year": 2002,
     "sequel": false,
+    "liveAction": false,
     "poster": "spirit-stallion-of-the-cimarron-2002.webp",
     "titles": {
       "en": "Spirit: Stallion of the Cimarron",
@@ -1909,6 +2036,7 @@
     "category": "dreamworks",
     "year": 2021,
     "sequel": true,
+    "liveAction": false,
     "poster": "spirit-untamed-2021.webp",
     "titles": {
       "en": "Spirit Untamed",
@@ -1924,6 +2052,7 @@
     "category": "disney",
     "year": 2022,
     "sequel": false,
+    "liveAction": false,
     "poster": "strange-world-2022.webp",
     "titles": {
       "en": "Strange World",
@@ -1936,9 +2065,10 @@
   },
   {
     "id": "swiss-family-robinson-1960",
-    "category": "live-action",
+    "category": "disney",
     "year": 1960,
     "sequel": false,
+    "liveAction": true,
     "poster": "swiss-family-robinson-1960.webp",
     "titles": {
       "en": "Swiss Family Robinson",
@@ -1954,6 +2084,7 @@
     "category": "disney",
     "year": 2010,
     "sequel": false,
+    "liveAction": false,
     "poster": "tangled-2010.webp",
     "titles": {
       "en": "Tangled",
@@ -1969,6 +2100,7 @@
     "category": "disney",
     "year": 1999,
     "sequel": false,
+    "liveAction": false,
     "poster": "tarzan-1999.webp",
     "titles": {
       "en": "Tarzan",
@@ -1984,6 +2116,7 @@
     "category": "disney",
     "year": 1949,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-adventures-of-ichabod-and-mr-toad-1949.webp",
     "titles": {
       "en": "The Adventures of Ichabod and Mr. Toad",
@@ -1999,6 +2132,7 @@
     "category": "disney",
     "year": 1970,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-aristocats-1970.webp",
     "titles": {
       "en": "The Aristocats",
@@ -2014,6 +2148,7 @@
     "category": "dreamworks",
     "year": 2025,
     "sequel": true,
+    "liveAction": false,
     "poster": "the-bad-guys-2-2025.webp",
     "titles": {
       "en": "The Bad Guys 2",
@@ -2029,6 +2164,7 @@
     "category": "dreamworks",
     "year": 2022,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-bad-guys-2022.webp",
     "titles": {
       "en": "The Bad Guys",
@@ -2044,6 +2180,7 @@
     "category": "disney",
     "year": 1985,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-black-cauldron-1985.webp",
     "titles": {
       "en": "The Black Cauldron",
@@ -2059,6 +2196,7 @@
     "category": "dreamworks",
     "year": 2017,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-boss-baby-2017.webp",
     "titles": {
       "en": "The Boss Baby",
@@ -2074,6 +2212,7 @@
     "category": "dreamworks",
     "year": 2021,
     "sequel": true,
+    "liveAction": false,
     "poster": "the-boss-baby-family-business-2021.webp",
     "titles": {
       "en": "The Boss Baby: Family Business",
@@ -2086,9 +2225,10 @@
   },
   {
     "id": "the-chronicles-of-narnia-prince-caspian-2008",
-    "category": "live-action",
+    "category": "disney",
     "year": 2008,
     "sequel": true,
+    "liveAction": true,
     "poster": "the-chronicles-of-narnia-prince-caspian-2008.webp",
     "titles": {
       "en": "The Chronicles of Narnia: Prince Caspian",
@@ -2101,9 +2241,10 @@
   },
   {
     "id": "the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe-2005",
-    "category": "live-action",
+    "category": "disney",
     "year": 2005,
     "sequel": false,
+    "liveAction": true,
     "poster": "the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe-2005.webp",
     "titles": {
       "en": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
@@ -2119,6 +2260,7 @@
     "category": "dreamworks",
     "year": 2013,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-croods-2013.webp",
     "titles": {
       "en": "The Croods",
@@ -2134,6 +2276,7 @@
     "category": "dreamworks",
     "year": 2020,
     "sequel": true,
+    "liveAction": false,
     "poster": "the-croods-a-new-age-2020.webp",
     "titles": {
       "en": "The Croods: A New Age",
@@ -2149,6 +2292,7 @@
     "category": "disney",
     "year": 2000,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-emperors-new-groove-2000.webp",
     "titles": {
       "en": "The Emperor's New Groove",
@@ -2164,6 +2308,7 @@
     "category": "disney",
     "year": 1981,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-fox-and-the-hound-1981.webp",
     "titles": {
       "en": "The Fox and the Hound",
@@ -2179,6 +2324,7 @@
     "category": "pixar",
     "year": 2015,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-good-dinosaur-2015.webp",
     "titles": {
       "en": "The Good Dinosaur",
@@ -2194,6 +2340,7 @@
     "category": "disney",
     "year": 1986,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-great-mouse-detective-1986.webp",
     "titles": {
       "en": "The Great Mouse Detective",
@@ -2209,6 +2356,7 @@
     "category": "disney",
     "year": 1996,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-hunchback-of-notre-dame-1996.webp",
     "titles": {
       "en": "The Hunchback of Notre Dame",
@@ -2224,6 +2372,7 @@
     "category": "pixar",
     "year": 2004,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-incredibles-2004.webp",
     "titles": {
       "en": "The Incredibles",
@@ -2239,6 +2388,7 @@
     "category": "disney",
     "year": 1967,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-jungle-book-1967.webp",
     "titles": {
       "en": "The Jungle Book",
@@ -2251,9 +2401,10 @@
   },
   {
     "id": "the-jungle-book-2016",
-    "category": "live-action",
+    "category": "disney",
     "year": 2016,
     "sequel": false,
+    "liveAction": true,
     "poster": "the-jungle-book-2016.webp",
     "titles": {
       "en": "The Jungle Book",
@@ -2269,6 +2420,7 @@
     "category": "disney",
     "year": 1994,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-lion-king-1994.webp",
     "titles": {
       "en": "The Lion King",
@@ -2281,9 +2433,10 @@
   },
   {
     "id": "the-lion-king-2019",
-    "category": "live-action",
+    "category": "disney",
     "year": 2019,
     "sequel": false,
+    "liveAction": true,
     "poster": "the-lion-king-2019.webp",
     "titles": {
       "en": "The Lion King",
@@ -2299,6 +2452,7 @@
     "category": "disney",
     "year": 1989,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-little-mermaid-1989.webp",
     "titles": {
       "en": "The Little Mermaid",
@@ -2311,9 +2465,10 @@
   },
   {
     "id": "the-little-mermaid-2023",
-    "category": "live-action",
+    "category": "disney",
     "year": 2023,
     "sequel": false,
+    "liveAction": true,
     "poster": "the-little-mermaid-2023.webp",
     "titles": {
       "en": "The Little Mermaid",
@@ -2326,9 +2481,10 @@
   },
   {
     "id": "the-love-bug-1968",
-    "category": "live-action",
+    "category": "disney",
     "year": 1968,
     "sequel": false,
+    "liveAction": true,
     "poster": "the-love-bug-1968.webp",
     "titles": {
       "en": "The Love Bug",
@@ -2344,6 +2500,7 @@
     "category": "disney",
     "year": 1977,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-many-adventures-of-winnie-the-pooh-1977.webp",
     "titles": {
       "en": "The Many Adventures of Winnie the Pooh",
@@ -2356,9 +2513,10 @@
   },
   {
     "id": "the-mighty-ducks-1992",
-    "category": "live-action",
+    "category": "disney",
     "year": 1992,
     "sequel": false,
+    "liveAction": true,
     "poster": "the-mighty-ducks-1992.webp",
     "titles": {
       "en": "The Mighty Ducks",
@@ -2371,9 +2529,10 @@
   },
   {
     "id": "the-parent-trap-1961",
-    "category": "live-action",
+    "category": "disney",
     "year": 1961,
     "sequel": false,
+    "liveAction": true,
     "poster": "the-parent-trap-1961.webp",
     "titles": {
       "en": "The Parent Trap",
@@ -2386,9 +2545,10 @@
   },
   {
     "id": "the-parent-trap-1998",
-    "category": "live-action",
+    "category": "disney",
     "year": 1998,
     "sequel": false,
+    "liveAction": true,
     "poster": "the-parent-trap-1998.webp",
     "titles": {
       "en": "The Parent Trap",
@@ -2404,6 +2564,7 @@
     "category": "dreamworks",
     "year": 1998,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-prince-of-egypt-1998.webp",
     "titles": {
       "en": "The Prince of Egypt",
@@ -2419,6 +2580,7 @@
     "category": "disney",
     "year": 2009,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-princess-and-the-frog-2009.webp",
     "titles": {
       "en": "The Princess and the Frog",
@@ -2431,9 +2593,10 @@
   },
   {
     "id": "the-princess-diaries-2001",
-    "category": "live-action",
+    "category": "disney",
     "year": 2001,
     "sequel": false,
+    "liveAction": true,
     "poster": "the-princess-diaries-2001.webp",
     "titles": {
       "en": "The Princess Diaries",
@@ -2449,6 +2612,7 @@
     "category": "disney",
     "year": 1977,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-rescuers-1977.webp",
     "titles": {
       "en": "The Rescuers",
@@ -2464,6 +2628,7 @@
     "category": "disney",
     "year": 1990,
     "sequel": true,
+    "liveAction": false,
     "poster": "the-rescuers-down-under-1990.webp",
     "titles": {
       "en": "The Rescuers Down Under",
@@ -2479,6 +2644,7 @@
     "category": "dreamworks",
     "year": 2000,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-road-to-el-dorado-2000.webp",
     "titles": {
       "en": "The Road to El Dorado",
@@ -2494,6 +2660,7 @@
     "category": "disney",
     "year": 1963,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-sword-in-the-stone-1963.webp",
     "titles": {
       "en": "The Sword in the Stone",
@@ -2509,6 +2676,7 @@
     "category": "disney",
     "year": 1945,
     "sequel": true,
+    "liveAction": false,
     "poster": "the-three-caballeros-1945.webp",
     "titles": {
       "en": "The Three Caballeros",
@@ -2524,6 +2692,7 @@
     "category": "dreamworks",
     "year": 2024,
     "sequel": false,
+    "liveAction": false,
     "poster": "the-wild-robot-2024.webp",
     "titles": {
       "en": "The Wild Robot",
@@ -2539,6 +2708,7 @@
     "category": "pixar",
     "year": 1995,
     "sequel": false,
+    "liveAction": false,
     "poster": "toy-story-1995.webp",
     "titles": {
       "en": "Toy Story",
@@ -2554,6 +2724,7 @@
     "category": "pixar",
     "year": 1999,
     "sequel": true,
+    "liveAction": false,
     "poster": "toy-story-2-1999.webp",
     "titles": {
       "en": "Toy Story 2",
@@ -2569,6 +2740,7 @@
     "category": "pixar",
     "year": 2010,
     "sequel": true,
+    "liveAction": false,
     "poster": "toy-story-3-2010.webp",
     "titles": {
       "en": "Toy Story 3",
@@ -2584,6 +2756,7 @@
     "category": "pixar",
     "year": 2019,
     "sequel": true,
+    "liveAction": false,
     "poster": "toy-story-4-2019.webp",
     "titles": {
       "en": "Toy Story 4",
@@ -2599,6 +2772,7 @@
     "category": "pixar",
     "year": 2026,
     "sequel": true,
+    "liveAction": false,
     "poster": "toy-story-5-2026.webp",
     "titles": {
       "en": "Toy Story 5",
@@ -2614,6 +2788,7 @@
     "category": "disney",
     "year": 2002,
     "sequel": false,
+    "liveAction": false,
     "poster": "treasure-planet-2002.webp",
     "titles": {
       "en": "Treasure Planet",
@@ -2629,6 +2804,7 @@
     "category": "dreamworks",
     "year": 2016,
     "sequel": false,
+    "liveAction": false,
     "poster": "trolls-2016.webp",
     "titles": {
       "en": "Trolls",
@@ -2644,6 +2820,7 @@
     "category": "dreamworks",
     "year": 2023,
     "sequel": true,
+    "liveAction": false,
     "poster": "trolls-band-together-2023.webp",
     "titles": {
       "en": "Trolls Band Together",
@@ -2659,6 +2836,7 @@
     "category": "dreamworks",
     "year": 2020,
     "sequel": true,
+    "liveAction": false,
     "poster": "trolls-world-tour-2020.webp",
     "titles": {
       "en": "Trolls World Tour",
@@ -2674,6 +2852,7 @@
     "category": "dreamworks",
     "year": 2013,
     "sequel": false,
+    "liveAction": false,
     "poster": "turbo-2013.webp",
     "titles": {
       "en": "Turbo",
@@ -2689,6 +2868,7 @@
     "category": "pixar",
     "year": 2022,
     "sequel": false,
+    "liveAction": false,
     "poster": "turning-red-2022.webp",
     "titles": {
       "en": "Turning Red",
@@ -2704,6 +2884,7 @@
     "category": "pixar",
     "year": 2009,
     "sequel": false,
+    "liveAction": false,
     "poster": "up-2009.webp",
     "titles": {
       "en": "Up",
@@ -2719,6 +2900,7 @@
     "category": "pixar",
     "year": 2008,
     "sequel": false,
+    "liveAction": false,
     "poster": "wall-e-2008.webp",
     "titles": {
       "en": "WALL-E",
@@ -2734,6 +2916,7 @@
     "category": "dreamworks",
     "year": 2005,
     "sequel": false,
+    "liveAction": false,
     "poster": "wallace-and-gromit-the-curse-of-the-were-rabbit-2005.webp",
     "titles": {
       "en": "Wallace & Gromit: The Curse of the Were-Rabbit",
@@ -2746,9 +2929,10 @@
   },
   {
     "id": "who-framed-roger-rabbit-1988",
-    "category": "live-action",
+    "category": "disney",
     "year": 1988,
     "sequel": false,
+    "liveAction": true,
     "poster": "who-framed-roger-rabbit-1988.webp",
     "titles": {
       "en": "Who Framed Roger Rabbit",
@@ -2764,6 +2948,7 @@
     "category": "disney",
     "year": 2011,
     "sequel": false,
+    "liveAction": false,
     "poster": "winnie-the-pooh-2011.webp",
     "titles": {
       "en": "Winnie the Pooh",
@@ -2779,6 +2964,7 @@
     "category": "disney",
     "year": 2023,
     "sequel": false,
+    "liveAction": false,
     "poster": "wish-2023.webp",
     "titles": {
       "en": "Wish",
@@ -2794,6 +2980,7 @@
     "category": "disney",
     "year": 2012,
     "sequel": false,
+    "liveAction": false,
     "poster": "wreck-it-ralph-2012.webp",
     "titles": {
       "en": "Wreck-It Ralph",
@@ -2809,6 +2996,7 @@
     "category": "disney",
     "year": 2025,
     "sequel": true,
+    "liveAction": false,
     "poster": "zootopia-2-2025.webp",
     "titles": {
       "en": "Zootopia 2",
@@ -2824,6 +3012,7 @@
     "category": "disney",
     "year": 2016,
     "sequel": false,
+    "liveAction": false,
     "poster": "zootopia-2016.webp",
     "titles": {
       "en": "Zootopia",

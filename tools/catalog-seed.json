@@ -4,6 +4,7 @@
     "category": "disney",
     "year": 1937,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Blancanieves y los siete enanitos"
     }
@@ -12,49 +13,57 @@
     "page": "Fantasia (1940 film)",
     "category": "disney",
     "year": 1940,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Pinocchio (1940 film)",
     "category": "disney",
     "year": 1940,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Dumbo",
     "category": "disney",
     "year": 1941,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Bambi",
     "category": "disney",
     "year": 1942,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Saludos Amigos",
     "category": "disney",
     "year": 1943,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "The Three Caballeros",
     "category": "disney",
     "year": 1945,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Make Mine Music",
     "category": "disney",
     "year": 1946,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Fun and Fancy Free",
     "category": "disney",
     "year": 1947,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Diversión y fantasía"
     }
@@ -64,6 +73,7 @@
     "category": "disney",
     "year": 1948,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Tiempo de melodía"
     }
@@ -73,6 +83,7 @@
     "category": "disney",
     "year": 1949,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Las aventuras de Ichabod y el señor Sapo"
     }
@@ -81,43 +92,50 @@
     "page": "Cinderella (1950 film)",
     "category": "disney",
     "year": 1950,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Alice in Wonderland (1951 film)",
     "category": "disney",
     "year": 1951,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Peter Pan (1953 film)",
     "category": "disney",
     "year": 1953,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Lady and the Tramp",
     "category": "disney",
     "year": 1955,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Sleeping Beauty (1959 film)",
     "category": "disney",
     "year": 1959,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "One Hundred and One Dalmatians",
     "category": "disney",
     "year": 1961,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "The Sword in the Stone (1963 film)",
     "category": "disney",
     "year": 1963,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Merlín el encantador"
     }
@@ -126,25 +144,29 @@
     "page": "The Jungle Book (1967 film)",
     "category": "disney",
     "year": 1967,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "The Aristocats",
     "category": "disney",
     "year": 1970,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Robin Hood (1973 film)",
     "category": "disney",
     "year": 1973,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "The Many Adventures of Winnie the Pooh",
     "category": "disney",
     "year": 1977,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Las aventuras de Winnie the Pooh"
     }
@@ -154,6 +176,7 @@
     "category": "disney",
     "year": 1977,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Los rescatadores"
     }
@@ -163,6 +186,7 @@
     "category": "disney",
     "year": 1981,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Tod y Toby"
     }
@@ -172,6 +196,7 @@
     "category": "disney",
     "year": 1985,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Tarón y el caldero mágico"
     }
@@ -181,6 +206,7 @@
     "category": "disney",
     "year": 1986,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Basil, el ratón superdetective"
     }
@@ -189,19 +215,22 @@
     "page": "Oliver & Company",
     "category": "disney",
     "year": 1988,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "The Little Mermaid (1989 film)",
     "category": "disney",
     "year": 1989,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "The Rescuers Down Under",
     "category": "disney",
     "year": 1990,
     "sequel": true,
+    "liveAction": false,
     "titles": {
       "es": "Los rescatadores en Cangurolandia"
     }
@@ -210,67 +239,78 @@
     "page": "Beauty and the Beast (1991 film)",
     "category": "disney",
     "year": 1991,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Aladdin (1992 Disney film)",
     "category": "disney",
     "year": 1992,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "The Lion King",
     "category": "disney",
     "year": 1994,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Pocahontas (1995 film)",
     "category": "disney",
     "year": 1995,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "The Hunchback of Notre Dame (1996 film)",
     "category": "disney",
     "year": 1996,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Hercules (1997 film)",
     "category": "disney",
     "year": 1997,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Mulan (1998 film)",
     "category": "disney",
     "year": 1998,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Fantasia 2000",
     "category": "disney",
     "year": 1999,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Tarzan (1999 film)",
     "category": "disney",
     "year": 1999,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Dinosaur (2000 film)",
     "category": "disney",
     "year": 2000,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "The Emperor's New Groove",
     "category": "disney",
     "year": 2000,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "El emperador y sus locuras"
     }
@@ -279,25 +319,29 @@
     "page": "Atlantis: The Lost Empire",
     "category": "disney",
     "year": 2001,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Lilo & Stitch",
     "category": "disney",
     "year": 2002,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Treasure Planet",
     "category": "disney",
     "year": 2002,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Brother Bear",
     "category": "disney",
     "year": 2003,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Tierra de osos"
     }
@@ -307,6 +351,7 @@
     "category": "disney",
     "year": 2004,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Zafarrancho en el rancho"
     }
@@ -315,13 +360,15 @@
     "page": "Chicken Little (2005 film)",
     "category": "disney",
     "year": 2005,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Meet the Robinsons",
     "category": "disney",
     "year": 2007,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Descubriendo a los Robinsons"
     }
@@ -330,13 +377,15 @@
     "page": "Bolt (2008 film)",
     "category": "disney",
     "year": 2008,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "The Princess and the Frog",
     "category": "disney",
     "year": 2009,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Tiana y el sapo"
     }
@@ -345,19 +394,22 @@
     "page": "Tangled",
     "category": "disney",
     "year": 2010,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Winnie the Pooh (2011 film)",
     "category": "disney",
     "year": 2011,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Wreck-It Ralph",
     "category": "disney",
     "year": 2012,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "¡Rompe Ralph!"
     }
@@ -367,6 +419,7 @@
     "category": "disney",
     "year": 2013,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Frozen: El reino del hielo"
     }
@@ -375,13 +428,15 @@
     "page": "Big Hero 6 (film)",
     "category": "disney",
     "year": 2014,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Moana (2016 film)",
     "category": "disney",
     "year": 2016,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Vaiana"
     }
@@ -391,6 +446,7 @@
     "category": "disney",
     "year": 2016,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Zootrópolis"
     }
@@ -400,6 +456,7 @@
     "category": "disney",
     "year": 2018,
     "sequel": true,
+    "liveAction": false,
     "titles": {
       "es": "Ralph rompe Internet"
     }
@@ -408,37 +465,43 @@
     "page": "Frozen 2",
     "category": "disney",
     "year": 2019,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Encanto",
     "category": "disney",
     "year": 2021,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Raya and the Last Dragon",
     "category": "disney",
     "year": 2021,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Strange World (film)",
     "category": "disney",
     "year": 2022,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Wish (film)",
     "category": "disney",
     "year": 2023,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Moana 2",
     "category": "disney",
     "year": 2024,
     "sequel": true,
+    "liveAction": false,
     "titles": {
       "es": "Vaiana 2"
     }
@@ -448,6 +511,7 @@
     "category": "disney",
     "year": 2025,
     "sequel": true,
+    "liveAction": false,
     "titles": {
       "es": "Zootrópolis 2"
     }
@@ -457,6 +521,7 @@
     "category": "dreamworks",
     "year": 1998,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Antz (Hormigaz)"
     }
@@ -465,13 +530,15 @@
     "page": "The Prince of Egypt",
     "category": "dreamworks",
     "year": 1998,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Chicken Run",
     "category": "dreamworks",
     "year": 2000,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Evasión en la granja"
     }
@@ -481,6 +548,7 @@
     "category": "dreamworks",
     "year": 2000,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "La ruta hacia El Dorado"
     }
@@ -489,25 +557,29 @@
     "page": "Shrek",
     "category": "dreamworks",
     "year": 2001,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Spirit: Stallion of the Cimarron",
     "category": "dreamworks",
     "year": 2002,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Sinbad: Legend of the Seven Seas",
     "category": "dreamworks",
     "year": 2003,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Shark Tale",
     "category": "dreamworks",
     "year": 2004,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "El espantatiburones"
     }
@@ -516,19 +588,22 @@
     "page": "Shrek 2",
     "category": "dreamworks",
     "year": 2004,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Madagascar (2005 film)",
     "category": "dreamworks",
     "year": 2005,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Wallace & Gromit: The Curse of the Were-Rabbit",
     "category": "dreamworks",
     "year": 2005,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Wallace & Gromit: La maldición de las verduras"
     }
@@ -538,6 +613,7 @@
     "category": "dreamworks",
     "year": 2006,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Lo que el agua se llevó"
     }
@@ -546,79 +622,92 @@
     "page": "Over the Hedge",
     "category": "dreamworks",
     "year": 2006,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Bee Movie",
     "category": "dreamworks",
     "year": 2007,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Shrek the Third",
     "category": "dreamworks",
     "year": 2007,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Kung Fu Panda (film)",
     "category": "dreamworks",
     "year": 2008,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Madagascar: Escape 2 Africa",
     "category": "dreamworks",
     "year": 2008,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Monsters vs. Aliens",
     "category": "dreamworks",
     "year": 2009,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "How to Train Your Dragon (2010 film)",
     "category": "dreamworks",
     "year": 2010,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Megamind",
     "category": "dreamworks",
     "year": 2010,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Shrek Forever After",
     "category": "dreamworks",
     "year": 2010,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Kung Fu Panda 2",
     "category": "dreamworks",
     "year": 2011,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Puss in Boots (2011 film)",
     "category": "dreamworks",
     "year": 2011,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Madagascar 3: Europe's Most Wanted",
     "category": "dreamworks",
     "year": 2012,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Rise of the Guardians",
     "category": "dreamworks",
     "year": 2012,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "El origen de los guardianes"
     }
@@ -627,25 +716,29 @@
     "page": "The Croods",
     "category": "dreamworks",
     "year": 2013,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Turbo (2013 film)",
     "category": "dreamworks",
     "year": 2013,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "How to Train Your Dragon 2",
     "category": "dreamworks",
     "year": 2014,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Mr. Peabody & Sherman",
     "category": "dreamworks",
     "year": 2014,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Las aventuras de Peabody y Sherman"
     }
@@ -654,13 +747,15 @@
     "page": "Penguins of Madagascar",
     "category": "dreamworks",
     "year": 2014,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Home (2015 film)",
     "category": "dreamworks",
     "year": 2015,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Home: Hogar dulce hogar"
     }
@@ -669,19 +764,22 @@
     "page": "Kung Fu Panda 3",
     "category": "dreamworks",
     "year": 2016,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Trolls (film)",
     "category": "dreamworks",
     "year": 2016,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Captain Underpants: The First Epic Movie",
     "category": "dreamworks",
     "year": 2017,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Las aventuras del Capitán Calzoncillos"
     }
@@ -690,31 +788,36 @@
     "page": "The Boss Baby",
     "category": "dreamworks",
     "year": 2017,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Abominable (2019 film)",
     "category": "dreamworks",
     "year": 2019,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "How to Train Your Dragon: The Hidden World",
     "category": "dreamworks",
     "year": 2019,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "The Croods: A New Age",
     "category": "dreamworks",
     "year": 2020,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Trolls World Tour",
     "category": "dreamworks",
     "year": 2020,
     "sequel": true,
+    "liveAction": false,
     "titles": {
       "es": "Trolls 2: Gira mundial"
     }
@@ -724,6 +827,7 @@
     "category": "dreamworks",
     "year": 2021,
     "sequel": true,
+    "liveAction": false,
     "titles": {
       "es": "Spirit: El indomable"
     }
@@ -733,6 +837,7 @@
     "category": "dreamworks",
     "year": 2021,
     "sequel": true,
+    "liveAction": false,
     "titles": {
       "es": "El bebé jefazo: Negocios de familia"
     }
@@ -741,19 +846,22 @@
     "page": "Puss in Boots: The Last Wish",
     "category": "dreamworks",
     "year": 2022,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "The Bad Guys (film)",
     "category": "dreamworks",
     "year": 2022,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Ruby Gillman, Teenage Kraken",
     "category": "dreamworks",
     "year": 2023,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Ruby, la chica del mar"
     }
@@ -763,6 +871,7 @@
     "category": "dreamworks",
     "year": 2023,
     "sequel": true,
+    "liveAction": false,
     "titles": {
       "es": "Trolls 3: Todos juntos"
     }
@@ -771,25 +880,29 @@
     "page": "Kung Fu Panda 4",
     "category": "dreamworks",
     "year": 2024,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Orion and the Dark",
     "category": "dreamworks",
     "year": 2024,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "The Wild Robot",
     "category": "dreamworks",
     "year": 2024,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Dog Man (film)",
     "category": "dreamworks",
     "year": 2025,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Hombre Perro"
     }
@@ -798,331 +911,376 @@
     "page": "Gabby's Dollhouse: The Movie",
     "category": "dreamworks",
     "year": 2025,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "The Bad Guys 2",
     "category": "dreamworks",
     "year": 2025,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "20,000 Leagues Under the Sea (1954 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 1954,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Swiss Family Robinson (1960 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 1960,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "Los Robinsones de los mares del Sur"
     }
   },
   {
     "page": "The Parent Trap (1961 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 1961,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "Tú a Boston y yo a California"
     }
   },
   {
     "page": "Mary Poppins (film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 1964,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "The Love Bug",
-    "category": "live-action",
+    "category": "disney",
     "year": 1968,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "Ahí va ese bólido"
     }
   },
   {
     "page": "Bedknobs and Broomsticks",
-    "category": "live-action",
+    "category": "disney",
     "year": 1971,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "La bruja novata"
     }
   },
   {
     "page": "Who Framed Roger Rabbit",
-    "category": "live-action",
+    "category": "disney",
     "year": 1988,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Honey, I Shrunk the Kids",
-    "category": "live-action",
+    "category": "disney",
     "year": 1989,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "Cariño, he encogido a los niños"
     }
   },
   {
     "page": "The Mighty Ducks (film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 1992,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Cool Runnings",
-    "category": "live-action",
+    "category": "disney",
     "year": 1993,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "Elegidos para el triunfo"
     }
   },
   {
     "page": "Homeward Bound: The Incredible Journey",
-    "category": "live-action",
+    "category": "disney",
     "year": 1993,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "101 Dalmatians (1996 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 1996,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "101 dálmatas"
     }
   },
   {
     "page": "Flubber (film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 1997,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "George of the Jungle (film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 1997,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "The Parent Trap (1998 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 1998,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "Tú a Londres y yo a California"
     }
   },
   {
     "page": "The Princess Diaries (film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2001,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "Princesa por sorpresa"
     }
   },
   {
     "page": "Freaky Friday (2003 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2003,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Holes (film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2003,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Pirates of the Caribbean: The Curse of the Black Pearl",
-    "category": "live-action",
+    "category": "disney",
     "year": 2003,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "Piratas del Caribe: La maldición de la Perla Negra"
     }
   },
   {
     "page": "National Treasure (film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2004,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
-    "category": "live-action",
+    "category": "disney",
     "year": 2005,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "Las crónicas de Narnia: el león, la bruja y el armario"
     }
   },
   {
     "page": "Pirates of the Caribbean: Dead Man's Chest",
-    "category": "live-action",
+    "category": "disney",
     "year": 2006,
     "sequel": true,
+    "liveAction": true,
     "titles": {
       "es": "Piratas del Caribe: El cofre del hombre muerto"
     }
   },
   {
     "page": "Bridge to Terabithia (2007 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2007,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "Un puente hacia Terabithia"
     }
   },
   {
     "page": "Enchanted (film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2007,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "Encantada: La historia de Giselle"
     }
   },
   {
     "page": "Pirates of the Caribbean: At World's End",
-    "category": "live-action",
+    "category": "disney",
     "year": 2007,
     "sequel": true,
+    "liveAction": true,
     "titles": {
       "es": "Piratas del Caribe: En el fin del mundo"
     }
   },
   {
     "page": "The Chronicles of Narnia: Prince Caspian",
-    "category": "live-action",
+    "category": "disney",
     "year": 2008,
     "sequel": true,
+    "liveAction": true,
     "titles": {
       "es": "Las crónicas de Narnia: el príncipe Caspian"
     }
   },
   {
     "page": "Alice in Wonderland (2010 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2010,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Pirates of the Caribbean: On Stranger Tides",
-    "category": "live-action",
+    "category": "disney",
     "year": 2011,
     "sequel": true,
+    "liveAction": true,
     "titles": {
       "es": "Piratas del Caribe: En mareas misteriosas"
     }
   },
   {
     "page": "Maleficent (film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2014,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Cinderella (2015 American film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2015,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "La Cenicienta"
     }
   },
   {
     "page": "Pete's Dragon (2016 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2016,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "Peter y el dragón"
     }
   },
   {
     "page": "The Jungle Book (2016 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2016,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Beauty and the Beast (2017 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2017,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Christopher Robin (film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2018,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Mary Poppins Returns",
-    "category": "live-action",
+    "category": "disney",
     "year": 2018,
     "sequel": true,
+    "liveAction": true,
     "titles": {
       "es": "El regreso de Mary Poppins"
     }
   },
   {
     "page": "Aladdin (2019 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2019,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Dumbo (2019 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2019,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "The Lion King (2019 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2019,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Cruella (film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2021,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Jungle Cruise (film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2021,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "The Little Mermaid (2023 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2023,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Lilo & Stitch (2025 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2025,
-    "sequel": false
+    "sequel": false,
+    "liveAction": true
   },
   {
     "page": "Snow White (2025 film)",
-    "category": "live-action",
+    "category": "disney",
     "year": 2025,
     "sequel": false,
+    "liveAction": true,
     "titles": {
       "es": "Blancanieves"
     }
@@ -1131,25 +1289,29 @@
     "page": "Toy Story",
     "category": "pixar",
     "year": 1995,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "A Bug's Life",
     "category": "pixar",
     "year": 1998,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Toy Story 2",
     "category": "pixar",
     "year": 1999,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Monsters, Inc.",
     "category": "pixar",
     "year": 2001,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Monstruos, S.A."
     }
@@ -1158,55 +1320,64 @@
     "page": "Finding Nemo",
     "category": "pixar",
     "year": 2003,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "The Incredibles",
     "category": "pixar",
     "year": 2004,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Cars (film)",
     "category": "pixar",
     "year": 2006,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Ratatouille (film)",
     "category": "pixar",
     "year": 2007,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "WALL-E",
     "category": "pixar",
     "year": 2008,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Up (2009 film)",
     "category": "pixar",
     "year": 2009,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Toy Story 3",
     "category": "pixar",
     "year": 2010,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Cars 2",
     "category": "pixar",
     "year": 2011,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Brave (2012 film)",
     "category": "pixar",
     "year": 2012,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Brave (Indomable)"
     }
@@ -1216,6 +1387,7 @@
     "category": "pixar",
     "year": 2013,
     "sequel": true,
+    "liveAction": false,
     "titles": {
       "es": "Monstruos University"
     }
@@ -1225,6 +1397,7 @@
     "category": "pixar",
     "year": 2015,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Del revés (Inside Out)"
     }
@@ -1234,6 +1407,7 @@
     "category": "pixar",
     "year": 2015,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "El viaje de Arlo"
     }
@@ -1242,37 +1416,43 @@
     "page": "Finding Dory",
     "category": "pixar",
     "year": 2016,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Cars 3",
     "category": "pixar",
     "year": 2017,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Coco (2017 film)",
     "category": "pixar",
     "year": 2017,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Incredibles 2",
     "category": "pixar",
     "year": 2018,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Toy Story 4",
     "category": "pixar",
     "year": 2019,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Onward (film)",
     "category": "pixar",
     "year": 2020,
     "sequel": false,
+    "liveAction": false,
     "titles": {
       "es": "Unidos"
     }
@@ -1281,37 +1461,43 @@
     "page": "Soul (2020 film)",
     "category": "pixar",
     "year": 2020,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Luca (2021 film)",
     "category": "pixar",
     "year": 2021,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Lightyear (film)",
     "category": "pixar",
     "year": 2022,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   },
   {
     "page": "Turning Red",
     "category": "pixar",
     "year": 2022,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Elemental (2023 film)",
     "category": "pixar",
     "year": 2023,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Inside Out 2",
     "category": "pixar",
     "year": 2024,
     "sequel": true,
+    "liveAction": false,
     "titles": {
       "es": "Del revés 2"
     }
@@ -1320,18 +1506,21 @@
     "page": "Elio (film)",
     "category": "pixar",
     "year": 2025,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Hoppers (film)",
     "category": "pixar",
     "year": 2026,
-    "sequel": false
+    "sequel": false,
+    "liveAction": false
   },
   {
     "page": "Toy Story 5",
     "category": "pixar",
     "year": 2026,
-    "sequel": true
+    "sequel": true,
+    "liveAction": false
   }
 ]
