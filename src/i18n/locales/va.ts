@@ -20,6 +20,7 @@ export const va: Dict = {
   round: 'Ronda {n} de {total}',
   swipeHint: 'Llisca cap a la que t’agrade més',
   favourite: 'La teua preferida',
+  beats: 'Guanya a',
   yourPicks: 'Tot el que has triat',
   playAgain: 'Una altra vegada',
   change: 'Canviar opcions',

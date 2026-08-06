@@ -20,6 +20,7 @@ export const eu: Dict = {
   round: '{total}(e)tik {n}. txanda',
   swipeHint: 'Gehien gustatzen zaizunerantz mugitu hatza',
   favourite: 'Zure gogokoena',
+  beats: 'Irabazten dio:',
   yourPicks: 'Aukeratu duzun guztia',
   playAgain: 'Berriro',
   change: 'Aukerak aldatu',

@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { CATALOG, title } from '../src/data/catalog'
-import { createMatch, type Match } from '../src/core/match'
+import { championRuns, createMatch, type Match } from '../src/core/match'
 import { createRng } from '../src/core/rng'
 import { setLang } from '../src/i18n'
 import { renderResultsScreen } from '../src/app/results-screen'
@@ -25,7 +25,7 @@ describe('results screen', () => {
     document.body.replaceChildren()
   })
 
-  it('lists every pick of the match', () => {
+  it('lists every pick of the match, grouped by champion', () => {
     const root = mount()
     const match = playedMatch(8)
     renderResultsScreen(
@@ -35,8 +35,14 @@ describe('results screen', () => {
       () => {},
       () => {},
     )
-    expect(root.querySelectorAll('li')).toHaveLength(match.history.length)
+    const runs = championRuns(match.history)
     expect(match.history).toHaveLength(7)
+    expect(root.querySelectorAll('li')).toHaveLength(runs.length)
+    // Nothing is lost by grouping: every beaten film is still named.
+    const shown = root.textContent ?? ''
+    for (const choice of match.history) {
+      expect(shown).toContain(title(choice.loser, 'es'))
+    }
   })
 
   it('puts the champion at the top', () => {
@@ -55,7 +61,7 @@ describe('results screen', () => {
     expect(first?.textContent).toContain(title(match.champion!, 'es'))
   })
 
-  it('names the loser of each duel under the winner', () => {
+  it('names what the newest champion beat, in the top entry', () => {
     const root = mount()
     const match = playedMatch(4)
     renderResultsScreen(
@@ -68,6 +74,7 @@ describe('results screen', () => {
     const last = match.history[match.history.length - 1]
     const first = root.querySelector('li')
     expect(first?.textContent).toContain(title(last!.loser, 'es'))
+    expect(first?.textContent).toContain('Gana a')
   })
 
   it('offers another match and a way back to the options', () => {

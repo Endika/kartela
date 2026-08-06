@@ -1,5 +1,5 @@
 import { posterUrl, title, type Lang } from '../data/catalog'
-import type { Match } from '../core/match'
+import { championRuns, type Match } from '../core/match'
 import { t } from '../i18n'
 import { clear, el } from './dom'
 
@@ -25,44 +25,43 @@ export function renderResultsScreen(
     header.append(label, poster, name)
   }
 
-  const listTitle = el('h3', { class: 'text-sm font-semibold text-white/60' })
+  const listTitle = el('h3', { class: 'text-sm font-semibold text-white/75' })
   listTitle.textContent = t('yourPicks')
 
-  // Latest pick first: the champion's last win sits at the top of the list.
-  const picks = [...match.history].reverse()
+  // Latest pick first: the champion's run sits at the top of the list.
+  const runs = championRuns(match.history).reverse()
   const list = el(
     'ol',
     { class: 'flex flex-col gap-2' },
-    picks.map((choice, index) => {
+    runs.map((run) => {
       const thumb = el('img', {
-        class: 'h-16 w-11 rounded-md object-cover',
-        src: posterUrl(choice.winner),
+        class: 'h-16 w-11 shrink-0 rounded-md object-cover',
+        src: posterUrl(run.winner),
         alt: '',
       })
       const name = el('p', { class: 'text-sm font-semibold' })
-      name.textContent = `${title(choice.winner, lang)} · ${choice.winner.year}`
-      const over = el('p', { class: 'text-xs text-white/45' })
-      over.textContent = `${title(choice.loser, lang)}`
-      const rank = el('span', { class: 'w-6 text-right text-xs text-white/40' })
-      rank.textContent = String(picks.length - index)
+      name.textContent = `${title(run.winner, lang)} · ${run.winner.year}`
+      const over = el('p', { class: 'text-xs text-white/60' })
+      over.textContent = `${t('beats')} ${run.beaten.map((film) => title(film, lang)).join(' · ')}`
       return el('li', { class: 'flex items-center gap-3 rounded-xl bg-night-soft/70 p-2' }, [
-        rank,
         thumb,
-        el('div', { class: 'flex flex-col' }, [name, over]),
+        el('div', { class: 'flex min-w-0 flex-col' }, [name, over]),
       ])
     }),
   )
 
   const again = el('button', {
     type: 'button',
-    class: 'rounded-full bg-gold px-8 py-4 text-lg font-bold text-night',
+    class:
+      'rounded-full bg-gold px-8 py-4 text-lg font-bold text-night focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold',
   })
   again.textContent = t('playAgain')
   again.addEventListener('click', onAgain)
 
   const change = el('button', {
     type: 'button',
-    class: 'rounded-full bg-night-soft px-6 py-3 text-sm font-semibold text-white/70',
+    class:
+      'rounded-full bg-night-soft px-6 py-3 text-sm font-semibold text-white/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold',
   })
   change.textContent = t('change')
   change.addEventListener('click', onChange)

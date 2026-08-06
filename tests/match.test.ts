@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { CATALOG, type Film } from '../src/data/catalog'
 import { buildDeck, DURATION_SIZES, eligible } from '../src/core/deck'
-import { createMatch } from '../src/core/match'
+import { championRuns, createMatch } from '../src/core/match'
 import { createRng } from '../src/core/rng'
 
 const ALL_CATEGORIES = ['disney', 'pixar', 'dreamworks', 'live-action'] as const
@@ -158,5 +158,40 @@ describe('match', () => {
     const first = playAll(deckOf(16), 123).match.history.map((choice) => choice.winner.id)
     const second = playAll(deckOf(16), 123).match.history.map((choice) => choice.winner.id)
     expect(first).toEqual(second)
+  })
+})
+
+describe('championRuns', () => {
+  it('groups the duels a single champion won in a row', () => {
+    const match = createMatch(deckOf(6), createRng(3))
+    while (!match.isOver) {
+      // Always keeping the champion means one run for the whole match.
+      match.choose(match.duel?.left === match.champion ? 'left' : 'right')
+    }
+    const runs = championRuns(match.history)
+    expect(runs).toHaveLength(1)
+    expect(runs[0]?.winner).toBe(match.champion)
+    expect(runs[0]?.beaten).toHaveLength(5)
+  })
+
+  it('opens a new run every time the challenger wins', () => {
+    const match = createMatch(deckOf(5), createRng(3))
+    while (!match.isOver) {
+      // Always keeping the challenger means a new run every duel.
+      match.choose(match.duel?.left === match.champion ? 'right' : 'left')
+    }
+    const runs = championRuns(match.history)
+    expect(runs).toHaveLength(4)
+    expect(runs.every((run) => run.beaten.length === 1)).toBe(true)
+  })
+
+  it('loses no beaten film while grouping', () => {
+    const { match } = playAll(deckOf(20), 8)
+    const beaten = championRuns(match.history).flatMap((run) => run.beaten)
+    expect(beaten.map((film) => film.id)).toEqual(match.history.map((c) => c.loser.id))
+  })
+
+  it('gives no runs for a match with no duels', () => {
+    expect(championRuns([])).toEqual([])
   })
 })

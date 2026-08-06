@@ -20,6 +20,7 @@ export const gl: Dict = {
   round: 'Rolda {n} de {total}',
   swipeHint: 'Desliza cara á que máis che guste',
   favourite: 'A túa favorita',
+  beats: 'Gaña a',
   yourPicks: 'Todo o que escolliches',
   playAgain: 'Outra vez',
   change: 'Cambiar opcións',

@@ -18,6 +18,7 @@ export const en = {
   round: 'Round {n} of {total}',
   swipeHint: 'Swipe towards the one you like more',
   favourite: 'Your favourite',
+  beats: 'Beats',
   yourPicks: 'Everything you picked',
   playAgain: 'Play again',
   change: 'Change options',

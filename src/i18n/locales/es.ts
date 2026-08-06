@@ -20,6 +20,7 @@ export const es: Dict = {
   round: 'Ronda {n} de {total}',
   swipeHint: 'Desliza hacia la que más te guste',
   favourite: 'Tu favorita',
+  beats: 'Gana a',
   yourPicks: 'Todo lo que has elegido',
   playAgain: 'Otra vez',
   change: 'Cambiar opciones',
