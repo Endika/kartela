@@ -21,3 +21,11 @@ to Wikipedia's own use of them, not to third parties.
 
 If you hold rights to any image here and want it removed, open an issue at
 https://github.com/Endika/kartela/issues and it will be taken down.
+
+Fonts
+-----
+The typefaces bundled under public/fonts/ are used under the SIL Open Font License 1.1
+(https://openfontlicense.org), which is not affected by the MIT licence above:
+
+  Baloo 2  — Copyright (c) 2019 Ek Type (https://ektype.in)
+  Nunito   — Copyright (c) 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito)

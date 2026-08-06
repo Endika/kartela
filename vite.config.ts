@@ -19,8 +19,8 @@ export default defineConfig({
         name: 'Kartela',
         short_name: 'Kartela',
         description: 'Pick your favourite movie poster, one duel at a time',
-        theme_color: '#171327',
-        background_color: '#171327',
+        theme_color: '#1d1147',
+        background_color: '#1d1147',
         display: 'standalone',
         orientation: 'portrait',
         start_url: '/kartela/',
@@ -53,7 +53,7 @@ export default defineConfig({
       workbox: {
         // The posters are the game, so they are precached with the app shell: without them
         // an offline match shows empty cards.
-        globPatterns: ['**/*.{js,css,html,svg,png,json,webp}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,json,webp,woff2}'],
       },
     }),
   ],
