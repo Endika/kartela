@@ -1,0 +1,26 @@
+import type { Dict } from './en'
+
+export const gl: Dict = {
+  tagline: '¿Con cal quedas?',
+  studios: 'Estudios',
+  disney: 'Clásicos Disney',
+  pixar: 'Pixar',
+  dreamworks: 'DreamWorks',
+  liveAction: 'Disney en imaxe real',
+  includeSequels: 'Incluír secuelas',
+  howLong: '¿Canto queres xogar?',
+  short: 'Curta',
+  medium: 'Media',
+  full: 'Todo',
+  films: '{n} películas',
+  play: 'Xogar',
+  pickAStudio: 'Escolle polo menos un estudio',
+  notEnoughFilms: 'Faltan películas — engade outro estudio ou permite as secuelas',
+  language: 'Idioma',
+  round: 'Rolda {n} de {total}',
+  swipeHint: 'Desliza cara á que máis che guste',
+  favourite: 'A túa favorita',
+  yourPicks: 'Todo o que escolliches',
+  playAgain: 'Outra vez',
+  change: 'Cambiar opcións',
+}

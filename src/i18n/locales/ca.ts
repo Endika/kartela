@@ -1,0 +1,26 @@
+import type { Dict } from './en'
+
+export const ca: Dict = {
+  tagline: 'Amb quina et quedes?',
+  studios: 'Estudis',
+  disney: 'Clàssics Disney',
+  pixar: 'Pixar',
+  dreamworks: 'DreamWorks',
+  liveAction: 'Disney en imatge real',
+  includeSequels: 'Incloure seqüeles',
+  howLong: 'Quant vols jugar?',
+  short: 'Curta',
+  medium: 'Mitjana',
+  full: 'Tot',
+  films: '{n} pel·lícules',
+  play: 'Jugar',
+  pickAStudio: 'Tria com a mínim un estudi',
+  notEnoughFilms: 'Falten pel·lícules — afegeix un altre estudi o permet les seqüeles',
+  language: 'Idioma',
+  round: 'Ronda {n} de {total}',
+  swipeHint: 'Llisca cap a la que t’agradi més',
+  favourite: 'La teva preferida',
+  yourPicks: 'Tot el que has triat',
+  playAgain: 'Una altra vegada',
+  change: 'Canviar opcions',
+}

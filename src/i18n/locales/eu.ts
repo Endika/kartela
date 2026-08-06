@@ -1,0 +1,26 @@
+import type { Dict } from './en'
+
+export const eu: Dict = {
+  tagline: 'Zeinekin geratzen zara?',
+  studios: 'Estudioak',
+  disney: 'Disney klasikoak',
+  pixar: 'Pixar',
+  dreamworks: 'DreamWorks',
+  liveAction: 'Disney irudi errealean',
+  includeSequels: 'Segidak barne',
+  howLong: 'Zenbat denbora jokatu nahi duzu?',
+  short: 'Laburra',
+  medium: 'Ertaina',
+  full: 'Dena',
+  films: '{n} film',
+  play: 'Jolastu',
+  pickAStudio: 'Aukeratu estudio bat gutxienez',
+  notEnoughFilms: 'Film gutxi daude — gehitu beste estudio bat edo onartu segidak',
+  language: 'Hizkuntza',
+  round: '{total}(e)tik {n}. txanda',
+  swipeHint: 'Gehien gustatzen zaizunerantz mugitu hatza',
+  favourite: 'Zure gogokoena',
+  yourPicks: 'Aukeratu duzun guztia',
+  playAgain: 'Berriro',
+  change: 'Aukerak aldatu',
+}

@@ -1,0 +1,26 @@
+export const en = {
+  tagline: 'Which one do you keep?',
+  studios: 'Studios',
+  disney: 'Disney classics',
+  pixar: 'Pixar',
+  dreamworks: 'DreamWorks',
+  liveAction: 'Disney live-action',
+  includeSequels: 'Include sequels',
+  howLong: 'How long?',
+  short: 'Short',
+  medium: 'Medium',
+  full: 'Everything',
+  films: '{n} films',
+  play: 'Play',
+  pickAStudio: 'Pick at least one studio',
+  notEnoughFilms: 'Not enough films — turn on another studio or allow sequels',
+  language: 'Language',
+  round: 'Round {n} of {total}',
+  swipeHint: 'Swipe towards the one you like more',
+  favourite: 'Your favourite',
+  yourPicks: 'Everything you picked',
+  playAgain: 'Play again',
+  change: 'Change options',
+} as const
+
+export type Dict = Record<keyof typeof en, string>
