@@ -47,7 +47,9 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,json}'],
+        // The posters are the game, so they are precached with the app shell: without them
+        // an offline match shows empty cards.
+        globPatterns: ['**/*.{js,css,html,svg,png,json,webp}'],
       },
     }),
   ],
