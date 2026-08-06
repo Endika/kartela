@@ -41,7 +41,7 @@ export function startApp(host: HTMLElement, deps: Deps): void {
 
   function play(): void {
     const deck = buildDeck(deps.catalogue.all(), options, deps.random)
-    const match = createMatch(deck, deps.random)
+    const match = createMatch(deck)
     swap((root) => renderMatchScreen(root, deps, match, options.lang, () => results(match)))
   }
 

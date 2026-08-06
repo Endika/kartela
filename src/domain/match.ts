@@ -1,5 +1,4 @@
 import type { Film } from './film'
-import type { Random } from './ports'
 
 export const SIDES = ['left', 'right'] as const
 export type Side = (typeof SIDES)[number]
@@ -52,12 +51,14 @@ export function championRuns(history: readonly Choice[]): Run[] {
  * King of the hill: the first film takes on the second, whoever wins stays and meets the
  * next film in the deck. Every film shows up exactly once as a challenger, so a deck of N
  * films is N-1 duels and ends with a single champion.
+ *
+ * The champion always holds the left side and challengers always arrive on the right. It is
+ * one less thing to track mid-game, so nobody swipes the wrong way by accident.
  */
-export function createMatch(deck: readonly Film[], random: Random): Match {
+export function createMatch(deck: readonly Film[]): Match {
   const queue = [...deck]
   let champion = queue.shift() ?? null
   let challenger = queue.shift() ?? null
-  let championOnLeft = random() < 0.5
   const history: Choice[] = []
   const total = Math.max(deck.length - 1, 0)
 
@@ -66,9 +67,7 @@ export function createMatch(deck: readonly Film[], random: Random): Match {
       if (!champion || !challenger) {
         return null
       }
-      return championOnLeft
-        ? { left: champion, right: challenger }
-        : { left: challenger, right: champion }
+      return { left: champion, right: challenger }
     },
     get champion() {
       return champion
@@ -91,8 +90,6 @@ export function createMatch(deck: readonly Film[], random: Random): Match {
       history.push(choice)
       champion = winner
       challenger = queue.shift() ?? null
-      // The champion swaps sides between duels so the answer is never "swipe the same way".
-      championOnLeft = random() < 0.5
       return choice
     },
   }

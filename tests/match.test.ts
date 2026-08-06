@@ -13,8 +13,8 @@ function deckOf(size: number): Film[] {
 }
 
 /** Plays a whole match by always keeping whatever sits on the given side. */
-function playAll(deck: readonly Film[], seed: number, side: 'left' | 'right' = 'left') {
-  const match = createMatch(deck, seededRandom(seed))
+function playAll(deck: readonly Film[], side: 'left' | 'right' = 'left') {
+  const match = createMatch(deck)
   const seen: Film[] = []
   const duel = match.duel
   if (duel) {
@@ -101,7 +101,7 @@ describe('deck', () => {
 describe('match', () => {
   it('produces one choice fewer than the deck size and a single champion', () => {
     const deck = deckOf(12)
-    const { match } = playAll(deck, 42)
+    const { match } = playAll(deck)
     expect(match.history).toHaveLength(deck.length - 1)
     expect(match.total).toBe(deck.length - 1)
     expect(match.champion).not.toBeNull()
@@ -110,13 +110,13 @@ describe('match', () => {
 
   it('shows every film exactly once across the whole match', () => {
     const deck = deckOf(20)
-    const { seen } = playAll(deck, 7)
+    const { seen } = playAll(deck)
     expect(seen).toHaveLength(deck.length)
     expect(new Set(seen.map((film) => film.id)).size).toBe(deck.length)
   })
 
   it('keeps the winner on screen for the next duel', () => {
-    const match = createMatch(deckOf(6), seededRandom(5))
+    const match = createMatch(deckOf(6))
     const choice = match.choose('left')
     expect(choice?.winner).toBe(match.champion)
     const next = match.duel
@@ -124,7 +124,7 @@ describe('match', () => {
   })
 
   it('never brings a beaten film back', () => {
-    const match = createMatch(deckOf(15), seededRandom(9))
+    const match = createMatch(deckOf(15))
     const beaten = new Set<string>()
     while (!match.isOver) {
       const duel = match.duel
@@ -136,7 +136,7 @@ describe('match', () => {
   })
 
   it('records the winner and loser of each duel', () => {
-    const match = createMatch(deckOf(4), seededRandom(2))
+    const match = createMatch(deckOf(4))
     while (!match.isOver) {
       const duel = match.duel
       const choice = match.choose('left')
@@ -146,23 +146,23 @@ describe('match', () => {
     expect(match.history.map((choice) => choice.loser.id)).toHaveLength(3)
   })
 
-  it('swaps the champion between sides so the answer is never the same swipe', () => {
-    const sides = new Set<string>()
-    for (let seed = 0; seed < 20; seed++) {
-      const match = createMatch(deckOf(10), seededRandom(seed))
-      while (!match.isOver) {
-        match.choose('left')
-        const duel = match.duel
-        if (duel) {
-          sides.add(duel.left === match.champion ? 'left' : 'right')
-        }
-      }
+  it('always keeps the champion on the left and the challenger on the right', () => {
+    const deck = deckOf(14)
+    const match = createMatch(deck)
+    let seenChallengers = 0
+    while (!match.isOver) {
+      expect(match.duel?.left).toBe(match.champion)
+      const challenger = match.duel?.right
+      expect(challenger).not.toBe(match.champion)
+      seenChallengers += 1
+      // Whoever wins, the next duel still shows the champion on the left.
+      match.choose(seenChallengers % 2 === 0 ? 'right' : 'left')
     }
-    expect(sides).toEqual(new Set(['left', 'right']))
+    expect(seenChallengers).toBe(deck.length - 1)
   })
 
   it('ends immediately with a one-film deck', () => {
-    const match = createMatch(deckOf(1), seededRandom(1))
+    const match = createMatch(deckOf(1))
     expect(match.isOver).toBe(true)
     expect(match.duel).toBeNull()
     expect(match.champion).toBe(FILMS[0])
@@ -170,7 +170,7 @@ describe('match', () => {
   })
 
   it('survives an empty deck', () => {
-    const match = createMatch([], seededRandom(1))
+    const match = createMatch([])
     expect(match.isOver).toBe(true)
     expect(match.duel).toBeNull()
     expect(match.champion).toBeNull()
@@ -178,15 +178,15 @@ describe('match', () => {
   })
 
   it('replays identically for the same seed', () => {
-    const first = playAll(deckOf(16), 123).match.history.map((choice) => choice.winner.id)
-    const second = playAll(deckOf(16), 123).match.history.map((choice) => choice.winner.id)
+    const first = playAll(deckOf(16)).match.history.map((choice) => choice.winner.id)
+    const second = playAll(deckOf(16)).match.history.map((choice) => choice.winner.id)
     expect(first).toEqual(second)
   })
 })
 
 describe('championRuns', () => {
   it('groups the duels a single champion won in a row', () => {
-    const match = createMatch(deckOf(6), seededRandom(3))
+    const match = createMatch(deckOf(6))
     while (!match.isOver) {
       // Always keeping the champion means one run for the whole match.
       match.choose(match.duel?.left === match.champion ? 'left' : 'right')
@@ -198,7 +198,7 @@ describe('championRuns', () => {
   })
 
   it('opens a new run every time the challenger wins', () => {
-    const match = createMatch(deckOf(5), seededRandom(3))
+    const match = createMatch(deckOf(5))
     while (!match.isOver) {
       // Always keeping the challenger means a new run every duel.
       match.choose(match.duel?.left === match.champion ? 'right' : 'left')
@@ -209,7 +209,7 @@ describe('championRuns', () => {
   })
 
   it('loses no beaten film while grouping', () => {
-    const { match } = playAll(deckOf(20), 8)
+    const { match } = playAll(deckOf(20))
     const beaten = championRuns(match.history).flatMap((run) => run.beaten)
     expect(beaten.map((film) => film.id)).toEqual(match.history.map((c) => c.loser.id))
   })
