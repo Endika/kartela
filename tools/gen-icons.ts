@@ -4,7 +4,7 @@ import sharp from 'sharp'
 
 const PUBLIC_DIR = join(import.meta.dirname, '..', 'public')
 const SOURCE = join(PUBLIC_DIR, 'icon.svg')
-const BACKGROUND = { r: 0x17, g: 0x13, b: 0x27, alpha: 1 }
+const BACKGROUND = { r: 0x1d, g: 0x11, b: 0x47, alpha: 1 }
 
 async function square(svg: Buffer, size: number, name: string): Promise<void> {
   const png = await sharp(svg, { density: 384 }).resize(size, size).png().toBuffer()
