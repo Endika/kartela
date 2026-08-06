@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/Endika/kartela/compare/v0.3.0...v0.4.0) (2026-08-06)
+
+
+### Features
+
+* show the running version in the footer ([cfd9f38](https://github.com/Endika/kartela/commit/cfd9f386483d06f7cc7ab6096a639e37d9e16689))
+
 ## [0.3.0](https://github.com/Endika/kartela/compare/v0.2.0...v0.3.0) (2026-08-06)
 
 
