@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/Endika/kartela/compare/v0.6.0...v0.6.1) (2026-08-06)
+
+
+### Documentation
+
+* call it live action in spanish, catalan, galician, valencian and basque ([2c5e522](https://github.com/Endika/kartela/commit/2c5e52283268d3978ca2cf3bd8c9162c68e9762e))
+
 ## [0.6.0](https://github.com/Endika/kartela/compare/v0.5.0...v0.6.0) (2026-08-06)
 
 
