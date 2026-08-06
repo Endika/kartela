@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/Endika/kartela/compare/v0.2.0...v0.3.0) (2026-08-06)
+
+
+### Features
+
+* make the cards lean, lift and fly like actual cards ([006b27e](https://github.com/Endika/kartela/commit/006b27e90ea41440f46fead7a24d0fb56dff31eb))
+* show every duel so you can see what knocked a film out ([16f1894](https://github.com/Endika/kartela/commit/16f1894128a8bce8d81e7c99f9f169e554dfb6e6))
+
+
+### Bug Fixes
+
+* keep the champion always on the left so nobody swipes the wrong way ([ce1f275](https://github.com/Endika/kartela/commit/ce1f27553677383021cc7d49bc601bdbe4d7cfb2))
+
 ## [0.2.0](https://github.com/Endika/kartela/compare/v0.1.0...v0.2.0) (2026-08-06)
 
 
