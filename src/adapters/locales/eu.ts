@@ -10,7 +10,7 @@ export const eu: Dict = {
   tabPixar: 'Pixar',
   tabDreamworks: 'DreamWorks',
   includeSequels: 'Segidak barne',
-  includeLiveAction: 'Irudi erreala barne',
+  includeLiveAction: 'Live action barne',
   howLong: 'Zenbat denbora jokatu nahi duzu?',
   short: 'Laburra',
   medium: 'Ertaina',

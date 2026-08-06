@@ -43,7 +43,7 @@ describe('start screen', () => {
       'Pixar',
       'DreamWorks',
       'Incluir secuelas',
-      'Incluir imagen real',
+      'Incluir live action',
       'Corta',
       'Media',
       'Todo',
@@ -70,7 +70,7 @@ describe('start screen', () => {
     const options: Options = { ...spanish(), duration: 'full' }
     const { root } = mount(options)
     const all = deckLabel(root)
-    byText(root, 'Incluir imagen real').click()
+    byText(root, 'Incluir live action').click()
     expect(deckLabel(root)).not.toBe(all)
     expect(byText(root, 'Disney').getAttribute('aria-pressed')).toBe('true')
     expect(deckLabel(root)).toBe(
