@@ -1,0 +1,2837 @@
+[
+  {
+    "id": "101-dalmatians-1996",
+    "category": "live-action",
+    "year": 1996,
+    "sequel": false,
+    "poster": "101-dalmatians-1996.webp",
+    "titles": {
+      "en": "101 Dalmatians",
+      "es": "101 dálmatas",
+      "eu": "101 Dalmatians",
+      "gl": "101 Dalmatians",
+      "ca": "101 Dalmatians",
+      "va": "101 Dalmatians"
+    }
+  },
+  {
+    "id": "20-000-leagues-under-the-sea-1954",
+    "category": "live-action",
+    "year": 1954,
+    "sequel": false,
+    "poster": "20-000-leagues-under-the-sea-1954.webp",
+    "titles": {
+      "en": "20,000 Leagues Under the Sea",
+      "es": "Veinte mil leguas de viaje submarino",
+      "eu": "20,000 Leagues Under the Sea",
+      "gl": "Veinte mil leguas de viaje submarino",
+      "ca": "20,000 Leagues Under the Sea",
+      "va": "20,000 Leagues Under the Sea"
+    }
+  },
+  {
+    "id": "a-bugs-life-1998",
+    "category": "pixar",
+    "year": 1998,
+    "sequel": false,
+    "poster": "a-bugs-life-1998.webp",
+    "titles": {
+      "en": "A Bug's Life",
+      "es": "Bichos: Una aventura en miniatura",
+      "eu": "A Bug's Life",
+      "gl": "A Bug's Life",
+      "ca": "A Bug's Life",
+      "va": "A Bug's Life"
+    }
+  },
+  {
+    "id": "abominable-2019",
+    "category": "dreamworks",
+    "year": 2019,
+    "sequel": false,
+    "poster": "abominable-2019.webp",
+    "titles": {
+      "en": "Abominable",
+      "es": "Abominable",
+      "eu": "Abominable",
+      "gl": "Abominable",
+      "ca": "Abominable",
+      "va": "Abominable"
+    }
+  },
+  {
+    "id": "aladdin-1992",
+    "category": "disney",
+    "year": 1992,
+    "sequel": false,
+    "poster": "aladdin-1992.webp",
+    "titles": {
+      "en": "Aladdin",
+      "es": "Aladdín",
+      "eu": "Aladdin",
+      "gl": "Aladdin",
+      "ca": "Aladdin",
+      "va": "Aladdin"
+    }
+  },
+  {
+    "id": "aladdin-2019",
+    "category": "live-action",
+    "year": 2019,
+    "sequel": false,
+    "poster": "aladdin-2019.webp",
+    "titles": {
+      "en": "Aladdin",
+      "es": "Aladdin",
+      "eu": "Aladdin",
+      "gl": "Aladdin",
+      "ca": "Aladdin",
+      "va": "Aladdin"
+    }
+  },
+  {
+    "id": "alice-in-wonderland-1951",
+    "category": "disney",
+    "year": 1951,
+    "sequel": false,
+    "poster": "alice-in-wonderland-1951.webp",
+    "titles": {
+      "en": "Alice in Wonderland",
+      "es": "Alicia en el país de las maravillas",
+      "eu": "Alice in Wonderland",
+      "gl": "Alice in Wonderland",
+      "ca": "Alícia al país de les meravelles",
+      "va": "Alícia al país de les meravelles"
+    }
+  },
+  {
+    "id": "alice-in-wonderland-2010",
+    "category": "live-action",
+    "year": 2010,
+    "sequel": false,
+    "poster": "alice-in-wonderland-2010.webp",
+    "titles": {
+      "en": "Alice in Wonderland",
+      "es": "Alicia en el país de las maravillas",
+      "eu": "Alice in Wonderland",
+      "gl": "Alice in Wonderland",
+      "ca": "Alícia al país de les meravelles",
+      "va": "Alícia al país de les meravelles"
+    }
+  },
+  {
+    "id": "antz-1998",
+    "category": "dreamworks",
+    "year": 1998,
+    "sequel": false,
+    "poster": "antz-1998.webp",
+    "titles": {
+      "en": "Antz",
+      "es": "Antz (Hormigaz)",
+      "eu": "Antz",
+      "gl": "Antz",
+      "ca": "Formiguez",
+      "va": "Formiguez"
+    }
+  },
+  {
+    "id": "atlantis-the-lost-empire-2001",
+    "category": "disney",
+    "year": 2001,
+    "sequel": false,
+    "poster": "atlantis-the-lost-empire-2001.webp",
+    "titles": {
+      "en": "Atlantis: The Lost Empire",
+      "es": "Atlantis: El imperio perdido",
+      "eu": "Atlantis: El imperio perdido",
+      "gl": "Atlantis: The Lost Empire",
+      "ca": "Atlantis: L'imperi perdut",
+      "va": "Atlantis: L'imperi perdut"
+    }
+  },
+  {
+    "id": "bambi-1942",
+    "category": "disney",
+    "year": 1942,
+    "sequel": false,
+    "poster": "bambi-1942.webp",
+    "titles": {
+      "en": "Bambi",
+      "es": "Bambi",
+      "eu": "Bambi",
+      "gl": "Bambi",
+      "ca": "Bambi",
+      "va": "Bambi"
+    }
+  },
+  {
+    "id": "beauty-and-the-beast-1991",
+    "category": "disney",
+    "year": 1991,
+    "sequel": false,
+    "poster": "beauty-and-the-beast-1991.webp",
+    "titles": {
+      "en": "Beauty and the Beast",
+      "es": "La bella y la bestia",
+      "eu": "Beauty and the Beast",
+      "gl": "Beauty and the Beast",
+      "ca": "La bella i la bèstia",
+      "va": "La bella i la bèstia"
+    }
+  },
+  {
+    "id": "beauty-and-the-beast-2017",
+    "category": "live-action",
+    "year": 2017,
+    "sequel": false,
+    "poster": "beauty-and-the-beast-2017.webp",
+    "titles": {
+      "en": "Beauty and the Beast",
+      "es": "La bella y la bestia",
+      "eu": "Beauty and the Beast",
+      "gl": "Beauty and the Beast",
+      "ca": "La bella i la bèstia",
+      "va": "La bella i la bèstia"
+    }
+  },
+  {
+    "id": "bedknobs-and-broomsticks-1971",
+    "category": "live-action",
+    "year": 1971,
+    "sequel": false,
+    "poster": "bedknobs-and-broomsticks-1971.webp",
+    "titles": {
+      "en": "Bedknobs and Broomsticks",
+      "es": "La bruja novata",
+      "eu": "Bedknobs and Broomsticks",
+      "gl": "A meiga novata",
+      "ca": "L'aprenenta de bruixa",
+      "va": "L'aprenenta de bruixa"
+    }
+  },
+  {
+    "id": "bee-movie-2007",
+    "category": "dreamworks",
+    "year": 2007,
+    "sequel": false,
+    "poster": "bee-movie-2007.webp",
+    "titles": {
+      "en": "Bee Movie",
+      "es": "Bee Movie",
+      "eu": "Bee Movie",
+      "gl": "Bee Movie",
+      "ca": "Bee Movie",
+      "va": "Bee Movie"
+    }
+  },
+  {
+    "id": "big-hero-6-2014",
+    "category": "disney",
+    "year": 2014,
+    "sequel": false,
+    "poster": "big-hero-6-2014.webp",
+    "titles": {
+      "en": "Big Hero 6",
+      "es": "Big Hero 6",
+      "eu": "Big Hero 6",
+      "gl": "Big Hero 6",
+      "ca": "Big Hero 6",
+      "va": "Big Hero 6"
+    }
+  },
+  {
+    "id": "bolt-2008",
+    "category": "disney",
+    "year": 2008,
+    "sequel": false,
+    "poster": "bolt-2008.webp",
+    "titles": {
+      "en": "Bolt",
+      "es": "Bolt",
+      "eu": "Bolt",
+      "gl": "Bolt",
+      "ca": "Bolt",
+      "va": "Bolt"
+    }
+  },
+  {
+    "id": "brave-2012",
+    "category": "pixar",
+    "year": 2012,
+    "sequel": false,
+    "poster": "brave-2012.webp",
+    "titles": {
+      "en": "Brave",
+      "es": "Brave (Indomable)",
+      "eu": "Brave",
+      "gl": "Brave",
+      "ca": "Brave",
+      "va": "Brave"
+    }
+  },
+  {
+    "id": "bridge-to-terabithia-2007",
+    "category": "live-action",
+    "year": 2007,
+    "sequel": false,
+    "poster": "bridge-to-terabithia-2007.webp",
+    "titles": {
+      "en": "Bridge to Terabithia",
+      "es": "Un puente hacia Terabithia",
+      "eu": "Bridge to Terabithia",
+      "gl": "Bridge to Terabithia",
+      "ca": "Un pont cap a Terabithia",
+      "va": "Un pont cap a Terabithia"
+    }
+  },
+  {
+    "id": "brother-bear-2003",
+    "category": "disney",
+    "year": 2003,
+    "sequel": false,
+    "poster": "brother-bear-2003.webp",
+    "titles": {
+      "en": "Brother Bear",
+      "es": "Tierra de osos",
+      "eu": "Brother Bear",
+      "gl": "Brother Bear",
+      "ca": "Germà ós",
+      "va": "Germà ós"
+    }
+  },
+  {
+    "id": "captain-underpants-the-first-epic-movie-2017",
+    "category": "dreamworks",
+    "year": 2017,
+    "sequel": false,
+    "poster": "captain-underpants-the-first-epic-movie-2017.webp",
+    "titles": {
+      "en": "Captain Underpants: The First Epic Movie",
+      "es": "Las aventuras del Capitán Calzoncillos",
+      "eu": "Las aventuras del Capitán Calzoncillos",
+      "gl": "Las aventuras del Capitán Calzoncillos",
+      "ca": "Capità Calçotets",
+      "va": "Capità Calçotets"
+    }
+  },
+  {
+    "id": "cars-2-2011",
+    "category": "pixar",
+    "year": 2011,
+    "sequel": true,
+    "poster": "cars-2-2011.webp",
+    "titles": {
+      "en": "Cars 2",
+      "es": "Cars 2",
+      "eu": "Cars 2",
+      "gl": "Cars 2",
+      "ca": "Cars 2",
+      "va": "Cars 2"
+    }
+  },
+  {
+    "id": "cars-2006",
+    "category": "pixar",
+    "year": 2006,
+    "sequel": false,
+    "poster": "cars-2006.webp",
+    "titles": {
+      "en": "Cars",
+      "es": "Cars",
+      "eu": "Cars",
+      "gl": "Cars",
+      "ca": "Cars",
+      "va": "Cars"
+    }
+  },
+  {
+    "id": "cars-3-2017",
+    "category": "pixar",
+    "year": 2017,
+    "sequel": true,
+    "poster": "cars-3-2017.webp",
+    "titles": {
+      "en": "Cars 3",
+      "es": "Cars 3",
+      "eu": "Cars 3",
+      "gl": "Cars 3",
+      "ca": "Cars 3",
+      "va": "Cars 3"
+    }
+  },
+  {
+    "id": "chicken-little-2005",
+    "category": "disney",
+    "year": 2005,
+    "sequel": false,
+    "poster": "chicken-little-2005.webp",
+    "titles": {
+      "en": "Chicken Little",
+      "es": "Chicken Little",
+      "eu": "Chicken Little",
+      "gl": "Chicken Little",
+      "ca": "Chicken Little",
+      "va": "Chicken Little"
+    }
+  },
+  {
+    "id": "chicken-run-2000",
+    "category": "dreamworks",
+    "year": 2000,
+    "sequel": false,
+    "poster": "chicken-run-2000.webp",
+    "titles": {
+      "en": "Chicken Run",
+      "es": "Evasión en la granja",
+      "eu": "Chicken Run",
+      "gl": "Chicken Run",
+      "ca": "Chicken Run: Evasió a la granja",
+      "va": "Chicken Run: Evasió a la granja"
+    }
+  },
+  {
+    "id": "christopher-robin-2018",
+    "category": "live-action",
+    "year": 2018,
+    "sequel": false,
+    "poster": "christopher-robin-2018.webp",
+    "titles": {
+      "en": "Christopher Robin",
+      "es": "Christopher Robin",
+      "eu": "Christopher Robin",
+      "gl": "Christopher Robin",
+      "ca": "Christopher Robin",
+      "va": "Christopher Robin"
+    }
+  },
+  {
+    "id": "cinderella-1950",
+    "category": "disney",
+    "year": 1950,
+    "sequel": false,
+    "poster": "cinderella-1950.webp",
+    "titles": {
+      "en": "Cinderella",
+      "es": "La Cenicienta",
+      "eu": "Cinderella",
+      "gl": "Cinderella",
+      "ca": "La Ventafocs",
+      "va": "La Ventafocs"
+    }
+  },
+  {
+    "id": "cinderella-2015",
+    "category": "live-action",
+    "year": 2015,
+    "sequel": false,
+    "poster": "cinderella-2015.webp",
+    "titles": {
+      "en": "Cinderella",
+      "es": "La Cenicienta",
+      "eu": "La Cenicienta",
+      "gl": "Cinderella",
+      "ca": "Cinderella",
+      "va": "Cinderella"
+    }
+  },
+  {
+    "id": "coco-2017",
+    "category": "pixar",
+    "year": 2017,
+    "sequel": false,
+    "poster": "coco-2017.webp",
+    "titles": {
+      "en": "Coco",
+      "es": "Coco",
+      "eu": "Coco",
+      "gl": "Coco",
+      "ca": "Coco",
+      "va": "Coco"
+    }
+  },
+  {
+    "id": "cool-runnings-1993",
+    "category": "live-action",
+    "year": 1993,
+    "sequel": false,
+    "poster": "cool-runnings-1993.webp",
+    "titles": {
+      "en": "Cool Runnings",
+      "es": "Elegidos para el triunfo",
+      "eu": "Cool Runnings",
+      "gl": "Cool Runnings",
+      "ca": "Elegidos para el triunfo",
+      "va": "Elegidos para el triunfo"
+    }
+  },
+  {
+    "id": "cruella-2021",
+    "category": "live-action",
+    "year": 2021,
+    "sequel": false,
+    "poster": "cruella-2021.webp",
+    "titles": {
+      "en": "Cruella",
+      "es": "Cruella",
+      "eu": "Cruella",
+      "gl": "Cruella",
+      "ca": "Cruella",
+      "va": "Cruella"
+    }
+  },
+  {
+    "id": "dinosaur-2000",
+    "category": "disney",
+    "year": 2000,
+    "sequel": false,
+    "poster": "dinosaur-2000.webp",
+    "titles": {
+      "en": "Dinosaur",
+      "es": "Dinosaurio",
+      "eu": "Dinosaurio",
+      "gl": "Dinosaur",
+      "ca": "Dinosaure",
+      "va": "Dinosaure"
+    }
+  },
+  {
+    "id": "dog-man-2025",
+    "category": "dreamworks",
+    "year": 2025,
+    "sequel": false,
+    "poster": "dog-man-2025.webp",
+    "titles": {
+      "en": "Dog Man",
+      "es": "Hombre Perro",
+      "eu": "Hombre Perro",
+      "gl": "Hombre Perro",
+      "ca": "Hombre Perro",
+      "va": "Hombre Perro"
+    }
+  },
+  {
+    "id": "dumbo-1941",
+    "category": "disney",
+    "year": 1941,
+    "sequel": false,
+    "poster": "dumbo-1941.webp",
+    "titles": {
+      "en": "Dumbo",
+      "es": "Dumbo",
+      "eu": "Dumbo",
+      "gl": "Dumbo",
+      "ca": "Dumbo",
+      "va": "Dumbo"
+    }
+  },
+  {
+    "id": "dumbo-2019",
+    "category": "live-action",
+    "year": 2019,
+    "sequel": false,
+    "poster": "dumbo-2019.webp",
+    "titles": {
+      "en": "Dumbo",
+      "es": "Dumbo",
+      "eu": "Dumbo",
+      "gl": "Dumbo",
+      "ca": "Dumbo",
+      "va": "Dumbo"
+    }
+  },
+  {
+    "id": "elemental-2023",
+    "category": "pixar",
+    "year": 2023,
+    "sequel": false,
+    "poster": "elemental-2023.webp",
+    "titles": {
+      "en": "Elemental",
+      "es": "Elemental",
+      "eu": "Elemental",
+      "gl": "Elemental",
+      "ca": "Elemental",
+      "va": "Elemental"
+    }
+  },
+  {
+    "id": "elio-2025",
+    "category": "pixar",
+    "year": 2025,
+    "sequel": false,
+    "poster": "elio-2025.webp",
+    "titles": {
+      "en": "Elio",
+      "es": "Elio",
+      "eu": "Elio",
+      "gl": "Elio",
+      "ca": "Elio",
+      "va": "Elio"
+    }
+  },
+  {
+    "id": "encanto-2021",
+    "category": "disney",
+    "year": 2021,
+    "sequel": false,
+    "poster": "encanto-2021.webp",
+    "titles": {
+      "en": "Encanto",
+      "es": "Encanto",
+      "eu": "Encanto",
+      "gl": "Encanto",
+      "ca": "Encanto",
+      "va": "Encanto"
+    }
+  },
+  {
+    "id": "enchanted-2007",
+    "category": "live-action",
+    "year": 2007,
+    "sequel": false,
+    "poster": "enchanted-2007.webp",
+    "titles": {
+      "en": "Enchanted",
+      "es": "Encantada: La historia de Giselle",
+      "eu": "Encantada: La historia de Giselle",
+      "gl": "Enchanted",
+      "ca": "Enchanted",
+      "va": "Enchanted"
+    }
+  },
+  {
+    "id": "fantasia-1940",
+    "category": "disney",
+    "year": 1940,
+    "sequel": false,
+    "poster": "fantasia-1940.webp",
+    "titles": {
+      "en": "Fantasia",
+      "es": "Fantasía",
+      "eu": "Fantasia",
+      "gl": "Fantasia",
+      "ca": "Fantasia",
+      "va": "Fantasia"
+    }
+  },
+  {
+    "id": "fantasia-2000-1999",
+    "category": "disney",
+    "year": 1999,
+    "sequel": true,
+    "poster": "fantasia-2000-1999.webp",
+    "titles": {
+      "en": "Fantasia 2000",
+      "es": "Fantasía 2000",
+      "eu": "Fantasía 2000",
+      "gl": "Fantasia 2000",
+      "ca": "Fantasia 2000",
+      "va": "Fantasia 2000"
+    }
+  },
+  {
+    "id": "finding-dory-2016",
+    "category": "pixar",
+    "year": 2016,
+    "sequel": true,
+    "poster": "finding-dory-2016.webp",
+    "titles": {
+      "en": "Finding Dory",
+      "es": "Buscando a Dory",
+      "eu": "Buscando a Dory",
+      "gl": "Finding Dory",
+      "ca": "Buscant la Dory",
+      "va": "Buscant la Dory"
+    }
+  },
+  {
+    "id": "finding-nemo-2003",
+    "category": "pixar",
+    "year": 2003,
+    "sequel": false,
+    "poster": "finding-nemo-2003.webp",
+    "titles": {
+      "en": "Finding Nemo",
+      "es": "Buscando a Nemo",
+      "eu": "Finding Nemo",
+      "gl": "Finding Nemo",
+      "ca": "Buscant en Nemo",
+      "va": "Buscant en Nemo"
+    }
+  },
+  {
+    "id": "flubber-1997",
+    "category": "live-action",
+    "year": 1997,
+    "sequel": false,
+    "poster": "flubber-1997.webp",
+    "titles": {
+      "en": "Flubber",
+      "es": "Flubber",
+      "eu": "Flubber",
+      "gl": "Flubber",
+      "ca": "Flubber",
+      "va": "Flubber"
+    }
+  },
+  {
+    "id": "flushed-away-2006",
+    "category": "dreamworks",
+    "year": 2006,
+    "sequel": false,
+    "poster": "flushed-away-2006.webp",
+    "titles": {
+      "en": "Flushed Away",
+      "es": "Lo que el agua se llevó",
+      "eu": "Lo que el agua se llevó",
+      "gl": "Flushed Away",
+      "ca": "Flushed Away",
+      "va": "Flushed Away"
+    }
+  },
+  {
+    "id": "freaky-friday-2003",
+    "category": "live-action",
+    "year": 2003,
+    "sequel": false,
+    "poster": "freaky-friday-2003.webp",
+    "titles": {
+      "en": "Freaky Friday",
+      "es": "Freaky Friday",
+      "eu": "Freaky Friday",
+      "gl": "Freaky Friday",
+      "ca": "Freaky Friday",
+      "va": "Freaky Friday"
+    }
+  },
+  {
+    "id": "frozen-2-2019",
+    "category": "disney",
+    "year": 2019,
+    "sequel": true,
+    "poster": "frozen-2-2019.webp",
+    "titles": {
+      "en": "Frozen 2",
+      "es": "Frozen II",
+      "eu": "Frozen II",
+      "gl": "Frozen II",
+      "ca": "Frozen II",
+      "va": "Frozen II"
+    }
+  },
+  {
+    "id": "frozen-2013",
+    "category": "disney",
+    "year": 2013,
+    "sequel": false,
+    "poster": "frozen-2013.webp",
+    "titles": {
+      "en": "Frozen",
+      "es": "Frozen: El reino del hielo",
+      "eu": "Frozen",
+      "gl": "Frozen",
+      "ca": "Frozen: El regne del gel",
+      "va": "Frozen: El regne del gel"
+    }
+  },
+  {
+    "id": "fun-and-fancy-free-1947",
+    "category": "disney",
+    "year": 1947,
+    "sequel": false,
+    "poster": "fun-and-fancy-free-1947.webp",
+    "titles": {
+      "en": "Fun and Fancy Free",
+      "es": "Diversión y fantasía",
+      "eu": "Fun and Fancy Free",
+      "gl": "Fun and Fancy Free",
+      "ca": "Fun and Fancy Free",
+      "va": "Fun and Fancy Free"
+    }
+  },
+  {
+    "id": "gabbys-dollhouse-the-movie-2025",
+    "category": "dreamworks",
+    "year": 2025,
+    "sequel": false,
+    "poster": "gabbys-dollhouse-the-movie-2025.webp",
+    "titles": {
+      "en": "Gabby's Dollhouse: The Movie",
+      "es": "La casa de muñecas de Gabby: La película",
+      "eu": "La casa de muñecas de Gabby: La película",
+      "gl": "La casa de muñecas de Gabby: La película",
+      "ca": "La casa de muñecas de Gabby: La película",
+      "va": "La casa de muñecas de Gabby: La película"
+    }
+  },
+  {
+    "id": "george-of-the-jungle-1997",
+    "category": "live-action",
+    "year": 1997,
+    "sequel": false,
+    "poster": "george-of-the-jungle-1997.webp",
+    "titles": {
+      "en": "George of the Jungle",
+      "es": "George of the jungle",
+      "eu": "George of the Jungle",
+      "gl": "George of the Jungle",
+      "ca": "George of the jungle",
+      "va": "George of the jungle"
+    }
+  },
+  {
+    "id": "hercules-1997",
+    "category": "disney",
+    "year": 1997,
+    "sequel": false,
+    "poster": "hercules-1997.webp",
+    "titles": {
+      "en": "Hercules",
+      "es": "Hércules",
+      "eu": "Hercules",
+      "gl": "Hércules",
+      "ca": "Hèrcules",
+      "va": "Hèrcules"
+    }
+  },
+  {
+    "id": "holes-2003",
+    "category": "live-action",
+    "year": 2003,
+    "sequel": false,
+    "poster": "holes-2003.webp",
+    "titles": {
+      "en": "Holes",
+      "es": "Holes",
+      "eu": "Holes",
+      "gl": "Holes",
+      "ca": "Holes",
+      "va": "Holes"
+    }
+  },
+  {
+    "id": "home-2015",
+    "category": "dreamworks",
+    "year": 2015,
+    "sequel": false,
+    "poster": "home-2015.webp",
+    "titles": {
+      "en": "Home",
+      "es": "Home: Hogar dulce hogar",
+      "eu": "Home: Hogar dulce hogar",
+      "gl": "Home",
+      "ca": "Home: Llar dolça llar",
+      "va": "Home: Llar dolça llar"
+    }
+  },
+  {
+    "id": "home-on-the-range-2004",
+    "category": "disney",
+    "year": 2004,
+    "sequel": false,
+    "poster": "home-on-the-range-2004.webp",
+    "titles": {
+      "en": "Home on the Range",
+      "es": "Zafarrancho en el rancho",
+      "eu": "Home on the Range",
+      "gl": "Home on the Range",
+      "ca": "Home on the Range",
+      "va": "Home on the Range"
+    }
+  },
+  {
+    "id": "homeward-bound-the-incredible-journey-1993",
+    "category": "live-action",
+    "year": 1993,
+    "sequel": false,
+    "poster": "homeward-bound-the-incredible-journey-1993.webp",
+    "titles": {
+      "en": "Homeward Bound: The Incredible Journey",
+      "es": "Homeward Bound: The Incredible Journey",
+      "eu": "Homeward Bound: The Incredible Journey",
+      "gl": "Homeward Bound: The Incredible Journey",
+      "ca": "Homeward Bound: The Incredible Journey",
+      "va": "Homeward Bound: The Incredible Journey"
+    }
+  },
+  {
+    "id": "honey-i-shrunk-the-kids-1989",
+    "category": "live-action",
+    "year": 1989,
+    "sequel": false,
+    "poster": "honey-i-shrunk-the-kids-1989.webp",
+    "titles": {
+      "en": "Honey, I Shrunk the Kids",
+      "es": "Cariño, he encogido a los niños",
+      "eu": "Honey, I Shrunk the Kids",
+      "gl": "Honey, I Shrunk the Kids",
+      "ca": "Cariño, he encogido a los niños",
+      "va": "Cariño, he encogido a los niños"
+    }
+  },
+  {
+    "id": "hoppers-2026",
+    "category": "pixar",
+    "year": 2026,
+    "sequel": false,
+    "poster": "hoppers-2026.webp",
+    "titles": {
+      "en": "Hoppers",
+      "es": "Hoppers",
+      "eu": "Hoppers",
+      "gl": "Hoppers",
+      "ca": "Hoppers",
+      "va": "Hoppers"
+    }
+  },
+  {
+    "id": "how-to-train-your-dragon-2-2014",
+    "category": "dreamworks",
+    "year": 2014,
+    "sequel": true,
+    "poster": "how-to-train-your-dragon-2-2014.webp",
+    "titles": {
+      "en": "How to Train Your Dragon 2",
+      "es": "Cómo entrenar a tu dragón 2",
+      "eu": "Cómo entrenar a tu dragón 2",
+      "gl": "How to Train Your Dragon 2",
+      "ca": "Com ensinistrar un drac 2",
+      "va": "Com ensinistrar un drac 2"
+    }
+  },
+  {
+    "id": "how-to-train-your-dragon-2010",
+    "category": "dreamworks",
+    "year": 2010,
+    "sequel": false,
+    "poster": "how-to-train-your-dragon-2010.webp",
+    "titles": {
+      "en": "How to Train Your Dragon",
+      "es": "Cómo entrenar a tu dragón",
+      "eu": "Cómo entrenar a tu dragón",
+      "gl": "How to Train Your Dragon",
+      "ca": "Com ensinistrar un drac",
+      "va": "Com ensinistrar un drac"
+    }
+  },
+  {
+    "id": "how-to-train-your-dragon-the-hidden-world-2019",
+    "category": "dreamworks",
+    "year": 2019,
+    "sequel": true,
+    "poster": "how-to-train-your-dragon-the-hidden-world-2019.webp",
+    "titles": {
+      "en": "How to Train Your Dragon: The Hidden World",
+      "es": "Cómo entrenar a tu dragón 3",
+      "eu": "Cómo entrenar a tu dragón 3",
+      "gl": "How to Train Your Dragon: The Hidden World",
+      "ca": "Com ensinistrar un drac 3",
+      "va": "Com ensinistrar un drac 3"
+    }
+  },
+  {
+    "id": "incredibles-2-2018",
+    "category": "pixar",
+    "year": 2018,
+    "sequel": true,
+    "poster": "incredibles-2-2018.webp",
+    "titles": {
+      "en": "Incredibles 2",
+      "es": "Los Increíbles 2",
+      "eu": "Incredibles 2",
+      "gl": "Incredibles 2",
+      "ca": "Els increïbles 2",
+      "va": "Els increïbles 2"
+    }
+  },
+  {
+    "id": "inside-out-2-2024",
+    "category": "pixar",
+    "year": 2024,
+    "sequel": true,
+    "poster": "inside-out-2-2024.webp",
+    "titles": {
+      "en": "Inside Out 2",
+      "es": "Del revés 2",
+      "eu": "Del revés 2",
+      "gl": "Inside Out 2",
+      "ca": "Del revés 2",
+      "va": "Del revés 2"
+    }
+  },
+  {
+    "id": "inside-out-2015",
+    "category": "pixar",
+    "year": 2015,
+    "sequel": false,
+    "poster": "inside-out-2015.webp",
+    "titles": {
+      "en": "Inside Out",
+      "es": "Del revés (Inside Out)",
+      "eu": "Inside Out",
+      "gl": "Inside Out",
+      "ca": "Del revés",
+      "va": "Del revés"
+    }
+  },
+  {
+    "id": "jungle-cruise-2021",
+    "category": "live-action",
+    "year": 2021,
+    "sequel": false,
+    "poster": "jungle-cruise-2021.webp",
+    "titles": {
+      "en": "Jungle Cruise",
+      "es": "Jungle Cruise",
+      "eu": "Jungle Cruise",
+      "gl": "Jungle Cruise",
+      "ca": "Jungle Cruise",
+      "va": "Jungle Cruise"
+    }
+  },
+  {
+    "id": "kung-fu-panda-2-2011",
+    "category": "dreamworks",
+    "year": 2011,
+    "sequel": true,
+    "poster": "kung-fu-panda-2-2011.webp",
+    "titles": {
+      "en": "Kung Fu Panda 2",
+      "es": "Kung Fu Panda 2",
+      "eu": "Kung Fu Panda 2",
+      "gl": "Kung Fu Panda 2",
+      "ca": "Kung Fu Panda 2",
+      "va": "Kung Fu Panda 2"
+    }
+  },
+  {
+    "id": "kung-fu-panda-2008",
+    "category": "dreamworks",
+    "year": 2008,
+    "sequel": false,
+    "poster": "kung-fu-panda-2008.webp",
+    "titles": {
+      "en": "Kung Fu Panda",
+      "es": "Kung Fu Panda",
+      "eu": "Kung Fu Panda",
+      "gl": "Kung Fu Panda",
+      "ca": "Kung Fu Panda",
+      "va": "Kung Fu Panda"
+    }
+  },
+  {
+    "id": "kung-fu-panda-3-2016",
+    "category": "dreamworks",
+    "year": 2016,
+    "sequel": true,
+    "poster": "kung-fu-panda-3-2016.webp",
+    "titles": {
+      "en": "Kung Fu Panda 3",
+      "es": "Kung Fu Panda 3",
+      "eu": "Kung Fu Panda 3",
+      "gl": "Kung Fu Panda 3",
+      "ca": "Kung Fu Panda 3",
+      "va": "Kung Fu Panda 3"
+    }
+  },
+  {
+    "id": "kung-fu-panda-4-2024",
+    "category": "dreamworks",
+    "year": 2024,
+    "sequel": true,
+    "poster": "kung-fu-panda-4-2024.webp",
+    "titles": {
+      "en": "Kung Fu Panda 4",
+      "es": "Kung Fu Panda 4",
+      "eu": "Kung Fu Panda 4",
+      "gl": "Kung Fu Panda 4",
+      "ca": "Kung Fu Panda 4",
+      "va": "Kung Fu Panda 4"
+    }
+  },
+  {
+    "id": "lady-and-the-tramp-1955",
+    "category": "disney",
+    "year": 1955,
+    "sequel": false,
+    "poster": "lady-and-the-tramp-1955.webp",
+    "titles": {
+      "en": "Lady and the Tramp",
+      "es": "La dama y el vagabundo",
+      "eu": "Lady and the Tramp",
+      "gl": "Lady and the Tramp",
+      "ca": "La dama i el rodamón",
+      "va": "La dama i el rodamón"
+    }
+  },
+  {
+    "id": "lightyear-2022",
+    "category": "pixar",
+    "year": 2022,
+    "sequel": true,
+    "poster": "lightyear-2022.webp",
+    "titles": {
+      "en": "Lightyear",
+      "es": "Lightyear",
+      "eu": "Lightyear",
+      "gl": "Lightyear",
+      "ca": "Lightyear",
+      "va": "Lightyear"
+    }
+  },
+  {
+    "id": "lilo-and-stitch-2002",
+    "category": "disney",
+    "year": 2002,
+    "sequel": false,
+    "poster": "lilo-and-stitch-2002.webp",
+    "titles": {
+      "en": "Lilo & Stitch",
+      "es": "Lilo & Stitch",
+      "eu": "Lilo & Stitch",
+      "gl": "Lilo & Stitch",
+      "ca": "Lilo & Stitch",
+      "va": "Lilo & Stitch"
+    }
+  },
+  {
+    "id": "lilo-and-stitch-2025",
+    "category": "live-action",
+    "year": 2025,
+    "sequel": false,
+    "poster": "lilo-and-stitch-2025.webp",
+    "titles": {
+      "en": "Lilo & Stitch",
+      "es": "Lilo & Stitch",
+      "eu": "Lilo & Stitch",
+      "gl": "Lilo & Stitch",
+      "ca": "Lilo & Stitch",
+      "va": "Lilo & Stitch"
+    }
+  },
+  {
+    "id": "luca-2021",
+    "category": "pixar",
+    "year": 2021,
+    "sequel": false,
+    "poster": "luca-2021.webp",
+    "titles": {
+      "en": "Luca",
+      "es": "Luca",
+      "eu": "Luca",
+      "gl": "Luca",
+      "ca": "Luca",
+      "va": "Luca"
+    }
+  },
+  {
+    "id": "madagascar-2005",
+    "category": "dreamworks",
+    "year": 2005,
+    "sequel": false,
+    "poster": "madagascar-2005.webp",
+    "titles": {
+      "en": "Madagascar",
+      "es": "Madagascar",
+      "eu": "Madagascar",
+      "gl": "Madagascar",
+      "ca": "Madagascar",
+      "va": "Madagascar"
+    }
+  },
+  {
+    "id": "madagascar-3-europes-most-wanted-2012",
+    "category": "dreamworks",
+    "year": 2012,
+    "sequel": true,
+    "poster": "madagascar-3-europes-most-wanted-2012.webp",
+    "titles": {
+      "en": "Madagascar 3: Europe's Most Wanted",
+      "es": "Madagascar 3: Europe's Most Wanted",
+      "eu": "Madagascar 3: Europe's Most Wanted",
+      "gl": "Madagascar 3: Europe's Most Wanted",
+      "ca": "Madagascar 3: De marxa per Europa",
+      "va": "Madagascar 3: De marxa per Europa"
+    }
+  },
+  {
+    "id": "madagascar-escape-2-africa-2008",
+    "category": "dreamworks",
+    "year": 2008,
+    "sequel": true,
+    "poster": "madagascar-escape-2-africa-2008.webp",
+    "titles": {
+      "en": "Madagascar: Escape 2 Africa",
+      "es": "Madagascar 2: Escape de África",
+      "eu": "Madagascar: Escape 2 Africa",
+      "gl": "Madagascar 2: Escape de África",
+      "ca": "Madagascar 2",
+      "va": "Madagascar 2"
+    }
+  },
+  {
+    "id": "make-mine-music-1946",
+    "category": "disney",
+    "year": 1946,
+    "sequel": false,
+    "poster": "make-mine-music-1946.webp",
+    "titles": {
+      "en": "Make Mine Music",
+      "es": "Música maestro",
+      "eu": "Música maestro",
+      "gl": "Make Mine Music",
+      "ca": "Make Mine Music",
+      "va": "Make Mine Music"
+    }
+  },
+  {
+    "id": "maleficent-2014",
+    "category": "live-action",
+    "year": 2014,
+    "sequel": false,
+    "poster": "maleficent-2014.webp",
+    "titles": {
+      "en": "Maleficent",
+      "es": "Maléfica",
+      "eu": "Maleficent",
+      "gl": "Maleficent",
+      "ca": "Maleficent",
+      "va": "Maleficent"
+    }
+  },
+  {
+    "id": "mary-poppins-1964",
+    "category": "live-action",
+    "year": 1964,
+    "sequel": false,
+    "poster": "mary-poppins-1964.webp",
+    "titles": {
+      "en": "Mary Poppins",
+      "es": "Mary Poppins",
+      "eu": "Mary Poppins",
+      "gl": "Mary Poppins",
+      "ca": "Mary Poppins",
+      "va": "Mary Poppins"
+    }
+  },
+  {
+    "id": "mary-poppins-returns-2018",
+    "category": "live-action",
+    "year": 2018,
+    "sequel": true,
+    "poster": "mary-poppins-returns-2018.webp",
+    "titles": {
+      "en": "Mary Poppins Returns",
+      "es": "El regreso de Mary Poppins",
+      "eu": "Mary Poppins Returns",
+      "gl": "Mary Poppins Returns",
+      "ca": "Mary Poppins Returns",
+      "va": "Mary Poppins Returns"
+    }
+  },
+  {
+    "id": "meet-the-robinsons-2007",
+    "category": "disney",
+    "year": 2007,
+    "sequel": false,
+    "poster": "meet-the-robinsons-2007.webp",
+    "titles": {
+      "en": "Meet the Robinsons",
+      "es": "Descubriendo a los Robinsons",
+      "eu": "Meet the Robinsons",
+      "gl": "Meet the Robinsons",
+      "ca": "Descobrint els Robinsons",
+      "va": "Descobrint els Robinsons"
+    }
+  },
+  {
+    "id": "megamind-2010",
+    "category": "dreamworks",
+    "year": 2010,
+    "sequel": false,
+    "poster": "megamind-2010.webp",
+    "titles": {
+      "en": "Megamind",
+      "es": "Megamind",
+      "eu": "Megamind",
+      "gl": "Megamind",
+      "ca": "Megamind",
+      "va": "Megamind"
+    }
+  },
+  {
+    "id": "melody-time-1948",
+    "category": "disney",
+    "year": 1948,
+    "sequel": false,
+    "poster": "melody-time-1948.webp",
+    "titles": {
+      "en": "Melody Time",
+      "es": "Tiempo de melodía",
+      "eu": "Melody Time",
+      "gl": "Melody Time",
+      "ca": "Melody Time",
+      "va": "Melody Time"
+    }
+  },
+  {
+    "id": "moana-2-2024",
+    "category": "disney",
+    "year": 2024,
+    "sequel": true,
+    "poster": "moana-2-2024.webp",
+    "titles": {
+      "en": "Moana 2",
+      "es": "Vaiana 2",
+      "eu": "Vaiana 2",
+      "gl": "Moana 2",
+      "ca": "Vaiana 2",
+      "va": "Vaiana 2"
+    }
+  },
+  {
+    "id": "moana-2016",
+    "category": "disney",
+    "year": 2016,
+    "sequel": false,
+    "poster": "moana-2016.webp",
+    "titles": {
+      "en": "Moana",
+      "es": "Vaiana",
+      "eu": "Moana",
+      "gl": "Moana",
+      "ca": "Vaiana",
+      "va": "Vaiana"
+    }
+  },
+  {
+    "id": "monsters-inc-2001",
+    "category": "pixar",
+    "year": 2001,
+    "sequel": false,
+    "poster": "monsters-inc-2001.webp",
+    "titles": {
+      "en": "Monsters, Inc.",
+      "es": "Monstruos, S.A.",
+      "eu": "Monsters, Inc.",
+      "gl": "Monsters, Inc.",
+      "ca": "Monsters, Inc.",
+      "va": "Monsters, Inc."
+    }
+  },
+  {
+    "id": "monsters-university-2013",
+    "category": "pixar",
+    "year": 2013,
+    "sequel": true,
+    "poster": "monsters-university-2013.webp",
+    "titles": {
+      "en": "Monsters University",
+      "es": "Monstruos University",
+      "eu": "Monstruos University",
+      "gl": "Monsters University",
+      "ca": "Monsters University",
+      "va": "Monsters University"
+    }
+  },
+  {
+    "id": "monsters-vs-aliens-2009",
+    "category": "dreamworks",
+    "year": 2009,
+    "sequel": false,
+    "poster": "monsters-vs-aliens-2009.webp",
+    "titles": {
+      "en": "Monsters vs. Aliens",
+      "es": "Monsters vs Aliens",
+      "eu": "Monsters vs Aliens",
+      "gl": "Monsters vs Aliens",
+      "ca": "Monstres contra alienígenes",
+      "va": "Monstres contra alienígenes"
+    }
+  },
+  {
+    "id": "mr-peabody-and-sherman-2014",
+    "category": "dreamworks",
+    "year": 2014,
+    "sequel": false,
+    "poster": "mr-peabody-and-sherman-2014.webp",
+    "titles": {
+      "en": "Mr. Peabody & Sherman",
+      "es": "Las aventuras de Peabody y Sherman",
+      "eu": "Las aventuras de Peabody y Sherman",
+      "gl": "Las aventuras de Peabody y Sherman",
+      "ca": "Mr. Peabody & Sherman",
+      "va": "Mr. Peabody & Sherman"
+    }
+  },
+  {
+    "id": "mulan-1998",
+    "category": "disney",
+    "year": 1998,
+    "sequel": false,
+    "poster": "mulan-1998.webp",
+    "titles": {
+      "en": "Mulan",
+      "es": "Mulan",
+      "eu": "Mulan",
+      "gl": "Mulan",
+      "ca": "Mulan",
+      "va": "Mulan"
+    }
+  },
+  {
+    "id": "national-treasure-2004",
+    "category": "live-action",
+    "year": 2004,
+    "sequel": false,
+    "poster": "national-treasure-2004.webp",
+    "titles": {
+      "en": "National Treasure",
+      "es": "National Treasure",
+      "eu": "National Treasure",
+      "gl": "National Treasure",
+      "ca": "National Treasure",
+      "va": "National Treasure"
+    }
+  },
+  {
+    "id": "oliver-and-company-1988",
+    "category": "disney",
+    "year": 1988,
+    "sequel": false,
+    "poster": "oliver-and-company-1988.webp",
+    "titles": {
+      "en": "Oliver & Company",
+      "es": "Oliver y su pandilla",
+      "eu": "Oliver & Company",
+      "gl": "Oliver & Company",
+      "ca": "Oliver i companyia",
+      "va": "Oliver i companyia"
+    }
+  },
+  {
+    "id": "one-hundred-and-one-dalmatians-1961",
+    "category": "disney",
+    "year": 1961,
+    "sequel": false,
+    "poster": "one-hundred-and-one-dalmatians-1961.webp",
+    "titles": {
+      "en": "One Hundred and One Dalmatians",
+      "es": "101 dálmatas",
+      "eu": "One Hundred and One Dalmatians",
+      "gl": "One Hundred and One Dalmatians",
+      "ca": "101 dàlmates",
+      "va": "101 dàlmates"
+    }
+  },
+  {
+    "id": "onward-2020",
+    "category": "pixar",
+    "year": 2020,
+    "sequel": false,
+    "poster": "onward-2020.webp",
+    "titles": {
+      "en": "Onward",
+      "es": "Unidos",
+      "eu": "Onward",
+      "gl": "Onward",
+      "ca": "Onward",
+      "va": "Onward"
+    }
+  },
+  {
+    "id": "orion-and-the-dark-2024",
+    "category": "dreamworks",
+    "year": 2024,
+    "sequel": false,
+    "poster": "orion-and-the-dark-2024.webp",
+    "titles": {
+      "en": "Orion and the Dark",
+      "es": "Orión y la oscuridad",
+      "eu": "Orión y la oscuridad",
+      "gl": "Orión e a escuridade",
+      "ca": "Orió i la foscor",
+      "va": "Orió i la foscor"
+    }
+  },
+  {
+    "id": "over-the-hedge-2006",
+    "category": "dreamworks",
+    "year": 2006,
+    "sequel": false,
+    "poster": "over-the-hedge-2006.webp",
+    "titles": {
+      "en": "Over the Hedge",
+      "es": "Vecinos invasores",
+      "eu": "Vecinos invasores",
+      "gl": "Over the Hedge",
+      "ca": "Veïns invasors",
+      "va": "Veïns invasors"
+    }
+  },
+  {
+    "id": "penguins-of-madagascar-2014",
+    "category": "dreamworks",
+    "year": 2014,
+    "sequel": true,
+    "poster": "penguins-of-madagascar-2014.webp",
+    "titles": {
+      "en": "Penguins of Madagascar",
+      "es": "Los pingüinos de Madagascar",
+      "eu": "Los pingüinos de Madagascar",
+      "gl": "Los pingüinos de Madagascar",
+      "ca": "Els pingüins de Madagascar",
+      "va": "Els pingüins de Madagascar"
+    }
+  },
+  {
+    "id": "peter-pan-1953",
+    "category": "disney",
+    "year": 1953,
+    "sequel": false,
+    "poster": "peter-pan-1953.webp",
+    "titles": {
+      "en": "Peter Pan",
+      "es": "Peter Pan",
+      "eu": "Peter Pan",
+      "gl": "Peter Pan",
+      "ca": "Peter Pan",
+      "va": "Peter Pan"
+    }
+  },
+  {
+    "id": "petes-dragon-2016",
+    "category": "live-action",
+    "year": 2016,
+    "sequel": false,
+    "poster": "petes-dragon-2016.webp",
+    "titles": {
+      "en": "Pete's Dragon",
+      "es": "Peter y el dragón",
+      "eu": "Peter y el dragón",
+      "gl": "Peter y el dragón",
+      "ca": "Pete's Dragon",
+      "va": "Pete's Dragon"
+    }
+  },
+  {
+    "id": "pinocchio-1940",
+    "category": "disney",
+    "year": 1940,
+    "sequel": false,
+    "poster": "pinocchio-1940.webp",
+    "titles": {
+      "en": "Pinocchio",
+      "es": "Pinocho",
+      "eu": "Pinocchio",
+      "gl": "Pinocchio",
+      "ca": "Pinotxo",
+      "va": "Pinotxo"
+    }
+  },
+  {
+    "id": "pirates-of-the-caribbean-at-worlds-end-2007",
+    "category": "live-action",
+    "year": 2007,
+    "sequel": true,
+    "poster": "pirates-of-the-caribbean-at-worlds-end-2007.webp",
+    "titles": {
+      "en": "Pirates of the Caribbean: At World's End",
+      "es": "Piratas del Caribe: En el fin del mundo",
+      "eu": "Pirates of the Caribbean: At World's End",
+      "gl": "Pirates of the Caribbean: At World's End",
+      "ca": "Pirates of the Caribbean: At World's End",
+      "va": "Pirates of the Caribbean: At World's End"
+    }
+  },
+  {
+    "id": "pirates-of-the-caribbean-dead-mans-chest-2006",
+    "category": "live-action",
+    "year": 2006,
+    "sequel": true,
+    "poster": "pirates-of-the-caribbean-dead-mans-chest-2006.webp",
+    "titles": {
+      "en": "Pirates of the Caribbean: Dead Man's Chest",
+      "es": "Piratas del Caribe: El cofre del hombre muerto",
+      "eu": "Pirates of the Caribbean: Dead Man's Chest",
+      "gl": "Pirates of the Caribbean: Dead Man's Chest",
+      "ca": "Pirates of the Caribbean: Dead Man's Chest",
+      "va": "Pirates of the Caribbean: Dead Man's Chest"
+    }
+  },
+  {
+    "id": "pirates-of-the-caribbean-on-stranger-tides-2011",
+    "category": "live-action",
+    "year": 2011,
+    "sequel": true,
+    "poster": "pirates-of-the-caribbean-on-stranger-tides-2011.webp",
+    "titles": {
+      "en": "Pirates of the Caribbean: On Stranger Tides",
+      "es": "Piratas del Caribe: En mareas misteriosas",
+      "eu": "Pirates of the Caribbean: On Stranger Tides",
+      "gl": "Pirates of the Caribbean: On Stranger Tides",
+      "ca": "Pirates of the Caribbean: On Stranger Tides",
+      "va": "Pirates of the Caribbean: On Stranger Tides"
+    }
+  },
+  {
+    "id": "pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003",
+    "category": "live-action",
+    "year": 2003,
+    "sequel": false,
+    "poster": "pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003.webp",
+    "titles": {
+      "en": "Pirates of the Caribbean: The Curse of the Black Pearl",
+      "es": "Piratas del Caribe: La maldición de la Perla Negra",
+      "eu": "Pirates of the Caribbean: The Curse of the Black Pearl",
+      "gl": "Pirates of the Caribbean: The Curse of the Black Pearl",
+      "ca": "Pirates of the Caribbean: The Curse of the Black Pearl",
+      "va": "Pirates of the Caribbean: The Curse of the Black Pearl"
+    }
+  },
+  {
+    "id": "pocahontas-1995",
+    "category": "disney",
+    "year": 1995,
+    "sequel": false,
+    "poster": "pocahontas-1995.webp",
+    "titles": {
+      "en": "Pocahontas",
+      "es": "Pocahontas",
+      "eu": "Pocahontas",
+      "gl": "Pocahontas",
+      "ca": "Pocahontas",
+      "va": "Pocahontas"
+    }
+  },
+  {
+    "id": "puss-in-boots-2011",
+    "category": "dreamworks",
+    "year": 2011,
+    "sequel": true,
+    "poster": "puss-in-boots-2011.webp",
+    "titles": {
+      "en": "Puss in Boots",
+      "es": "El gato con botas",
+      "eu": "Puss in Boots",
+      "gl": "Puss in Boots",
+      "ca": "El gat amb botes",
+      "va": "El gat amb botes"
+    }
+  },
+  {
+    "id": "puss-in-boots-the-last-wish-2022",
+    "category": "dreamworks",
+    "year": 2022,
+    "sequel": true,
+    "poster": "puss-in-boots-the-last-wish-2022.webp",
+    "titles": {
+      "en": "Puss in Boots: The Last Wish",
+      "es": "El Gato con Botas: el último deseo",
+      "eu": "El Gato con Botas: el último deseo",
+      "gl": "Puss in Boots: The Last Wish",
+      "ca": "El gat amb botes: l'últim desig",
+      "va": "El gat amb botes: l'últim desig"
+    }
+  },
+  {
+    "id": "ralph-breaks-the-internet-2018",
+    "category": "disney",
+    "year": 2018,
+    "sequel": true,
+    "poster": "ralph-breaks-the-internet-2018.webp",
+    "titles": {
+      "en": "Ralph Breaks the Internet",
+      "es": "Ralph rompe Internet",
+      "eu": "Ralph Breaks the Internet",
+      "gl": "Ralph Breaks the Internet",
+      "ca": "En Ralph destrueix internet",
+      "va": "En Ralph destrueix internet"
+    }
+  },
+  {
+    "id": "ratatouille-2007",
+    "category": "pixar",
+    "year": 2007,
+    "sequel": false,
+    "poster": "ratatouille-2007.webp",
+    "titles": {
+      "en": "Ratatouille",
+      "es": "Ratatouille",
+      "eu": "Ratatouille",
+      "gl": "Ratatouille",
+      "ca": "Ratatouille",
+      "va": "Ratatouille"
+    }
+  },
+  {
+    "id": "raya-and-the-last-dragon-2021",
+    "category": "disney",
+    "year": 2021,
+    "sequel": false,
+    "poster": "raya-and-the-last-dragon-2021.webp",
+    "titles": {
+      "en": "Raya and the Last Dragon",
+      "es": "Raya y el último dragón",
+      "eu": "Raya and the Last Dragon",
+      "gl": "Raya and the Last Dragon",
+      "ca": "Raya i l'últim drac",
+      "va": "Raya i l'últim drac"
+    }
+  },
+  {
+    "id": "rise-of-the-guardians-2012",
+    "category": "dreamworks",
+    "year": 2012,
+    "sequel": false,
+    "poster": "rise-of-the-guardians-2012.webp",
+    "titles": {
+      "en": "Rise of the Guardians",
+      "es": "El origen de los guardianes",
+      "eu": "El origen de los guardianes",
+      "gl": "El origen de los guardianes",
+      "ca": "L'origen dels guardians",
+      "va": "L'origen dels guardians"
+    }
+  },
+  {
+    "id": "robin-hood-1973",
+    "category": "disney",
+    "year": 1973,
+    "sequel": false,
+    "poster": "robin-hood-1973.webp",
+    "titles": {
+      "en": "Robin Hood",
+      "es": "Robin Hood",
+      "eu": "Robin Hood",
+      "gl": "Robin Hood",
+      "ca": "Robin Hood",
+      "va": "Robin Hood"
+    }
+  },
+  {
+    "id": "ruby-gillman-teenage-kraken-2023",
+    "category": "dreamworks",
+    "year": 2023,
+    "sequel": false,
+    "poster": "ruby-gillman-teenage-kraken-2023.webp",
+    "titles": {
+      "en": "Ruby Gillman, Teenage Kraken",
+      "es": "Ruby, la chica del mar",
+      "eu": "Ruby, la chica del mar",
+      "gl": "Ruby, la chica del mar",
+      "ca": "Ruby Gillman, Teenage Kraken",
+      "va": "Ruby Gillman, Teenage Kraken"
+    }
+  },
+  {
+    "id": "saludos-amigos-1943",
+    "category": "disney",
+    "year": 1943,
+    "sequel": false,
+    "poster": "saludos-amigos-1943.webp",
+    "titles": {
+      "en": "Saludos Amigos",
+      "es": "Saludos amigos",
+      "eu": "Saludos Amigos",
+      "gl": "Saludos Amigos",
+      "ca": "Saludos Amigos",
+      "va": "Saludos Amigos"
+    }
+  },
+  {
+    "id": "shark-tale-2004",
+    "category": "dreamworks",
+    "year": 2004,
+    "sequel": false,
+    "poster": "shark-tale-2004.webp",
+    "titles": {
+      "en": "Shark Tale",
+      "es": "El espantatiburones",
+      "eu": "El espantatiburones",
+      "gl": "El espantatiburones",
+      "ca": "L'Espantataurons",
+      "va": "L'Espantataurons"
+    }
+  },
+  {
+    "id": "shrek-2-2004",
+    "category": "dreamworks",
+    "year": 2004,
+    "sequel": true,
+    "poster": "shrek-2-2004.webp",
+    "titles": {
+      "en": "Shrek 2",
+      "es": "Shrek 2",
+      "eu": "Shrek 2",
+      "gl": "Shrek 2",
+      "ca": "Shrek 2",
+      "va": "Shrek 2"
+    }
+  },
+  {
+    "id": "shrek-2001",
+    "category": "dreamworks",
+    "year": 2001,
+    "sequel": false,
+    "poster": "shrek-2001.webp",
+    "titles": {
+      "en": "Shrek",
+      "es": "Shrek",
+      "eu": "Shrek",
+      "gl": "Shrek",
+      "ca": "Shrek",
+      "va": "Shrek"
+    }
+  },
+  {
+    "id": "shrek-forever-after-2010",
+    "category": "dreamworks",
+    "year": 2010,
+    "sequel": true,
+    "poster": "shrek-forever-after-2010.webp",
+    "titles": {
+      "en": "Shrek Forever After",
+      "es": "Shrek Forever After",
+      "eu": "Shrek Forever After",
+      "gl": "Shrek Forever After",
+      "ca": "Shrek, feliços per sempre...",
+      "va": "Shrek, feliços per sempre..."
+    }
+  },
+  {
+    "id": "shrek-the-third-2007",
+    "category": "dreamworks",
+    "year": 2007,
+    "sequel": true,
+    "poster": "shrek-the-third-2007.webp",
+    "titles": {
+      "en": "Shrek the Third",
+      "es": "Shrek tercero",
+      "eu": "Shrek tercero",
+      "gl": "Shrek the Third",
+      "ca": "Shrek Tercer",
+      "va": "Shrek Tercer"
+    }
+  },
+  {
+    "id": "sinbad-legend-of-the-seven-seas-2003",
+    "category": "dreamworks",
+    "year": 2003,
+    "sequel": false,
+    "poster": "sinbad-legend-of-the-seven-seas-2003.webp",
+    "titles": {
+      "en": "Sinbad: Legend of the Seven Seas",
+      "es": "Simbad: La leyenda de los siete mares",
+      "eu": "Simbad: La leyenda de los siete mares",
+      "gl": "Sinbad: Legend of the Seven Seas",
+      "ca": "Simbad, la llegenda dels set mars",
+      "va": "Simbad, la llegenda dels set mars"
+    }
+  },
+  {
+    "id": "sleeping-beauty-1959",
+    "category": "disney",
+    "year": 1959,
+    "sequel": false,
+    "poster": "sleeping-beauty-1959.webp",
+    "titles": {
+      "en": "Sleeping Beauty",
+      "es": "La bella durmiente",
+      "eu": "Sleeping Beauty",
+      "gl": "Sleeping Beauty",
+      "ca": "La Bella Dorment",
+      "va": "La Bella Dorment"
+    }
+  },
+  {
+    "id": "snow-white-2025",
+    "category": "live-action",
+    "year": 2025,
+    "sequel": false,
+    "poster": "snow-white-2025.webp",
+    "titles": {
+      "en": "Snow White",
+      "es": "Blancanieves",
+      "eu": "Blancanieves",
+      "gl": "Snow White",
+      "ca": "Blancaneu",
+      "va": "Blancaneu"
+    }
+  },
+  {
+    "id": "snow-white-and-the-seven-dwarfs-1937",
+    "category": "disney",
+    "year": 1937,
+    "sequel": false,
+    "poster": "snow-white-and-the-seven-dwarfs-1937.webp",
+    "titles": {
+      "en": "Snow White and the Seven Dwarfs",
+      "es": "Blancanieves y los siete enanitos",
+      "eu": "Snow White and the Seven Dwarfs",
+      "gl": "Snow White and the Seven Dwarfs",
+      "ca": "La Blancaneu i els set nans",
+      "va": "La Blancaneu i els set nans"
+    }
+  },
+  {
+    "id": "soul-2020",
+    "category": "pixar",
+    "year": 2020,
+    "sequel": false,
+    "poster": "soul-2020.webp",
+    "titles": {
+      "en": "Soul",
+      "es": "Soul",
+      "eu": "Soul",
+      "gl": "Soul",
+      "ca": "Soul",
+      "va": "Soul"
+    }
+  },
+  {
+    "id": "spirit-stallion-of-the-cimarron-2002",
+    "category": "dreamworks",
+    "year": 2002,
+    "sequel": false,
+    "poster": "spirit-stallion-of-the-cimarron-2002.webp",
+    "titles": {
+      "en": "Spirit: Stallion of the Cimarron",
+      "es": "Spirit: el corcel indomable",
+      "eu": "Spirit: el corcel indomable",
+      "gl": "Spirit: Stallion of the Cimarron",
+      "ca": "Spirit: El cavall indomable",
+      "va": "Spirit: El cavall indomable"
+    }
+  },
+  {
+    "id": "spirit-untamed-2021",
+    "category": "dreamworks",
+    "year": 2021,
+    "sequel": true,
+    "poster": "spirit-untamed-2021.webp",
+    "titles": {
+      "en": "Spirit Untamed",
+      "es": "Spirit: El indomable",
+      "eu": "Spirit: El indomable",
+      "gl": "Spirit: El indomable",
+      "ca": "Spirit: Indomable",
+      "va": "Spirit: Indomable"
+    }
+  },
+  {
+    "id": "strange-world-2022",
+    "category": "disney",
+    "year": 2022,
+    "sequel": false,
+    "poster": "strange-world-2022.webp",
+    "titles": {
+      "en": "Strange World",
+      "es": "Un mundo extraño",
+      "eu": "Un mundo extraño",
+      "gl": "Strange World",
+      "ca": "Un món estrany",
+      "va": "Un món estrany"
+    }
+  },
+  {
+    "id": "swiss-family-robinson-1960",
+    "category": "live-action",
+    "year": 1960,
+    "sequel": false,
+    "poster": "swiss-family-robinson-1960.webp",
+    "titles": {
+      "en": "Swiss Family Robinson",
+      "es": "Los Robinsones de los mares del Sur",
+      "eu": "Los Robinsones de los mares del Sur",
+      "gl": "Los Robinsones de los mares del Sur",
+      "ca": "Los Robinsones de los mares del Sur",
+      "va": "Los Robinsones de los mares del Sur"
+    }
+  },
+  {
+    "id": "tangled-2010",
+    "category": "disney",
+    "year": 2010,
+    "sequel": false,
+    "poster": "tangled-2010.webp",
+    "titles": {
+      "en": "Tangled",
+      "es": "Enredados",
+      "eu": "Tangled",
+      "gl": "Tangled",
+      "ca": "Embolicats",
+      "va": "Embolicats"
+    }
+  },
+  {
+    "id": "tarzan-1999",
+    "category": "disney",
+    "year": 1999,
+    "sequel": false,
+    "poster": "tarzan-1999.webp",
+    "titles": {
+      "en": "Tarzan",
+      "es": "Tarzán",
+      "eu": "Tarzan",
+      "gl": "Tarzan",
+      "ca": "Tarzan",
+      "va": "Tarzan"
+    }
+  },
+  {
+    "id": "the-adventures-of-ichabod-and-mr-toad-1949",
+    "category": "disney",
+    "year": 1949,
+    "sequel": false,
+    "poster": "the-adventures-of-ichabod-and-mr-toad-1949.webp",
+    "titles": {
+      "en": "The Adventures of Ichabod and Mr. Toad",
+      "es": "Las aventuras de Ichabod y el señor Sapo",
+      "eu": "The Adventures of Ichabod and Mr. Toad",
+      "gl": "The Adventures of Ichabod and Mr. Toad",
+      "ca": "The Adventures of Ichabod and Mr. Toad",
+      "va": "The Adventures of Ichabod and Mr. Toad"
+    }
+  },
+  {
+    "id": "the-aristocats-1970",
+    "category": "disney",
+    "year": 1970,
+    "sequel": false,
+    "poster": "the-aristocats-1970.webp",
+    "titles": {
+      "en": "The Aristocats",
+      "es": "Los Aristogatos",
+      "eu": "The Aristocats",
+      "gl": "The Aristocats",
+      "ca": "The Aristocats",
+      "va": "The Aristocats"
+    }
+  },
+  {
+    "id": "the-bad-guys-2-2025",
+    "category": "dreamworks",
+    "year": 2025,
+    "sequel": true,
+    "poster": "the-bad-guys-2-2025.webp",
+    "titles": {
+      "en": "The Bad Guys 2",
+      "es": "Los tipos malos 2",
+      "eu": "Los tipos malos 2",
+      "gl": "Los tipos malos 2",
+      "ca": "Los tipos malos 2",
+      "va": "Los tipos malos 2"
+    }
+  },
+  {
+    "id": "the-bad-guys-2022",
+    "category": "dreamworks",
+    "year": 2022,
+    "sequel": false,
+    "poster": "the-bad-guys-2022.webp",
+    "titles": {
+      "en": "The Bad Guys",
+      "es": "Los tipos malos",
+      "eu": "Los tipos malos",
+      "gl": "Los tipos malos",
+      "ca": "The Bad Guys",
+      "va": "The Bad Guys"
+    }
+  },
+  {
+    "id": "the-black-cauldron-1985",
+    "category": "disney",
+    "year": 1985,
+    "sequel": false,
+    "poster": "the-black-cauldron-1985.webp",
+    "titles": {
+      "en": "The Black Cauldron",
+      "es": "Tarón y el caldero mágico",
+      "eu": "Tarón y el caldero mágico",
+      "gl": "The Black Cauldron",
+      "ca": "Taran i la caldera màgica",
+      "va": "Taran i la caldera màgica"
+    }
+  },
+  {
+    "id": "the-boss-baby-2017",
+    "category": "dreamworks",
+    "year": 2017,
+    "sequel": false,
+    "poster": "the-boss-baby-2017.webp",
+    "titles": {
+      "en": "The Boss Baby",
+      "es": "Boss Baby",
+      "eu": "Boss Baby",
+      "gl": "Boss Baby",
+      "ca": "El nadó en cap",
+      "va": "El nadó en cap"
+    }
+  },
+  {
+    "id": "the-boss-baby-family-business-2021",
+    "category": "dreamworks",
+    "year": 2021,
+    "sequel": true,
+    "poster": "the-boss-baby-family-business-2021.webp",
+    "titles": {
+      "en": "The Boss Baby: Family Business",
+      "es": "El bebé jefazo: Negocios de familia",
+      "eu": "El bebé jefazo: Negocios de familia",
+      "gl": "El bebé jefazo: Negocios de familia",
+      "ca": "El nadó en cap: Negocis de família",
+      "va": "El nadó en cap: Negocis de família"
+    }
+  },
+  {
+    "id": "the-chronicles-of-narnia-prince-caspian-2008",
+    "category": "live-action",
+    "year": 2008,
+    "sequel": true,
+    "poster": "the-chronicles-of-narnia-prince-caspian-2008.webp",
+    "titles": {
+      "en": "The Chronicles of Narnia: Prince Caspian",
+      "es": "Las crónicas de Narnia: el príncipe Caspian",
+      "eu": "The Chronicles of Narnia: Prince Caspian",
+      "gl": "The Chronicles of Narnia: Prince Caspian",
+      "ca": "Les Cròniques de Nàrnia: El príncep Caspian",
+      "va": "Les Cròniques de Nàrnia: El príncep Caspian"
+    }
+  },
+  {
+    "id": "the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe-2005",
+    "category": "live-action",
+    "year": 2005,
+    "sequel": false,
+    "poster": "the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe-2005.webp",
+    "titles": {
+      "en": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+      "es": "Las crónicas de Narnia: el león, la bruja y el armario",
+      "eu": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+      "gl": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+      "ca": "Les Cròniques de Nàrnia: El lleó, la bruixa i l'armari",
+      "va": "Les Cròniques de Nàrnia: El lleó, la bruixa i l'armari"
+    }
+  },
+  {
+    "id": "the-croods-2013",
+    "category": "dreamworks",
+    "year": 2013,
+    "sequel": false,
+    "poster": "the-croods-2013.webp",
+    "titles": {
+      "en": "The Croods",
+      "es": "Los Croods",
+      "eu": "The Croods",
+      "gl": "The Croods",
+      "ca": "Els Croods",
+      "va": "Els Croods"
+    }
+  },
+  {
+    "id": "the-croods-a-new-age-2020",
+    "category": "dreamworks",
+    "year": 2020,
+    "sequel": true,
+    "poster": "the-croods-a-new-age-2020.webp",
+    "titles": {
+      "en": "The Croods: A New Age",
+      "es": "Los Croods 2: una nueva era",
+      "eu": "Los Croods 2: una nueva era",
+      "gl": "Los Croods 2: una nueva era",
+      "ca": "Els Croods: una nova era",
+      "va": "Els Croods: una nova era"
+    }
+  },
+  {
+    "id": "the-emperors-new-groove-2000",
+    "category": "disney",
+    "year": 2000,
+    "sequel": false,
+    "poster": "the-emperors-new-groove-2000.webp",
+    "titles": {
+      "en": "The Emperor's New Groove",
+      "es": "El emperador y sus locuras",
+      "eu": "The Emperor's New Groove",
+      "gl": "The Emperor's New Groove",
+      "ca": "L'emperador i les seves bogeries",
+      "va": "L'emperador i les seves bogeries"
+    }
+  },
+  {
+    "id": "the-fox-and-the-hound-1981",
+    "category": "disney",
+    "year": 1981,
+    "sequel": false,
+    "poster": "the-fox-and-the-hound-1981.webp",
+    "titles": {
+      "en": "The Fox and the Hound",
+      "es": "Tod y Toby",
+      "eu": "The Fox and the Hound",
+      "gl": "The Fox and the Hound",
+      "ca": "The Fox and the Hound",
+      "va": "The Fox and the Hound"
+    }
+  },
+  {
+    "id": "the-good-dinosaur-2015",
+    "category": "pixar",
+    "year": 2015,
+    "sequel": false,
+    "poster": "the-good-dinosaur-2015.webp",
+    "titles": {
+      "en": "The Good Dinosaur",
+      "es": "El viaje de Arlo",
+      "eu": "El viaje de Arlo",
+      "gl": "El viaje de Arlo",
+      "ca": "El viatge d'Arlo",
+      "va": "El viatge d'Arlo"
+    }
+  },
+  {
+    "id": "the-great-mouse-detective-1986",
+    "category": "disney",
+    "year": 1986,
+    "sequel": false,
+    "poster": "the-great-mouse-detective-1986.webp",
+    "titles": {
+      "en": "The Great Mouse Detective",
+      "es": "Basil, el ratón superdetective",
+      "eu": "The Great Mouse Detective",
+      "gl": "The Great Mouse Detective",
+      "ca": "Bàsil, el ratolí detectiu",
+      "va": "Bàsil, el ratolí detectiu"
+    }
+  },
+  {
+    "id": "the-hunchback-of-notre-dame-1996",
+    "category": "disney",
+    "year": 1996,
+    "sequel": false,
+    "poster": "the-hunchback-of-notre-dame-1996.webp",
+    "titles": {
+      "en": "The Hunchback of Notre Dame",
+      "es": "El jorobado de Notre Dame",
+      "eu": "The Hunchback of Notre Dame",
+      "gl": "The Hunchback of Notre Dame",
+      "ca": "El geperut de Notre Dame",
+      "va": "El geperut de Notre Dame"
+    }
+  },
+  {
+    "id": "the-incredibles-2004",
+    "category": "pixar",
+    "year": 2004,
+    "sequel": false,
+    "poster": "the-incredibles-2004.webp",
+    "titles": {
+      "en": "The Incredibles",
+      "es": "Los Increíbles",
+      "eu": "The Incredibles",
+      "gl": "The Incredibles",
+      "ca": "Els increïbles",
+      "va": "Els increïbles"
+    }
+  },
+  {
+    "id": "the-jungle-book-1967",
+    "category": "disney",
+    "year": 1967,
+    "sequel": false,
+    "poster": "the-jungle-book-1967.webp",
+    "titles": {
+      "en": "The Jungle Book",
+      "es": "El libro de la selva",
+      "eu": "The Jungle Book",
+      "gl": "The Jungle Book",
+      "ca": "El llibre de la selva",
+      "va": "El llibre de la selva"
+    }
+  },
+  {
+    "id": "the-jungle-book-2016",
+    "category": "live-action",
+    "year": 2016,
+    "sequel": false,
+    "poster": "the-jungle-book-2016.webp",
+    "titles": {
+      "en": "The Jungle Book",
+      "es": "El libro de la selva",
+      "eu": "The Jungle Book",
+      "gl": "The Jungle Book",
+      "ca": "El llibre de la selva",
+      "va": "El llibre de la selva"
+    }
+  },
+  {
+    "id": "the-lion-king-1994",
+    "category": "disney",
+    "year": 1994,
+    "sequel": false,
+    "poster": "the-lion-king-1994.webp",
+    "titles": {
+      "en": "The Lion King",
+      "es": "El rey león",
+      "eu": "The Lion King",
+      "gl": "The Lion King",
+      "ca": "El rei lleó",
+      "va": "El rei lleó"
+    }
+  },
+  {
+    "id": "the-lion-king-2019",
+    "category": "live-action",
+    "year": 2019,
+    "sequel": false,
+    "poster": "the-lion-king-2019.webp",
+    "titles": {
+      "en": "The Lion King",
+      "es": "El rey león",
+      "eu": "The Lion King",
+      "gl": "The Lion King",
+      "ca": "El rei lleó",
+      "va": "El rei lleó"
+    }
+  },
+  {
+    "id": "the-little-mermaid-1989",
+    "category": "disney",
+    "year": 1989,
+    "sequel": false,
+    "poster": "the-little-mermaid-1989.webp",
+    "titles": {
+      "en": "The Little Mermaid",
+      "es": "La sirenita",
+      "eu": "The Little Mermaid",
+      "gl": "The Little Mermaid",
+      "ca": "La Sireneta",
+      "va": "La Sireneta"
+    }
+  },
+  {
+    "id": "the-little-mermaid-2023",
+    "category": "live-action",
+    "year": 2023,
+    "sequel": false,
+    "poster": "the-little-mermaid-2023.webp",
+    "titles": {
+      "en": "The Little Mermaid",
+      "es": "La sirenita",
+      "eu": "La sirenita",
+      "gl": "The Little Mermaid",
+      "ca": "La Sireneta",
+      "va": "La Sireneta"
+    }
+  },
+  {
+    "id": "the-love-bug-1968",
+    "category": "live-action",
+    "year": 1968,
+    "sequel": false,
+    "poster": "the-love-bug-1968.webp",
+    "titles": {
+      "en": "The Love Bug",
+      "es": "Ahí va ese bólido",
+      "eu": "Ahí va ese bólido",
+      "gl": "Ahí va ese bólido",
+      "ca": "Ahí va ese bólido",
+      "va": "Ahí va ese bólido"
+    }
+  },
+  {
+    "id": "the-many-adventures-of-winnie-the-pooh-1977",
+    "category": "disney",
+    "year": 1977,
+    "sequel": false,
+    "poster": "the-many-adventures-of-winnie-the-pooh-1977.webp",
+    "titles": {
+      "en": "The Many Adventures of Winnie the Pooh",
+      "es": "Las aventuras de Winnie the Pooh",
+      "eu": "The Many Adventures of Winnie the Pooh",
+      "gl": "The Many Adventures of Winnie the Pooh",
+      "ca": "The Many Adventures of Winnie the Pooh",
+      "va": "The Many Adventures of Winnie the Pooh"
+    }
+  },
+  {
+    "id": "the-mighty-ducks-1992",
+    "category": "live-action",
+    "year": 1992,
+    "sequel": false,
+    "poster": "the-mighty-ducks-1992.webp",
+    "titles": {
+      "en": "The Mighty Ducks",
+      "es": "The Mighty Ducks",
+      "eu": "The Mighty Ducks",
+      "gl": "The Mighty Ducks",
+      "ca": "The Mighty Ducks",
+      "va": "The Mighty Ducks"
+    }
+  },
+  {
+    "id": "the-parent-trap-1961",
+    "category": "live-action",
+    "year": 1961,
+    "sequel": false,
+    "poster": "the-parent-trap-1961.webp",
+    "titles": {
+      "en": "The Parent Trap",
+      "es": "Tú a Boston y yo a California",
+      "eu": "Tú a Boston y yo a California",
+      "gl": "Tú a Boston y yo a California",
+      "ca": "Tú a Boston y yo a California",
+      "va": "Tú a Boston y yo a California"
+    }
+  },
+  {
+    "id": "the-parent-trap-1998",
+    "category": "live-action",
+    "year": 1998,
+    "sequel": false,
+    "poster": "the-parent-trap-1998.webp",
+    "titles": {
+      "en": "The Parent Trap",
+      "es": "Tú a Londres y yo a California",
+      "eu": "Tú a Londres y yo a California",
+      "gl": "The Parent Trap",
+      "ca": "The Parent Trap",
+      "va": "The Parent Trap"
+    }
+  },
+  {
+    "id": "the-prince-of-egypt-1998",
+    "category": "dreamworks",
+    "year": 1998,
+    "sequel": false,
+    "poster": "the-prince-of-egypt-1998.webp",
+    "titles": {
+      "en": "The Prince of Egypt",
+      "es": "El príncipe de Egipto",
+      "eu": "The Prince of Egypt",
+      "gl": "The Prince of Egypt",
+      "ca": "El príncep d'Egipte",
+      "va": "El príncep d'Egipte"
+    }
+  },
+  {
+    "id": "the-princess-and-the-frog-2009",
+    "category": "disney",
+    "year": 2009,
+    "sequel": false,
+    "poster": "the-princess-and-the-frog-2009.webp",
+    "titles": {
+      "en": "The Princess and the Frog",
+      "es": "Tiana y el sapo",
+      "eu": "The Princess and the Frog",
+      "gl": "The Princess and the Frog",
+      "ca": "The Princess and the Frog",
+      "va": "The Princess and the Frog"
+    }
+  },
+  {
+    "id": "the-princess-diaries-2001",
+    "category": "live-action",
+    "year": 2001,
+    "sequel": false,
+    "poster": "the-princess-diaries-2001.webp",
+    "titles": {
+      "en": "The Princess Diaries",
+      "es": "Princesa por sorpresa",
+      "eu": "The Princess Diaries",
+      "gl": "The Princess Diaries",
+      "ca": "The Princess Diaries",
+      "va": "The Princess Diaries"
+    }
+  },
+  {
+    "id": "the-rescuers-1977",
+    "category": "disney",
+    "year": 1977,
+    "sequel": false,
+    "poster": "the-rescuers-1977.webp",
+    "titles": {
+      "en": "The Rescuers",
+      "es": "Los rescatadores",
+      "eu": "The Rescuers",
+      "gl": "The Rescuers",
+      "ca": "Els rescatadors",
+      "va": "Els rescatadors"
+    }
+  },
+  {
+    "id": "the-rescuers-down-under-1990",
+    "category": "disney",
+    "year": 1990,
+    "sequel": true,
+    "poster": "the-rescuers-down-under-1990.webp",
+    "titles": {
+      "en": "The Rescuers Down Under",
+      "es": "Los rescatadores en Cangurolandia",
+      "eu": "The Rescuers Down Under",
+      "gl": "The Rescuers Down Under",
+      "ca": "The Rescuers Down Under",
+      "va": "The Rescuers Down Under"
+    }
+  },
+  {
+    "id": "the-road-to-el-dorado-2000",
+    "category": "dreamworks",
+    "year": 2000,
+    "sequel": false,
+    "poster": "the-road-to-el-dorado-2000.webp",
+    "titles": {
+      "en": "The Road to El Dorado",
+      "es": "La ruta hacia El Dorado",
+      "eu": "The Road to El Dorado",
+      "gl": "The Road to El Dorado",
+      "ca": "La ruta cap a El Dorado",
+      "va": "La ruta cap a El Dorado"
+    }
+  },
+  {
+    "id": "the-sword-in-the-stone-1963",
+    "category": "disney",
+    "year": 1963,
+    "sequel": false,
+    "poster": "the-sword-in-the-stone-1963.webp",
+    "titles": {
+      "en": "The Sword in the Stone",
+      "es": "Merlín el encantador",
+      "eu": "The Sword in the Stone",
+      "gl": "The Sword in the Stone",
+      "ca": "The Sword in the Stone",
+      "va": "The Sword in the Stone"
+    }
+  },
+  {
+    "id": "the-three-caballeros-1945",
+    "category": "disney",
+    "year": 1945,
+    "sequel": true,
+    "poster": "the-three-caballeros-1945.webp",
+    "titles": {
+      "en": "The Three Caballeros",
+      "es": "Los tres caballeros",
+      "eu": "The Three Caballeros",
+      "gl": "The Three Caballeros",
+      "ca": "The Three Caballeros",
+      "va": "The Three Caballeros"
+    }
+  },
+  {
+    "id": "the-wild-robot-2024",
+    "category": "dreamworks",
+    "year": 2024,
+    "sequel": false,
+    "poster": "the-wild-robot-2024.webp",
+    "titles": {
+      "en": "The Wild Robot",
+      "es": "Robot salvaje",
+      "eu": "The Wild Robot",
+      "gl": "Robot salvaje",
+      "ca": "The Wild Robot",
+      "va": "The Wild Robot"
+    }
+  },
+  {
+    "id": "toy-story-1995",
+    "category": "pixar",
+    "year": 1995,
+    "sequel": false,
+    "poster": "toy-story-1995.webp",
+    "titles": {
+      "en": "Toy Story",
+      "es": "Toy Story",
+      "eu": "Toy Story",
+      "gl": "Toy Story",
+      "ca": "Toy Story",
+      "va": "Toy Story"
+    }
+  },
+  {
+    "id": "toy-story-2-1999",
+    "category": "pixar",
+    "year": 1999,
+    "sequel": true,
+    "poster": "toy-story-2-1999.webp",
+    "titles": {
+      "en": "Toy Story 2",
+      "es": "Toy Story 2",
+      "eu": "Toy Story 2",
+      "gl": "Toy Story 2",
+      "ca": "Toy Story 2",
+      "va": "Toy Story 2"
+    }
+  },
+  {
+    "id": "toy-story-3-2010",
+    "category": "pixar",
+    "year": 2010,
+    "sequel": true,
+    "poster": "toy-story-3-2010.webp",
+    "titles": {
+      "en": "Toy Story 3",
+      "es": "Toy Story 3",
+      "eu": "Toy Story 3",
+      "gl": "Toy Story 3",
+      "ca": "Toy Story 3",
+      "va": "Toy Story 3"
+    }
+  },
+  {
+    "id": "toy-story-4-2019",
+    "category": "pixar",
+    "year": 2019,
+    "sequel": true,
+    "poster": "toy-story-4-2019.webp",
+    "titles": {
+      "en": "Toy Story 4",
+      "es": "Toy Story 4",
+      "eu": "Toy Story 4",
+      "gl": "Toy Story 4",
+      "ca": "Toy Story 4",
+      "va": "Toy Story 4"
+    }
+  },
+  {
+    "id": "toy-story-5-2026",
+    "category": "pixar",
+    "year": 2026,
+    "sequel": true,
+    "poster": "toy-story-5-2026.webp",
+    "titles": {
+      "en": "Toy Story 5",
+      "es": "Toy Story 5",
+      "eu": "Toy Story 5",
+      "gl": "Toy Story 5",
+      "ca": "Toy Story 5",
+      "va": "Toy Story 5"
+    }
+  },
+  {
+    "id": "treasure-planet-2002",
+    "category": "disney",
+    "year": 2002,
+    "sequel": false,
+    "poster": "treasure-planet-2002.webp",
+    "titles": {
+      "en": "Treasure Planet",
+      "es": "El planeta del tesoro",
+      "eu": "El planeta del tesoro",
+      "gl": "Treasure Planet",
+      "ca": "El planeta del tresor",
+      "va": "El planeta del tresor"
+    }
+  },
+  {
+    "id": "trolls-2016",
+    "category": "dreamworks",
+    "year": 2016,
+    "sequel": false,
+    "poster": "trolls-2016.webp",
+    "titles": {
+      "en": "Trolls",
+      "es": "Trolls",
+      "eu": "Trolls",
+      "gl": "Trolls",
+      "ca": "Trolls",
+      "va": "Trolls"
+    }
+  },
+  {
+    "id": "trolls-band-together-2023",
+    "category": "dreamworks",
+    "year": 2023,
+    "sequel": true,
+    "poster": "trolls-band-together-2023.webp",
+    "titles": {
+      "en": "Trolls Band Together",
+      "es": "Trolls 3: Todos juntos",
+      "eu": "Trolls 3: Todos juntos",
+      "gl": "Trolls 3: Todos juntos",
+      "ca": "Trolls 3: Tots junts",
+      "va": "Trolls 3: Tots junts"
+    }
+  },
+  {
+    "id": "trolls-world-tour-2020",
+    "category": "dreamworks",
+    "year": 2020,
+    "sequel": true,
+    "poster": "trolls-world-tour-2020.webp",
+    "titles": {
+      "en": "Trolls World Tour",
+      "es": "Trolls 2: Gira mundial",
+      "eu": "Trolls 2: Gira mundial",
+      "gl": "Trolls World Tour",
+      "ca": "Trolls 2: Gira mundial",
+      "va": "Trolls 2: Gira mundial"
+    }
+  },
+  {
+    "id": "turbo-2013",
+    "category": "dreamworks",
+    "year": 2013,
+    "sequel": false,
+    "poster": "turbo-2013.webp",
+    "titles": {
+      "en": "Turbo",
+      "es": "Turbo",
+      "eu": "Turbo",
+      "gl": "Turbo",
+      "ca": "Turbo",
+      "va": "Turbo"
+    }
+  },
+  {
+    "id": "turning-red-2022",
+    "category": "pixar",
+    "year": 2022,
+    "sequel": false,
+    "poster": "turning-red-2022.webp",
+    "titles": {
+      "en": "Turning Red",
+      "es": "Red",
+      "eu": "Turning Red",
+      "gl": "Turning Red",
+      "ca": "Red",
+      "va": "Red"
+    }
+  },
+  {
+    "id": "up-2009",
+    "category": "pixar",
+    "year": 2009,
+    "sequel": false,
+    "poster": "up-2009.webp",
+    "titles": {
+      "en": "Up",
+      "es": "Up",
+      "eu": "Up",
+      "gl": "Up",
+      "ca": "Up",
+      "va": "Up"
+    }
+  },
+  {
+    "id": "wall-e-2008",
+    "category": "pixar",
+    "year": 2008,
+    "sequel": false,
+    "poster": "wall-e-2008.webp",
+    "titles": {
+      "en": "WALL-E",
+      "es": "WALL•E",
+      "eu": "WALL-E",
+      "gl": "WALL-E",
+      "ca": "WALL·E",
+      "va": "WALL·E"
+    }
+  },
+  {
+    "id": "wallace-and-gromit-the-curse-of-the-were-rabbit-2005",
+    "category": "dreamworks",
+    "year": 2005,
+    "sequel": false,
+    "poster": "wallace-and-gromit-the-curse-of-the-were-rabbit-2005.webp",
+    "titles": {
+      "en": "Wallace & Gromit: The Curse of the Were-Rabbit",
+      "es": "Wallace & Gromit: La maldición de las verduras",
+      "eu": "Wallace & Gromit: The Curse of the Were-Rabbit",
+      "gl": "Wallace & Gromit: La maldición de las verduras",
+      "ca": "Wallace & Gromit: La maledicció de les verdures",
+      "va": "Wallace & Gromit: La maledicció de les verdures"
+    }
+  },
+  {
+    "id": "who-framed-roger-rabbit-1988",
+    "category": "live-action",
+    "year": 1988,
+    "sequel": false,
+    "poster": "who-framed-roger-rabbit-1988.webp",
+    "titles": {
+      "en": "Who Framed Roger Rabbit",
+      "es": "¿Quién engañó a Roger Rabbit?",
+      "eu": "Who Framed Roger Rabbit",
+      "gl": "Quen enganou a Roger Rabbit?",
+      "ca": "Qui ha enredat en Roger Rabbit?",
+      "va": "Qui ha enredat en Roger Rabbit?"
+    }
+  },
+  {
+    "id": "winnie-the-pooh-2011",
+    "category": "disney",
+    "year": 2011,
+    "sequel": false,
+    "poster": "winnie-the-pooh-2011.webp",
+    "titles": {
+      "en": "Winnie the Pooh",
+      "es": "Winnie the Pooh",
+      "eu": "Winnie the Pooh",
+      "gl": "Winnie the Pooh",
+      "ca": "Winnie the Pooh",
+      "va": "Winnie the Pooh"
+    }
+  },
+  {
+    "id": "wish-2023",
+    "category": "disney",
+    "year": 2023,
+    "sequel": false,
+    "poster": "wish-2023.webp",
+    "titles": {
+      "en": "Wish",
+      "es": "Wish: El poder de los deseos",
+      "eu": "Wish",
+      "gl": "Wish",
+      "ca": "Wish: el poder dels desitjos",
+      "va": "Wish: el poder dels desitjos"
+    }
+  },
+  {
+    "id": "wreck-it-ralph-2012",
+    "category": "disney",
+    "year": 2012,
+    "sequel": false,
+    "poster": "wreck-it-ralph-2012.webp",
+    "titles": {
+      "en": "Wreck-It Ralph",
+      "es": "¡Rompe Ralph!",
+      "eu": "Wreck-It Ralph",
+      "gl": "Wreck-It Ralph",
+      "ca": "En Ralph, el destructor",
+      "va": "En Ralph, el destructor"
+    }
+  },
+  {
+    "id": "zootopia-2-2025",
+    "category": "disney",
+    "year": 2025,
+    "sequel": true,
+    "poster": "zootopia-2-2025.webp",
+    "titles": {
+      "en": "Zootopia 2",
+      "es": "Zootrópolis 2",
+      "eu": "Zootrópolis 2",
+      "gl": "Zootopia 2",
+      "ca": "Zootròpolis 2",
+      "va": "Zootròpolis 2"
+    }
+  },
+  {
+    "id": "zootopia-2016",
+    "category": "disney",
+    "year": 2016,
+    "sequel": false,
+    "poster": "zootopia-2016.webp",
+    "titles": {
+      "en": "Zootopia",
+      "es": "Zootrópolis",
+      "eu": "Zootopia",
+      "gl": "Zootopia",
+      "ca": "Zootròpolis",
+      "va": "Zootròpolis"
+    }
+  }
+]
