@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/Endika/kartela/compare/v0.6.1...v0.7.0) (2026-08-06)
+
+
+### Features
+
+* add the live-action films a child would actually name ([317c2b3](https://github.com/Endika/kartela/commit/317c2b3e6ce643ef5e0d49112c1d5300720e0e63))
+
 ## [0.6.1](https://github.com/Endika/kartela/compare/v0.6.0...v0.6.1) (2026-08-06)
 
 
