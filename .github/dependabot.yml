@@ -8,6 +8,11 @@ updates:
     commit-message:
       prefix: chore
       include: scope
+    ignore:
+      # typescript-eslint peers on typescript <6.1.0, so a major TypeScript bump can only
+      # ever fail npm ci here. Drop this once typescript-eslint supports 7.
+      - dependency-name: typescript
+        update-types: ['version-update:semver-major']
     groups:
       security-npm:
         applies-to: security-updates
