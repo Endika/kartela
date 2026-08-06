@@ -12,9 +12,12 @@ const CATEGORY_LABELS: Record<Category, keyof Dict> = {
   'live-action': 'liveAction',
 }
 
-const CHIP = 'rounded-2xl px-4 py-3 text-left text-sm font-semibold transition-colors'
-const CHIP_ON = 'bg-gold text-night'
-const CHIP_OFF = 'bg-night-soft text-white/70'
+const FOCUS = 'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold'
+const CHIP = `rounded-2xl px-4 py-3 text-left text-sm font-semibold ring-2 transition-colors ${FOCUS}`
+// Only the play button is solid gold: chips that are on get a gold outline instead, so six
+// switched-on studios do not compete with the one thing you actually press.
+const CHIP_ON = 'bg-gold/15 text-gold ring-gold'
+const CHIP_OFF = 'bg-night-soft text-white/65 ring-transparent'
 
 export function deckSize(options: Options): number {
   const available = eligible(CATALOG, options).length
@@ -87,7 +90,11 @@ export function renderStartScreen(
       }),
     )
 
-    const count = el('p', { class: 'text-center text-sm text-white/60', id: 'deck-size' })
+    const count = el('p', {
+      class: 'text-center text-sm text-white/75',
+      id: 'deck-size',
+      'aria-live': 'polite',
+    })
     count.textContent = playable
       ? t('films', { n: size })
       : draft.categories.length === 0
@@ -96,8 +103,7 @@ export function renderStartScreen(
 
     const play = el('button', {
       type: 'button',
-      class:
-        'rounded-full bg-gold px-8 py-4 text-lg font-bold text-night disabled:bg-night-soft disabled:text-white/40',
+      class: `rounded-full bg-gold px-8 py-4 text-lg font-bold text-night disabled:bg-night-soft disabled:text-white/50 ${FOCUS}`,
       disabled: !playable,
       'aria-describedby': 'deck-size',
     })
@@ -107,7 +113,7 @@ export function renderStartScreen(
     const language = el(
       'select',
       {
-        class: 'rounded-full bg-night-soft px-4 py-2 text-sm text-white/70',
+        class: `min-w-0 rounded-full bg-night-soft px-4 py-2 text-sm text-white/80 ${FOCUS}`,
         'aria-label': t('language'),
       },
       LANGS.map((lang) => {
