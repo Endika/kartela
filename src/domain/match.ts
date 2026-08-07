@@ -48,6 +48,15 @@ export function championRuns(history: readonly Choice[]): Run[] {
 }
 
 /**
+ * The films that held the screen at some point. A champion's wins are always consecutive —
+ * the loser is discarded and every film challenges exactly once — so the runs already are
+ * the distinct winners.
+ */
+export function favourites(history: readonly Choice[]): Film[] {
+  return championRuns(history).map((run) => run.winner)
+}
+
+/**
  * King of the hill: the first film takes on the second, whoever wins stays and meets the
  * next film in the deck. Every film shows up exactly once as a challenger, so a deck of N
  * films is N-1 duels and ends with a single champion.
