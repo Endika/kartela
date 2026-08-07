@@ -3,7 +3,7 @@ import type { Film } from '../src/domain/film'
 import { FILMS } from './support/fakes'
 import { buildDeck, deckSize, eligible } from '../src/domain/deck'
 import { DURATION_SIZES } from '../src/domain/options'
-import { championRuns, createMatch } from '../src/domain/match'
+import { championRuns, createMatch, favourites } from '../src/domain/match'
 import { seededRandom } from '../src/adapters/seeded-random'
 
 const ALL_CATEGORIES = ['disney', 'pixar', 'dreamworks'] as const
@@ -256,5 +256,34 @@ describe('championRuns', () => {
 
   it('gives no runs for a match with no duels', () => {
     expect(championRuns([])).toEqual([])
+  })
+})
+
+describe('favourites', () => {
+  it('is empty when no duel was ever played', () => {
+    expect(favourites(createMatch(deckOf(1)).history)).toEqual([])
+  })
+
+  it('yields one film when the first poster wins everything', () => {
+    const { match } = playAll(deckOf(5))
+    expect(favourites(match.history).map((film) => film.id)).toEqual([FILMS[0]?.id])
+  })
+
+  it('lists every film that held the screen, in order of first win', () => {
+    const match = createMatch(deckOf(4))
+    match.choose('right') // the challenger takes the screen
+    match.choose('left') // and holds it
+    match.choose('right') // then loses it to the last challenger
+    expect(favourites(match.history).map((film) => film.id)).toEqual([FILMS[1]?.id, FILMS[3]?.id])
+  })
+
+  it('agrees with championRuns, which cannot record a non-consecutive win', () => {
+    const match = createMatch(deckOf(9))
+    let round = 0
+    while (!match.isOver) {
+      round += 1
+      match.choose(round % 3 === 0 ? 'right' : 'left')
+    }
+    expect(favourites(match.history)).toEqual(championRuns(match.history).map((run) => run.winner))
   })
 })
