@@ -29,4 +29,5 @@ export const gl: Dict = {
   fullHistory: 'Todos os duelos',
   playAgain: 'Outra vez',
   change: 'Cambiar opcións',
+  favouritesRound: 'Duelo de favoritas',
 }

@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { titleOf } from '../src/domain/film'
-import { championRuns, createMatch, type Match } from '../src/domain/match'
+import { championRuns, createMatch, favourites, type Match } from '../src/domain/match'
 import { renderResultsScreen } from '../src/ui/results-screen'
 import { FILMS, fakeDeps } from './support/fakes'
 
@@ -26,8 +26,16 @@ function mount(): HTMLDivElement {
   return root
 }
 
-const render = (root: HTMLElement, match: Match, onAgain = vi.fn(), onChange = vi.fn()) =>
-  renderResultsScreen(root, deps, match, 'es', onAgain, onChange)
+const render = (
+  root: HTMLElement,
+  match: Match,
+  onAgain = vi.fn(),
+  onChange = vi.fn(),
+  onFavourites = vi.fn(),
+) => renderResultsScreen(root, deps, match, 'es', onAgain, onChange, onFavourites)
+
+const favouritesButton = (root: HTMLElement): HTMLButtonElement | undefined =>
+  [...root.querySelectorAll('button')].find((b) => b.textContent?.includes('Duelo de favoritas'))
 
 describe('results screen', () => {
   beforeEach(() => {
@@ -115,5 +123,45 @@ describe('results screen', () => {
     const root = mount()
     render(root, playedMatch(5))
     expect(root.querySelector('details')?.hasAttribute('open')).toBe(false)
+  })
+
+  it('offers a favourites round with the films that held the screen', () => {
+    const root = mount()
+    const match = playedMatch(8)
+    const onFavourites = vi.fn()
+    render(root, match, vi.fn(), vi.fn(), onFavourites)
+    const picked = favourites(match.history)
+    expect(picked.length).toBeGreaterThanOrEqual(2)
+    expect(favouritesButton(root)?.textContent).toContain(`${picked.length} películas`)
+    favouritesButton(root)?.click()
+    expect(onFavourites).toHaveBeenCalledWith(picked)
+  })
+
+  it('hides the favourites round when one poster won everything', () => {
+    const root = mount()
+    const match = createMatch(FILMS.slice(0, 5))
+    while (!match.isOver) {
+      match.choose('left')
+    }
+    render(root, match)
+    expect(favourites(match.history)).toHaveLength(1)
+    expect(favouritesButton(root)).toBeUndefined()
+  })
+
+  it('hides the favourites round when no duel was played', () => {
+    const root = mount()
+    render(root, createMatch(FILMS.slice(0, 1)))
+    expect(favouritesButton(root)).toBeUndefined()
+  })
+
+  it('keeps play again as the primary action, favourites below it', () => {
+    const root = mount()
+    render(root, playedMatch(8))
+    const labels = [...root.querySelectorAll('button')].map((b) => b.textContent ?? '')
+    const again = labels.findIndex((text) => text === 'Otra vez')
+    const harder = labels.findIndex((text) => text.includes('Duelo de favoritas'))
+    const change = labels.findIndex((text) => text === 'Cambiar opciones')
+    expect(again).toBeLessThan(harder)
+    expect(harder).toBeLessThan(change)
   })
 })

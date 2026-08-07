@@ -49,6 +49,7 @@ export const TRANSLATION_KEYS = [
   'fullHistory',
   'playAgain',
   'change',
+  'favouritesRound',
 ] as const
 
 export type TranslationKey = (typeof TRANSLATION_KEYS)[number]

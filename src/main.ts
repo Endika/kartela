@@ -1,6 +1,8 @@
 import { buildDeck } from './domain/deck'
+import type { Film } from './domain/film'
 import { createMatch, type Match } from './domain/match'
 import type { Options } from './domain/options'
+import { shuffle } from './domain/shuffle'
 import { bundledCatalogue } from './adapters/bundled-catalogue'
 import { localeTranslations } from './adapters/locale-translations'
 import { storedOptions } from './adapters/local-storage-options'
@@ -49,15 +51,21 @@ export function startApp(host: HTMLElement, deps: Deps, version: string): void {
     })
   }
 
-  function play(): void {
-    const deck = buildDeck(deps.catalogue.all(), options, deps.random)
+  function playDeck(deck: readonly Film[]): void {
     const match = createMatch(deck)
     swap((root) => renderMatchScreen(root, deps, match, options.lang, () => results(match)))
   }
 
+  function play(): void {
+    playDeck(buildDeck(deps.catalogue.all(), options, deps.random))
+  }
+
   function results(match: Match): void {
     swap((root) => {
-      renderResultsScreen(root, deps, match, options.lang, play, start)
+      // Shuffled, so the previous champion does not always open on screen.
+      renderResultsScreen(root, deps, match, options.lang, play, start, (deck) =>
+        playDeck(shuffle(deck, deps.random)),
+      )
     })
   }
 

@@ -29,4 +29,5 @@ export const va: Dict = {
   fullHistory: 'Tots els duels',
   playAgain: 'Una altra vegada',
   change: 'Canviar opcions',
+  favouritesRound: 'Duel de favorites',
 }
