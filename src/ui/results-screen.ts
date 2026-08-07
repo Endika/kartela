@@ -1,5 +1,5 @@
 import { titleOf, type Film, type Lang } from '../domain/film'
-import { championRuns, type Match } from '../domain/match'
+import { championRuns, favourites, type Match } from '../domain/match'
 import { clear, el } from './dom'
 import type { Deps } from './deps'
 
@@ -10,6 +10,7 @@ export function renderResultsScreen(
   lang: Lang,
   onAgain: () => void,
   onChange: () => void,
+  onFavourites: (deck: readonly Film[]) => void,
 ): void {
   const { t } = deps.translations.for(lang)
   const posterUrl = (film: Film): string => deps.catalogue.posterUrl(film)
@@ -100,12 +101,34 @@ export function renderResultsScreen(
   change.textContent = t('change')
   change.addEventListener('click', onChange)
 
+  // Two films is the floor: with one there is no duel left to play.
+  const picked = favourites(match.history)
+  const harderLabel = el('span', { class: 'font-display text-base font-extrabold' })
+  harderLabel.textContent = t('favouritesRound')
+  const harderCount = el('span', { class: 'text-xs text-white/60' })
+  harderCount.textContent = t('films', { n: picked.length })
+  // Stacked, not one line: the label plus the count overflows 320px in several languages.
+  const harder = el(
+    'button',
+    {
+      type: 'button',
+      class:
+        'flex flex-col items-center rounded-2xl bg-stage-soft px-8 py-3 text-white ring-2 ring-crown focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-crown',
+    },
+    [harderLabel, harderCount],
+  )
+  harder.addEventListener('click', () => onFavourites(picked))
+
   clear(root)
   root.append(
     el('main', { class: 'mx-auto flex w-full max-w-md flex-1 flex-col gap-6 px-5 py-8' }, [
       header,
       el('section', { class: 'flex flex-col gap-2' }, [listTitle, list, history]),
-      el('div', { class: 'flex flex-col items-center gap-3' }, [again, change]),
+      el('div', { class: 'flex flex-col items-center gap-3' }, [
+        again,
+        ...(picked.length >= 2 ? [harder] : []),
+        change,
+      ]),
     ]),
   )
 }

@@ -29,4 +29,5 @@ export const en: Dict = {
   fullHistory: 'Every duel',
   playAgain: 'Play again',
   change: 'Change options',
+  favouritesRound: 'Favourites round',
 }

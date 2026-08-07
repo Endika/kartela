@@ -29,4 +29,5 @@ export const es: Dict = {
   fullHistory: 'Todos los duelos',
   playAgain: 'Otra vez',
   change: 'Cambiar opciones',
+  favouritesRound: 'Duelo de favoritas',
 }

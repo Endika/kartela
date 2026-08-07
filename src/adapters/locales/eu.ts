@@ -30,4 +30,5 @@ export const eu: Dict = {
   fullHistory: 'Duelo guztiak',
   playAgain: 'Berriro',
   change: 'Aukerak aldatu',
+  favouritesRound: 'Gogokoenen txanda',
 }
