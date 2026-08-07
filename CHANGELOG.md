@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.0](https://github.com/Endika/kartela/compare/v0.7.0...v0.8.0) (2026-08-07)
+
+
+### Features
+
+* expose the films that held the screen as a replayable set ([95e0c67](https://github.com/Endika/kartela/commit/95e0c67e251d23b6cec60f43535451cdcc573035))
+* replay a harder round with only the films you picked ([2585407](https://github.com/Endika/kartela/commit/25854079b7f35d30cabee543d251c47f94ec93be))
+
 ## [0.7.0](https://github.com/Endika/kartela/compare/v0.6.1...v0.7.0) (2026-08-06)
 
 
