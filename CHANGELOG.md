@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.8.1](https://github.com/Endika/kartela/compare/v0.8.0...v0.8.1) (2026-09-05)
+
+
+### Chores
+
+* add format:check gate covering src, tests and tools ([4446104](https://github.com/Endika/kartela/commit/4446104bd6ab74d3c1456940632ac34d91db7638))
+* **deps-dev:** bump the npm-minor-patch group with 4 updates ([41e88cd](https://github.com/Endika/kartela/commit/41e88cd8381fbe501715e2994eb86e52b8cc9d59))
+* **deps-dev:** bump the npm-minor-patch group with 4 updates ([b7c9317](https://github.com/Endika/kartela/commit/b7c9317e9a9c89830b585d0ec9b19dba71ac7e94))
+* **deps-dev:** bump the npm-minor-patch group with 4 updates ([3f15b8d](https://github.com/Endika/kartela/commit/3f15b8d452abfec7d4e449b87e25d5f3cfcbde50))
+* **deps-dev:** bump the npm-minor-patch group with 5 updates ([aaff3ca](https://github.com/Endika/kartela/commit/aaff3caba5f79ce1f8f2825fec78135d9deabcc4))
+* **deps:** bump fast-uri in the security-npm group across 1 directory ([11cf16e](https://github.com/Endika/kartela/commit/11cf16ef95d0e0d09c115addb87fb6a713d81035))
+
 ## [0.8.0](https://github.com/Endika/kartela/compare/v0.7.0...v0.8.0) (2026-08-07)
 
 
