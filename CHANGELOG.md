@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.3](https://github.com/Endika/kartela/compare/v0.8.2...v0.8.3) (2026-09-05)
+
+
+### Chores
+
+* run the same four gates in pre-commit as in CI ([07e25ef](https://github.com/Endika/kartela/commit/07e25efb4d33158948f8a2fac966f4450d22a5e0))
+
 ## [0.8.2](https://github.com/Endika/kartela/compare/v0.8.1...v0.8.2) (2026-09-05)
 
 
