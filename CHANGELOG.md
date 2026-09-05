@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.2](https://github.com/Endika/kartela/compare/v0.8.1...v0.8.2) (2026-09-05)
+
+
+### Chores
+
+* type-check the tools project in the gate ([c3b5b76](https://github.com/Endika/kartela/commit/c3b5b76d1461306b209618e94ec919fe31f13af5))
+
 ## [0.8.1](https://github.com/Endika/kartela/compare/v0.8.0...v0.8.1) (2026-09-05)
 
 
