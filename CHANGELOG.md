@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.5](https://github.com/Endika/kartela/compare/v0.8.4...v0.8.5) (2026-09-10)
+
+
+### Chores
+
+* **deps-dev:** bump js-yaml ([eb0ba9e](https://github.com/Endika/kartela/commit/eb0ba9eab9d7ff83bb3bcdb5ecd648d1d5574ec9))
+
 ## [0.8.4](https://github.com/Endika/kartela/compare/v0.8.3...v0.8.4) (2026-09-10)
 
 
