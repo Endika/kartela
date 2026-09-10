@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.6](https://github.com/Endika/kartela/compare/v0.8.5...v0.8.6) (2026-09-10)
+
+
+### Chores
+
+* **deps-dev:** bump vitest and @vitest/coverage-v8 from 4.1.11 to 5.0.0 ([992e9d4](https://github.com/Endika/kartela/commit/992e9d409853a539c3e0fb0f6e44418ff62e90b2))
+
 ## [0.8.5](https://github.com/Endika/kartela/compare/v0.8.4...v0.8.5) (2026-09-10)
 
 
