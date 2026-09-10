@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.4](https://github.com/Endika/kartela/compare/v0.8.3...v0.8.4) (2026-09-10)
+
+
+### Chores
+
+* **deps-dev:** bump the npm-minor-patch group with 4 updates ([07e2b84](https://github.com/Endika/kartela/commit/07e2b84c6e43ceb44ff121ed8345675e8f142b2b))
+
 ## [0.8.3](https://github.com/Endika/kartela/compare/v0.8.2...v0.8.3) (2026-09-05)
 
 
