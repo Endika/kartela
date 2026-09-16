@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.0](https://github.com/Endika/kartela/compare/v0.9.0...v0.10.0) (2026-09-16)
+
+
+### Features
+
+* **ci:** add CodeQL static analysis ([4313438](https://github.com/Endika/kartela/commit/43134383b6a2928f392c0a10d36f36ecc336a719))
+
 ## [0.9.0](https://github.com/Endika/kartela/compare/v0.8.6...v0.9.0) (2026-09-16)
 
 
