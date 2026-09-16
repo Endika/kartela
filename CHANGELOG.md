@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.0](https://github.com/Endika/kartela/compare/v0.8.6...v0.9.0) (2026-09-16)
+
+
+### Features
+
+* **ci:** block PRs that introduce high-severity dependency advisories ([324e36f](https://github.com/Endika/kartela/commit/324e36ff696793cb133ed8fe3c72928eb287e64a))
+
 ## [0.8.6](https://github.com/Endika/kartela/compare/v0.8.5...v0.8.6) (2026-09-10)
 
 
