@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.1](https://github.com/Endika/kartela/compare/v0.10.0...v0.10.1) (2026-09-17)
+
+
+### Bug Fixes
+
+* **fetch-catalog:** reject poster URLs not hosted on wikimedia.org ([d5146b5](https://github.com/Endika/kartela/commit/d5146b5c51cf1e77007dcdbb9368b42af41635b9))
+
 ## [0.10.0](https://github.com/Endika/kartela/compare/v0.9.0...v0.10.0) (2026-09-16)
 
 
