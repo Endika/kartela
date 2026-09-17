@@ -9,6 +9,7 @@
 import { mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import sharp from 'sharp'
+import { isTrustedPosterSource } from './poster-source'
 
 const ROOT = join(import.meta.dirname, '..')
 const SEED = join(ROOT, 'tools', 'catalog-seed.json')
@@ -201,6 +202,9 @@ async function poster(page: string, id: string): Promise<void> {
   const source = summary.originalimage?.source ?? summary.thumbnail?.source
   if (!source) {
     throw new SkipFilm('no lead image on the Wikipedia page')
+  }
+  if (!isTrustedPosterSource(source)) {
+    throw new SkipFilm(`lead image is not hosted on Wikimedia: ${source}`)
   }
   const original = await cached(`image-${slugify(page)}`, () => download(source))
   const webp = await sharp(original)
