@@ -3,7 +3,7 @@ import type { TranslationKey } from '../domain/ports'
 
 /**
  * One hue per studio. The colour lives in a thin frame and a small tab — never behind the
- * poster — because 189 posters already bring their own palettes and would fight it.
+ * poster — because the posters already bring their own palettes and would fight it.
  *
  * A live-action remake wears its studio's colour like any other film: it is a Disney film
  * that happens not to be animated, not a studio of its own.

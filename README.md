@@ -25,8 +25,8 @@ Swiping works with a finger, a mouse, or the ← / → keys, and a tap on a post
 ## Features
 
 - **202 films** — 119 Disney, 52 DreamWorks, 31 Pixar.
-- **Pick your studios** — one toggle each. Sequels and live-action (56 films) cut across all
-  three, so they are switches of their own: a live-action remake is still a film by the
+- **Pick your studios** — one toggle each. Sequels (49 films) and live-action (56) cut across
+  all three, so they are switches of their own: a live-action remake is still a film by the
   studio that made it, not a studio of its own.
 - Animation is the complete canon — all 64 Walt Disney Animation Studios features, all 31
   Pixar, 51 of the 53 DreamWorks Animation ones. Live-action is a curated pick of what a
