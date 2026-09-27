@@ -18,6 +18,9 @@ updates:
         applies-to: security-updates
         patterns:
           - '*'
+        update-types:
+          - minor
+          - patch
       npm-minor-patch:
         update-types:
           - minor
@@ -35,6 +38,9 @@ updates:
         applies-to: security-updates
         patterns:
           - '*'
+        update-types:
+          - minor
+          - patch
       actions:
         update-types:
           - minor
