@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.2](https://github.com/Endika/kartela/compare/v0.10.1...v0.10.2) (2026-11-05)
+
+
+### Bug Fixes
+
+* **deps:** override minimatch to ^11.0.1 for GHSA-g3hv-75wg-m249 ([197cf75](https://github.com/Endika/kartela/commit/197cf7536e859483fcccaf117654325e8cda5280))
+
 ## [0.10.1](https://github.com/Endika/kartela/compare/v0.10.0...v0.10.1) (2026-09-17)
 
 
