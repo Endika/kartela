@@ -1,9 +1,9 @@
 {
   "name": "kartela",
   "private": true,
-  "version": "0.10.2",
+  "version": "0.10.3",
   "type": "module",
-  "description": "Pick your favourite movie poster, one duel at a time \u2014 offline PWA for kids",
+  "description": "Pick your favourite movie poster, one duel at a time — offline PWA for kids",
   "license": "MIT",
   "author": "Endika Iglesias",
   "homepage": "https://endika.github.io/kartela/",

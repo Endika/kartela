@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.3](https://github.com/Endika/kartela/compare/v0.10.2...v0.10.3) (2026-11-23)
+
+
+### Bug Fixes
+
+* **pwa:** precache the app again so installed apps update ([21811d1](https://github.com/Endika/kartela/commit/21811d1e0eb099bbc53c82eab64b4a96ac68ae3e))
+
 ## [0.10.2](https://github.com/Endika/kartela/compare/v0.10.1...v0.10.2) (2026-11-05)
 
 
