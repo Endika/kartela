@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.10.2",
   "type": "module",
-  "description": "Pick your favourite movie poster, one duel at a time — offline PWA for kids",
+  "description": "Pick your favourite movie poster, one duel at a time \u2014 offline PWA for kids",
   "license": "MIT",
   "author": "Endika Iglesias",
   "homepage": "https://endika.github.io/kartela/",
@@ -14,7 +14,7 @@
   "bugs": "https://github.com/Endika/kartela/issues",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node scripts/check-precache.mjs",
     "preview": "vite preview",
     "lint": "eslint src tools tests --ext .ts --max-warnings 0 --no-error-on-unmatched-pattern",
     "format": "prettier --write \"{src,tests,tools}/**/*.{ts,json,css}\"",
@@ -50,6 +50,9 @@
     "vitest": "^5.0.0"
   },
   "overrides": {
-    "minimatch": "^11.0.1"
+    "minimatch": "^11.0.1",
+    "workbox-build": {
+      "glob": "^13.0.0"
+    }
   }
 }
